@@ -3,7 +3,8 @@ define a = "a"
 
 label start:
 
-    $ username = renpy.input()
+    scene bgPC
+    $ username = renpy.input("Login:\dPlease insert username: ")
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
