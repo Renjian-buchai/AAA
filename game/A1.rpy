@@ -3,7 +3,7 @@
     u "Also, you do know that I'm a guy,{w=.1} right?" 
     a "Haha,{w=.1} you don't say?" 
     a "Besides,{w=.1} we're friends!" 
-    show a -happy 
+    hide a happy 
     show a smirk 
     a "You don't look at your {i}friend{/i} with {i}pervy eyes{/i},{w=.1} correct?" 
     u "..." 
@@ -11,6 +11,8 @@
     "How did she know I was doing philosophy?" 
     "Was I reading aloud as I typed?" 
     u "How did you know I was doing philosophy?" 
+    hide a smirk 
+    show a happy 
     a "It was{w=1} just{w=1} a{w=1} guess!" 
     "Her guesses are way too accurate." 
     "Then again,{w=.1} it's not like I have anything else to do other than work." 
@@ -28,7 +30,7 @@ label A2:
 
 label A3: 
     u "Why have you come here anyways?"
-
+    
 menu: 
     a "Hehe,{w=.1} do you know what day it is?" 
     
