@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/neg1.rpy", line 5: expected statement.
+    void 
+         ^
+
+Ren'Py Version: Ren'Py 8.0.1.22070801
+Thu Nov 24 13:38:42 2022

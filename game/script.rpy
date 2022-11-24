@@ -3,20 +3,13 @@ define a = "a"
 
 label start:
 
-    scene bgPC
-    $ username = renpy.input("Login:\dPlease insert username: ")
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    scene bglogin
+    $ username = renpy.input("Login:\nPlease insert username: ", length=10, copypaste=False)
+    $ username = username.strip() 
+    if username == "": 
+        $ username = "Yu Wen" 
+    
+    #Game start
+    call neg1 
 
     return
