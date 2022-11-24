@@ -3,42 +3,32 @@
 While running game code:
   File "game/script.rpy", line 13, in script call
     call neg1
-  File "game/neg1.rpy", line 3, in script
-    play music ["./audio/You and Me.mp3", <silence 2.5>, "./audio/10dC.mp3"] volume 0.1 fadein 4 fadeout 4
-  File "renpy/common/000statements.rpy", line 123, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 32, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-SyntaxError: invalid syntax (game/neg1.rpy, line 3)
+  File "game/neg1.rpy", line 33, in script call
+    call A1
+  File "game/script.rpy", line 13, in script call
+    call neg1
+  File "game/neg1.rpy", line 33, in script call
+    call A1
+ScriptError: could not find label 'A1'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 13, in script call
     call neg1
-  File "game/neg1.rpy", line 3, in script
-    play music ["./audio/You and Me.mp3", <silence 2.5>, "./audio/10dC.mp3"] volume 0.1 fadein 4 fadeout 4
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 2232, in execute
-    self.call("execute")
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 2220, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\statements.py", line 281, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 123, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 32, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 1078, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 1015, in py_compile
-    raise e
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 967, in py_compile
-    raise orig_e
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 960, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/neg1.rpy, line 3)
+  File "game/neg1.rpy", line 33, in script call
+    call A1
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 1705, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 13, in script call
+    call neg1
+  File "game/neg1.rpy", line 33, in script call
+    call A1
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\script.py", line 927, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'A1'.
 
 Windows-10-10.0.19043 AMD64
 Ren'Py 8.0.1.22070801
 AAA 1.0
-Thu Nov 24 13:40:01 2022
+Thu Nov 24 14:07:11 2022

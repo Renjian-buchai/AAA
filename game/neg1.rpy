@@ -17,9 +17,9 @@
     "How scary must the prospect of frostbite and starvation be for those who can't even afford to survive?" 
     scene bgpc8 
     "Maybe—" 
-    jump 0 
+    jump zero 
 
-label 0: 
+label zero: 
     "???" "Are you doing your philosophy bullshit again?" 
     "A pair of soft arms wrapped around my neck." 
     u "Ahh, WHAT THE FUCK?!" 
@@ -29,7 +29,7 @@ label 0:
 menu: 
     a "Your mom let me in."
     
-    "You do know you're a girl, right?" 
+    "You do know you're a girl, right?": 
         call A1 
 
 
