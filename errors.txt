@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/neg1.rpy", line 32: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "You do know you're a girl, right?" 
-                                        ^
+File "game/A1.rpy", line 32: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "It's Saturday." 
+                     ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Thu Nov 24 14:06:25 2022
+Thu Nov 24 14:36:28 2022

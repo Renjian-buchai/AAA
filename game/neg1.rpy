@@ -4,7 +4,7 @@
     scene bgpc1 
     "Finals Philosophy Essay" 
     scene bgpc2 
-    "{u}Topic: Winter{/u}" 
+    "{u}Topic:{w=0.5} Winter{/u}" 
     scene bgpc3 
     "Winter..." 
     scene bgpc4 
@@ -23,13 +23,15 @@ label zero:
     "???" "Are you doing your philosophy bullshit again?" 
     "A pair of soft arms wrapped around my neck." 
     u "Ahh, WHAT THE FUCK?!" 
-    "I screamed and turned around, recognising the one standing behind me." 
+    scene bgbedroom
+    show a happy
+    "I screamed and turned around,{w=0.1} recognising the one standing behind me." 
     u "Why're you in my room?!" 
 
 menu: 
     a "Your mom let me in."
     
-    "You do know you're a girl, right?": 
+    "You do know you're a girl,{w=0.1} right?": 
         call A1 
 
 

@@ -4,7 +4,7 @@ define a = "a"
 label start:
 
     scene bglogin
-    $ username = renpy.input("Login:\nPlease insert username: ", length=10, copypaste=False)
+    $ username = renpy.input("Login:{w=0.5}\nPlease insert username: {w=0.5}", length=10, copypaste=False)
     $ username = username.strip() 
     if username == "": 
         $ username = "Yu Wen" 
