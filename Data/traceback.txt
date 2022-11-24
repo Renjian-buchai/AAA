@@ -1,30 +1,52 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 13, in script call
+  File "game/script.rpy", line 38, in script call
     call neg1
-  File "game/neg1.rpy", line 28, in script
-    "I screamed and turned around,{w=0,1} recognising the one standing behind me."
-ValueError: could not convert string to float: '0,1'
+  File "game/neg1.rpy", line 35, in script call
+    call A1
+  File "game/A1.rpy", line 38, in script call
+    call AA4
+  File "game/AA4.rpy", line 84, in script
+    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] fadein 5
+  File "renpy/common/000statements.rpy", line 123, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 32, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "game/AA4.rpy", line 84, in <module>
+    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] fadein 5
+NameError: name 'lgt' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 13, in script call
+  File "game/script.rpy", line 38, in script call
     call neg1
-  File "game/neg1.rpy", line 28, in script
-    "I screamed and turned around,{w=0,1} recognising the one standing behind me."
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\character.py", line 1263, in __call__
-    dtt = DialogueTextTags(what)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\character.py", line 83, in __init__
-    value = float(value)
-ValueError: could not convert string to float: '0,1'
+  File "game/neg1.rpy", line 35, in script call
+    call A1
+  File "game/A1.rpy", line 38, in script call
+    call AA4
+  File "game/AA4.rpy", line 84, in script
+    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] fadein 5
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 2232, in execute
+    self.call("execute")
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 2220, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\statements.py", line 281, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 123, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 32, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 1080, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 1073, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/AA4.rpy", line 84, in <module>
+    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] fadein 5
+NameError: name 'lgt' is not defined
 
 Windows-10-10.0.19043 AMD64
 Ren'Py 8.0.1.22070801
 AAA 1.0
-Thu Nov 24 14:49:24 2022
+Thu Nov 24 20:13:05 2022

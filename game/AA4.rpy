@@ -11,7 +11,7 @@
     u "Really?" 
     hide a disdainful 
     show a playful 
-    a "It's C-{w=0.8}H-{w=0.8}R-{w=0.8}I-{w=0.8}S-{w=0.8}T-{w=0.8}M-{w=0.8}A-{w=0.8}S{w=0.8} E-{w=0.8}V-{w=0.8}E." 
+    a "It's C{w=0.6}-H{w=0.6}-R{w=0.6}-I{w=0.6}-S{w=0.6}-T{w=0.6}-M{w=0.6}-A{w=0.6}-S{w=0.6} E{w=0.6}-V{w=0.6}-E." 
     u "Can you speak English?" 
     u "Why're you just reciting the letters—" 
     u "Ohh,{w=.1} Christmas Eve." 
@@ -70,7 +70,43 @@ label AA7:
     show a smirk 
     a "No,{w=.1} I'm actually at the top of the class." 
     "Did she really use my own retort against me?" 
-    
+    u "When do I call you?" 
+    a "Around 5 p.m-ish?" 
+    u "..." 
+    u "Alright,{w=.1} I'll call you at 17:00."  
+    jump AA8 
+
+label AA8: 
+    scene bgblack with fade 
+    stop music fadeout 5.0
+    "Around 5 p.m." 
+    scene bgbedroom with fade
+    a "Hello,{w=.1} who's this?" 
+    u "It's me." 
+    "Beep— {p}She ended the call." 
+    "What the hell?"
+    "I dialled her number again." 
+    a "Are you {i}really{/i} bored enough to call the same person twice?" 
+    u "No,{w=.1} it's me,{w=.1} [u]." 
+    a "Oh,{w=.1} wait..." 
+    a "Shit{w=.1} I thought you were another 'it's me' scammer." 
+    u "Weren't you the one who asked me to call you?" 
+    a "Right!" 
+    a "I forgot!"
+    a "Erm... uhm..." 
+    a "{size=20}Why's Baidu so slow all of a sudden?{/size}" 
+    a "Ah,{w=.1} we should meet up around Zhejiang Exhibition Hall." 
+    "She really forgot..." 
+    "I'm speechless." 
+    u "Around when?" 
+    a "Ahh..." 
+    a "Around 5:30...?" 
+    u "No problem." 
+    u "See you later."
+    scene bgblack with fade 
+    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] volume 0.01 fadein 5 fadeout 5
+    scene bgzhejiangexhibitionhall with fade 
+    ""
 
 
 

@@ -13,7 +13,7 @@
     u "How did you know I was doing philosophy?" 
     hide a smirk 
     show a happy 
-    a "It was{w=1} just{w=1} a{w=1} guess!" 
+    a "It was{w=1} just~{w=1} a~{w=1} guess!" 
     "Her guesses are way too accurate." 
     "Then again,{w=.1} it's not like I have anything else to do other than work." 
     jump A2 

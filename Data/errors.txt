@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/A1.rpy", line 32: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "It's Saturday." 
-                     ^
+File "game/neg1.rpy", line 3: expected end of line
+    play music [yam, "<silence 2.5>", tdc] volume 0.1 fadein 4 fadeout 4 loop=true 
+                                                                             ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Thu Nov 24 14:36:28 2022
+Thu Nov 24 20:11:16 2022
