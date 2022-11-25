@@ -46,8 +46,11 @@ label AA6:
     show ina confused 
     a "Then we just prove it." 
     hide ina confused 
-    show ina disdainful 
+    show ina disdainfu
+    a "Even if they ask us to kiss each other as proof,"
+    a "It's not like either of us haven't had our first kisses yet,{w=.1} right?" 
     "Why's she looking at me like I'm the one who's brain damaged?" 
+    "I had my first kiss last year, when I was drunk."
     u "Haha,{w=.1} yeah,{w=.1} right." 
     u "Regardless,{w=.1} I won't go just because you say so. " 
     hide ina disdainful 
@@ -104,10 +107,40 @@ label AA8:
     u "No problem." 
     u "See you later."
     scene bgblack with fade 
-    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] volume 0.01 fadein 5 fadeout 5
+    jump AA9 
+
+label AA9: 
     scene bgzhejiangexhibitionhall with fade 
-    ""
-
-
-
+    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] volume 0.01 fadein 5 fadeout 5
+    "I arrived outside Zhejiang Exhibition Hall." 
+    "I couldn't see [a] anywhere." 
+    "Dialling her phone number, I gave her a call." 
+    a "Hello?" 
+    u "Where're you?" 
+    a "Sorry, I'm still on my way!" 
+    u "Then, where are you on your way?" 
+    a "I'm... {w=.5}right behind you!" 
+    scene bgzhejiangexhibitionhall with hpunch 
+    "I turned around." 
+    u "No, you're not." 
+    a "..." 
+    u "What?" 
+    a "You know, sometimes, you're an idiot." 
+    u "And you're an idiot all the time." 
+    a "{i}Sigh...{/i} Anyways, I've arrived." 
+    u "Are you right behind me?" 
+    "I felt a finger tap me on my shoulder." 
+    scene bgzhejiangexhibitionhall with hpunch 
+    show a happy peace 
+    a "Yep, I am!" 
+    "She makes a peace sign as she hangs up." 
+    a "Are you surprised?" 
+    u "Not at all." 
+    a "Liar." 
+    show a pout 
+    "I was plenty surprised, so..." 
+    "Had it been showing on my face?" 
+menu: 
+    "Fine, I was surprised." 
+        call AAA10 
 return 

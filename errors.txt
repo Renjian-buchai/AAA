@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/AA4.rpy", line 140: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Fine, I was surprised." 
+                             ^
+
+Ren'Py Version: Ren'Py 8.0.1.22070801
+Fri Nov 25 19:59:15 2022
