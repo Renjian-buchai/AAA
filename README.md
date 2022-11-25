@@ -2,9 +2,13 @@
 By Stressed with Ale
 ver. 0.0.2.5 <br> 
 Credits: <br>
-  Art: <br>
+  Character Art: <br>
   The Alexer <br>
     Discord @Alexer#3370 <br>
+  Background Art: <br>
+  Gahjouyooj <br>
+    Github https://github.com/Renjian-buchai <br>
+    Discord 鸭励善达#1642 <br>
   Music: <br>
   Sharou <br>
     Twitter https://twitter.com/shlllllw <br>
