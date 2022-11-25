@@ -1,6 +1,6 @@
 # AAA
 By Stressed with Ale
-ver. 0.0.2.5 <br> 
+ver. 0.0.2.5.3 <br> 
 Credits: <br>
   Character Art: <br>
   The Alexer <br>
