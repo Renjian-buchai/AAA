@@ -4,4 +4,6 @@ To do:
         C1 
     A1 
         BA4
-        BAA4  
+        BAA4 
+        BAAA12 
+        CAAA12 

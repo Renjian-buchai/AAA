@@ -1,4 +1,4 @@
-﻿label AA4: 
+﻿label eA4: 
     u "Hmm..." 
     u "It's Saturday,{w=.1} why?" 
     hide ina happy 
@@ -15,9 +15,9 @@
     u "Can you speak English?" 
     u "Why're you just reciting the letters—" 
     u "Ohh,{w=.1} Christmas Eve." 
-    jump AA5 
+    jump eA5 
 
-label AA5: 
+label eA5: 
     u "And?" 
     hide ina playful 
     show ina confused 
@@ -30,9 +30,9 @@ label AA5:
     a "I'll give you the honour of going to the Christmas Market with you!" 
     "She definitely has an ulterior motive." 
     u "What's the {i}real{/i} reason you need me to come?" 
-    jump AA6 
+    jump eA6 
 
-label AA6: 
+label eA6: 
     hide ina smirk 
     show ina sarcastic 
     a "Oh no,{w=.1} you saw through me!" 
@@ -60,9 +60,9 @@ label AA6:
     a "She asked you to make good use of the discount." 
     u "..." 
     u "{i}Sigh{/i}" 
-    jump AA7 
+    jump eA7 
 
-label AA7: 
+label eA7: 
     u "So,{w=.1} when and where do we meet up?" 
     hide ina disdainful 
     show ina flustered 
@@ -77,9 +77,9 @@ label AA7:
     a "Around 5 p.m-ish?" 
     u "..." 
     u "Alright,{w=.1} I'll call you at 17:00."  
-    jump AA8 
+    jump eA8 
 
-label AA8: 
+label eA8: 
     scene bgblack with fade 
     stop music fadeout 5.0
     "Around 5 p.m." 
@@ -107,40 +107,41 @@ label AA8:
     u "No problem." 
     u "See you later."
     scene bgblack with fade 
-    jump AA9 
+    jump eA9 
 
-label AA9: 
+label eA9: 
     scene bgzhejiangexhibitionhall with fade 
     play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] volume 0.01 fadein 5 fadeout 5
     "I arrived outside Zhejiang Exhibition Hall." 
     "I couldn't see [a] anywhere." 
-    "Dialling her phone number, I gave her a call." 
+    "Dialling her phone number,{w=.1} I gave her a call." 
     a "Hello?" 
     u "Where're you?" 
-    a "Sorry, I'm still on my way!" 
-    u "Then, where are you on your way?" 
+    a "Sorry,{w=.1} I'm still on my way!" 
+    u "Then,{w=.1} where are you on your way?" 
     a "I'm... {w=.5}right behind you!" 
-    scene bgzhejiangexhibitionhall with hpunch 
+    scene bgzhejiangexhibitionhall with fade  
     "I turned around." 
-    u "No, you're not." 
+    u "No,{w=.1} you're not." 
     a "..." 
     u "What?" 
-    a "You know, sometimes, you're an idiot." 
+    a "You know,{w=.1} sometimes,{w=.1} you're an idiot." 
     u "And you're an idiot all the time." 
-    a "{i}Sigh...{/i} Anyways, I've arrived." 
+    a "{i}Sigh...{w=.3}{/i} Anyways,{w=.1} I've arrived." 
     u "Are you right behind me?" 
     "I felt a finger tap me on my shoulder." 
-    scene bgzhejiangexhibitionhall with hpunch 
+    scene bgzhejiangexhibitionhall with fade  
     show a happy peace 
-    a "Yep, I am!" 
+    a "Yep,{w=.1} I am!" 
     "She makes a peace sign as she hangs up." 
     a "Are you surprised?" 
     u "Not at all." 
     a "Liar." 
+    hide a happy peace 
     show a pout 
-    "I was plenty surprised, so..." 
+    "I was plenty surprised,{w=.1} so..." 
     "Had it been showing on my face?" 
 menu: 
-    "Fine, I was surprised." 
-        call AAA10 
+    "Fine,{w=.1} I was surprised.": 
+        call sA10 
 return 

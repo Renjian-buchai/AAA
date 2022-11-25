@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/AA4.rpy", line 140: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Fine, I was surprised." 
-                             ^
+File "game/A1.rpy", line 38: expected 'label_name' not found.
+    call 2A4 
+        ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Fri Nov 25 19:59:15 2022
+Fri Nov 25 20:25:23 2022

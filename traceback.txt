@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00keymap.rpy", line 473, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 473, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 492, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+AttributeError: 'NoneType' object has no attribute 'stores'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00keymap.rpy", line 473, in script
+    python hide:
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 1049, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 473, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 492, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\loadsave.py", line 382, in save
+    roots = renpy.game.log.freeze(None)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\rollback.py", line 1017, in freeze
+    self.complete(False)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\rollback.py", line 584, in complete
+    self.current.stores[name], self.current.delta_ebc[name] = delta
+AttributeError: 'NoneType' object has no attribute 'stores'
+
+Windows-10-10.0.19043 AMD64
+Ren'Py 8.0.1.22070801
+AAA 1.0
+Fri Nov 25 20:25:48 2022

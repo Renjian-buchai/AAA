@@ -35,6 +35,6 @@ menu:
     a "Hehe,{w=.1} do you know what day it is?" 
     
     "It's Saturday.": 
-        call AA4 
+        call eA4 
     
 return 
