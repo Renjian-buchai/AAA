@@ -1,16 +1,16 @@
 ﻿label AA4: 
     u "Hmm..." 
     u "It's Saturday,{w=.1} why?" 
-    hide a happy 
-    show a disdainful 
+    hide ina happy 
+    show ina disdainful 
     a "Are you an idiot?" 
     u "No,{w=.1} I'm actually at the top of my class." 
     a "What the fuck?!"  
     a "You know what I mean." 
     u "?" 
     u "Really?" 
-    hide a disdainful 
-    show a playful 
+    hide ina disdainful 
+    show ina playful 
     a "It's C{w=0.6}-H{w=0.6}-R{w=0.6}-I{w=0.6}-S{w=0.6}-T{w=0.6}-M{w=0.6}-A{w=0.6}-S{w=0.6} E{w=0.6}-V{w=0.6}-E." 
     u "Can you speak English?" 
     u "Why're you just reciting the letters—" 
@@ -19,12 +19,12 @@
 
 label AA5: 
     u "And?" 
-    hide a playful 
-    show a confused 
+    hide ina playful 
+    show ina confused 
     a "'And?'?" 
     u "How does that explain anything?" 
-    hide a confused 
-    show a smirk 
+    hide ina confused 
+    show ina smirk 
     a "You see..." 
     a "Ufufu~" 
     a "I'll give you the honour of going to the Christmas Market with you!" 
@@ -33,25 +33,25 @@ label AA5:
     jump AA6 
 
 label AA6: 
-    hide a smirk 
-    show a sarcastic 
+    hide ina smirk 
+    show ina sarcastic 
     a "Oh no,{w=.1} you saw through me!" 
     "She spoke in an overly-exaggerated manner." 
-    hide a sarcastic 
-    show a happy 
+    hide ina sarcastic 
+    show ina happy 
     a "The Christmas market has a couple's discount,{w=.1} so I need you to pretend to be my boyfriend." 
     u "{i}Sigh...{/i}" 
     u "Please.{w=.3} What if they want us to prove it?" 
-    hide a happy 
-    show a confused 
+    hide ina happy 
+    show ina confused 
     a "Then we just prove it." 
-    hide a confused 
-    show a disdainful 
+    hide ina confused 
+    show ina disdainful 
     "Why's she looking at me like I'm the one who's brain damaged?" 
     u "Haha,{w=.1} yeah,{w=.1} right." 
     u "Regardless,{w=.1} I won't go just because you say so. " 
-    hide a disdainful 
-    show a mischievous 
+    hide ina disdainful 
+    show ina mischievous 
     a "Hehe,{w=.1} too bad,{w=.1} your mom already agreed to it." 
     u "What the fuck?!" 
     a "She asked you to make good use of the discount." 
@@ -61,13 +61,13 @@ label AA6:
 
 label AA7: 
     u "So,{w=.1} when and where do we meet up?" 
-    hide a disdainful 
-    show a flustered 
+    hide ina disdainful 
+    show ina flustered 
     a "Uhm...{w=.3} Call me later." 
     a "I haven't thought of that." 
     u "Are you stupid?" 
-    hide a flustered 
-    show a smirk 
+    hide ina flustered 
+    show ina smirk 
     a "No,{w=.1} I'm actually at the top of the class." 
     "Did she really use my own retort against me?" 
     u "When do I call you?" 

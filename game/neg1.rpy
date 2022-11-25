@@ -24,7 +24,7 @@ label zero:
     "A pair of soft arms wrapped around my neck." 
     u "Ahh, WHAT THE FUCK?!" 
     scene bgbedroom with hpunch
-    show a happy
+    show ina happy
     "I screamed and turned around,{w=0.1} recognising the one standing behind me." 
     u "Why're you in my room?!" 
 
