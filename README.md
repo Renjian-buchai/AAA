@@ -1,8 +1,9 @@
 # AAA
+By Stressed with Ale
 ver. 0.0.2.5 <br> 
 Credits: <br>
 Art: <br>
-<Insert name here> <br>
+Insert name here <br>
 Discord @Alexer#3370 <br>
 Music: <br>
 Sharou <br>
