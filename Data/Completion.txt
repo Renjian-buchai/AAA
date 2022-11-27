@@ -1,9 +1,11 @@
-To do: 
-    neg1 
-        B1 
-        C1 
-    A1 
-        BA4
-        BAA4 
-        BAAA12 
-        CAAA12 
+Key: 
+    1: -
+    2: e
+    3: s 
+    4: si 
+    5: w 
+    6: sx 
+    7: q 
+    8: b 
+    9: j 
+    10: t 

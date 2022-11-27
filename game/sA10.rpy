@@ -39,4 +39,5 @@ menu:
 
     "I think we should get something to eat.": 
         call siA12  
+    # TODO: BsA12, CsA12; 
 return 

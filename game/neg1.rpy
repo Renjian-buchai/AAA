@@ -33,6 +33,5 @@ menu:
     
     "You do know you're a girl,{w=0.1} right?": 
         call A1 
-
-
+    # TODO: B1, C1 
 return 

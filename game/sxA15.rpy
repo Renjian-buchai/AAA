@@ -1,0 +1,28 @@
+﻿label sxA15: 
+    "In the heart of the Christmas Market, there was a competition stage." 
+    "On the competition stage was held a giftwrapping competition." 
+    "Emcee" "Alright! Is there anyone else who wants to come up?!" 
+    "Emcee" "The current record is 20.3 seconds by Mister Lu Hua!" 
+    a "Wow, so fast!" 
+    u "..." 
+    "To be honest, I wasn't very interested." 
+    "According to a screen by the side of the stage, the top ten fastest gift wrappers would get vouchers." 
+    "The top three would get vouchers and a medal." 
+    "The champion gets vouchers and a 'secret gift', whatever that was." 
+    "The tenth place had a time of 25.8 seconds." 
+    a "Why don't we participate?" 
+    u "I don't really want to, though." 
+    a "...Alright, then." 
+    "She walks up onto the stage." 
+    "Emcee" "We have a new competitor!" 
+    "Emcee" "What's your name, little miss?" 
+    a "Hehe, hi, I'm [a]." 
+    a "I'm honoured to come to a competition like this!" 
+    "Emcee" "Alright, let's start." 
+    "Emcee" "Do you know what you need to do in this competition?" 
+    a "We wrap a present, right?" 
+    "There was a sound of laughter." 
+    "Emcee" "Of course we must wrap a present!" 
+    
+
+return 
