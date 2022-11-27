@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/neg1.rpy", line 3: expected end of line
-    play music [yam, "<silence 2.5>", tdc] volume 0.1 fadein 4 fadeout 4 loop=true 
-                                                                             ^
+File "game/A1.rpy", line 38: expected 'label_name' not found.
+    call 2A4 
+        ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Thu Nov 24 20:11:16 2022
+Fri Nov 25 20:25:23 2022

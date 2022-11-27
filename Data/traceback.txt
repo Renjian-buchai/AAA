@@ -1,52 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 38, in script call
-    call neg1
-  File "game/neg1.rpy", line 35, in script call
-    call A1
-  File "game/A1.rpy", line 38, in script call
-    call AA4
-  File "game/AA4.rpy", line 84, in script
-    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] fadein 5
-  File "renpy/common/000statements.rpy", line 123, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 32, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "game/AA4.rpy", line 84, in <module>
-    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] fadein 5
-NameError: name 'lgt' is not defined
+While parsing C:\Users\student\Desktop\AAA\game/lA15.rpy.
+Exception: Line with id wA13_f4899a75 appeared twice, at game/WA13.rpy:2 and game/WA13.rpy:2.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 38, in script call
-    call neg1
-  File "game/neg1.rpy", line 35, in script call
-    call A1
-  File "game/A1.rpy", line 38, in script call
-    call AA4
-  File "game/AA4.rpy", line 84, in script
-    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] fadein 5
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 2232, in execute
-    self.call("execute")
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 2220, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\statements.py", line 281, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 123, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 32, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 1080, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 1073, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/AA4.rpy", line 84, in <module>
-    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] fadein 5
-NameError: name 'lgt' is not defined
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\main.py", line 490, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\script.py", line 297, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\script.py", line 809, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn) # type: ignore
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\script.py", line 427, in finish_load
+    self.translator.take_translates(all_stmts)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\translation\__init__.py", line 166, in take_translates
+    raise Exception("Line with id %s appeared twice, at %s:%d and %s:%d." %
+Exception: Line with id wA13_f4899a75 appeared twice, at game/WA13.rpy:2 and game/WA13.rpy:2.
 
 Windows-10-10.0.19043 AMD64
 Ren'Py 8.0.1.22070801
 AAA 1.0
-Thu Nov 24 20:13:05 2022
+Sun Nov 27 16:24:49 2022
