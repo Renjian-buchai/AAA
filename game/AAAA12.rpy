@@ -7,21 +7,21 @@
     a "Eggnog!"  
     u "I asked what you wanted to eat." 
     u "We can drink it later." 
-    a "Oh, then..." 
+    a "Oh,{w=.1} then..." 
     a "Log cake!" 
     u "Are you a pig?" 
     "She looked at me and deadass said:" 
-    a "No, I'm a human." 
-    u "{i}Sigh{/i}, We should've eaten something before coming here." 
-    a "What about you? What do you want to eat?" 
+    a "No,{w=.1} I'm a human." 
+    u "{i}Sigh{/i},{w=.1} We should've eaten something before coming here." 
+    a "What about you?{w=.3} What do you want to eat?" 
     "She just ignored my comment." 
-    "Looking up and down the street, I heard three owner's calls." 
-    "Shopkeeper A" "Roast beef wrapped in bread, cheap and easy to eat!" 
-    "Shopkeeper B" "Delicious mini toad-in-the-hole! If you share it with your crush before confessing, you'll definitely succeed!" 
-    "Shopkeeper C" "Roasted spring chicken, roasted to perfection! You'll be losing out if you don't try it now!" 
+    "Looking up and down the street,{w=.1} I heard three owner's calls." 
+    "Shopkeeper A" "Roast beef sandwich,{w=.1} cheap and easy to eat!" 
+    "Shopkeeper B" "Delicious mini toad-in-the-hole!{w=.3} If you share it with your crush before confessing,{w=.1} you'll definitely succeed!" 
+    "Shopkeeper C" "Roasted spring chicken,{w=.1} roasted to perfection!{w=.3} You'll be losing out if you don't try it now!" 
 
 menu: 
     a "What about you? What do you want to eat?" 
     
-    "Roast beef in bread.": 
+    "Roast beef sandwich.": 
         call wA13 
