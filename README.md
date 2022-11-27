@@ -1,7 +1,11 @@
 # AAA
 By Stressed with Ale
-ver. 0.0.2.5.6 <br> 
+ver. 0.0.2.5.6 <br> <br> 
 Credits: <br>
+  Programming: <br> 
+  Gahjouyooj <br> 
+    Github https://github.com/Renjian-buchai <br> 
+    Discord 鸭励善达#1642 
   Character Art: <br>
   The Alexer <br>
     Discord @Alexer#3370 <br>
@@ -9,7 +13,7 @@ Credits: <br>
   Gahjouyooj <br>
     Github https://github.com/Renjian-buchai <br>
     Discord 鸭励善达#1642 <br>
-  Music: <br>
+  BG Music: <br>
   Sharou <br>
     Twitter https://twitter.com/shlllllw <br>
     Youtube https://www.youtube.com/@Sharou <br>
