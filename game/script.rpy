@@ -1,10 +1,13 @@
-﻿python: 
+﻿init python: 
     import math 
+    import random 
 
 define randoma = 0
 define randomb = 0 
 define randomc = 0 
 define randomd = 0 
+define score = 0 
+define sxA23 = False 
 
 #Characters 
 define u = Character("[username]") 

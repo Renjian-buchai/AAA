@@ -1,6 +1,6 @@
 # AAA
 By Stressed with Ale
-ver. 0.0.2.5.7 <br> <br> 
+ver. 0.0.2.5.8 <br> <br> 
 Credits: <br>
   Programming: <br> 
   Gahjouyooj <br> 
