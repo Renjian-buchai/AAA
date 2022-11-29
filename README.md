@@ -1,6 +1,6 @@
 # AAA
 By Stressed with Ale
-ver. 0.0.2.5.6 <br> <br> 
+ver. 0.0.2.5.7 <br> <br> 
 Credits: <br>
   Programming: <br> 
   Gahjouyooj <br> 
@@ -8,7 +8,7 @@ Credits: <br>
     Discord 鸭励善达#1642 
   Character Art: <br>
   The Alexer <br>
-    Discord @Alexer#3370 <br>
+    Discord The Alexer#3370 <br>
   Background Art: <br>
   Gahjouyooj <br>
     Github https://github.com/Renjian-buchai <br>

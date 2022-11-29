@@ -1,4 +1,12 @@
-﻿#Characters 
+﻿python: 
+    import math 
+
+define randoma = 0
+define randomb = 0 
+define randomc = 0 
+define randomd = 0 
+
+#Characters 
 define u = Character("[username]") 
 define a = Character("Feng Qiuyue") 
 

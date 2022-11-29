@@ -23,13 +23,35 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.0.2.5.7"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""By Stressed with Ale. 
+
+Credits: 
+
+Programming: 
+    \nGahjouyooj 
+    \nGithub: https://github.com/Renjian-buchai 
+    \nDiscord: 鸭励善达#1642
+
+Character art: 
+    \nThe Alexer 
+    \nDiscord: The Alexer#3370 
+
+Background art: 
+    \nGahjouyooj 
+    \nGithub: https://github.com/Renjian-buchai 
+    \nDiscord: 鸭励善达#1642
+
+Background music: 
+    \nSharou 
+    \nTwitter: https://twitter.com/shlllllw 
+    \nYoutube https://www.youtube.com/@Sharou 
+    \ndova-s.jp https://dova-s.jp/_contents/author/profile106.html
 """)
 
 
