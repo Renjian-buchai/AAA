@@ -50,7 +50,7 @@ label eA6:
     a "Even if they ask us to kiss each other as proof,"
     a "It's not like either of us haven't had our first kisses yet,{w=.1} right?" 
     "Why's she looking at me like I'm the one who's brain damaged?" 
-    "I had my first kiss last year,{w=.1} when I was drunk."
+    "I had my first kiss last year, when I was drunk."
     u "Haha,{w=.1} yeah,{w=.1} right." 
     u "Regardless,{w=.1} I won't go just because you say so. " 
     hide ina disdainful 
@@ -143,6 +143,6 @@ label eA9:
     "Had it been showing on my face?" 
 menu: 
     "Fine,{w=.1} I was surprised.": 
-        call sA10 from _call_sA10 
+        call sA10 
     # TODO: BeA4; 
 return 

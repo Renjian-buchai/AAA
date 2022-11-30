@@ -38,6 +38,6 @@ menu:
     a "What should we do now?" 
 
     "I think we should get something to eat.": 
-        call siA12 from _call_siA12  
+        call siA12  
     # TODO: BsA12, CsA12; 
 return 

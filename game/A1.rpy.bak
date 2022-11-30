@@ -35,6 +35,6 @@ menu:
     a "Hehe,{w=.1} do you know what day it is?" 
     
     "It's Saturday.": 
-        call eA4 from _call_eA4 
+        call eA4 
     # TODO: BA4 
 return 

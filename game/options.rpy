@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.0.2.5.8"
+define config.version = "0.0.2.5.9"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -180,52 +180,26 @@ define config.window_icon = "gui/window_icon.png"
 ## This section controls how Ren'Py turns your project into distribution files.
 
 init python:
-
-    ## The following functions take file patterns. File patterns are case-
-    ## insensitive, and matched against the path relative to the base directory,
-    ## with and without a leading /. If multiple patterns match, the first is
-    ## used.
-    ##
-    ## In a pattern:
-    ##
-    ## / is the directory separator.
-    ##
-    ## * matches all characters, except the directory separator.
-    ##
-    ## ** matches all characters, including the directory separator.
-    ##
-    ## For example, "*.txt" matches txt files in the base directory, "game/
-    ## **.ogg" matches ogg files in the game directory or any of its
-    ## subdirectories, and "**.psd" matches psd files anywhere in the project.
-
-    ## Classify files as None to exclude them from the built distributions.
-
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)
-    build.classify('**/#**', None)
-    build.classify('**/thumbs.db', None)
+    build.classify('game/README.md', 'all') 
+    build.classify('LICENSE', 'all') 
+    build.classify('**.tab', 'all') 
+    build.classify('**.html','all') 
 
-    ## To archive files, classify them as 'archive'.
-
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
-
-    ## Files matching documentation patterns are duplicated in a mac app build,
-    ## so they appear in both the app and the zip file.
+    build.archive('scripts', 'all') 
+    build.archive('resources', 'all') 
+    build.archive('saves', 'all')
+    build.archive('tln', 'all')
+    build.classify('game/*.rpy', 'scripts') 
+    build.classify('game/*.rpyc', 'scripts')
+    build.classify('game/audio/*.mp3', 'resources') 
+    build.classify('game/gui/*.png', 'resources') 
+    build.classify('game/saves/*', 'saves')
+    build.classify('game/tl/*', 'tln')
 
     build.documentation('*.html')
     build.documentation('*.txt')
 
-
-## A Google Play license key is required to download expansion files and perform
-## in-app purchases. It can be found on the "Services & APIs" page of the Google
-## Play developer console.
-
-# define build.google_play_key = "..."
-
-
-## The username and project name associated with an itch.io project, separated
-## by a slash.
-
-# define build.itch_project = "renpytom/test-project"
+    build.package('AAA', 'bare-zip', 'C:/users/student/desktop/AAA', None, True, False, False)

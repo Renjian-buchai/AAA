@@ -1,22 +1,11 @@
 ﻿label wA13: 
-    scene bgchristmasmarket 
     u "I want to eat roast beef sandwich." 
-    hide shkpra
-    hide shkprb 
-    hide shkprc 
-    show a contemplative 
     a "Huh,{w=.1} that sounds great." 
-    show a happy 
     a "I'll try it,{w=.1} too!"
-    scene bgblack with fade 
     "We walk up to the stall."
-    scene bgchristmasmarket with fade 
-    show shkpra 
     "Shopkeeper A" "Hey,{w=.1} do you want to try some roast beef?{w=.3} I have some samples!" 
     "He reveals a plate with multiple pieces of roast beef impaled by toothpicks." 
     "Without hesitation,{w=.1} [a] picks one up and tries it." 
-    hide a happy 
-    show a excited 
     a "Wow,{w=.1} this is great." 
     a "Honey,{w=.1} I want to eat this." 
     u "..." 
@@ -36,56 +25,36 @@
 
 label wA14: 
     "We sat down by a side with food." 
-    hide a excited 
-    show a happy 
     a "Ahh,{w=.1} how warm!" 
     "She squeezed on the sandwich like it was a hand warmer." 
     u "..." 
     u "Just eat it." 
-    hide a happy 
-    show a sarcastic 
     a "Don't wanna,{w=.1} we ran out of hand warmers at home!" 
     u "So?" 
-    hide a sarcastic 
-    show a smirk 
     a "So,{w=.1} I'm cold!" 
     u "Then bear with it." 
     u "Oh,{w=.1} I almost forgot." 
     u "You owe me 13.5 RMB." 
-    hide a smirk 
-    show a confused 
     a "Huuh?{w=.3} Why?" 
     u "Because I bought the sandwich for you." 
-    hide a confused 
-    show a disdainful 
     a "Hmph,{w=.1} how stingy." 
     "She hands over one of her two sandwiches." 
     "To be more specific,{w=.1} the one she squished to leech the warmth off of." 
     a "Now,{w=.1} I owe you 6.75 RMB." 
     u "...Fine." 
     "I reluctantly accepted the sandwich." 
-    hide a disdainful 
-    show a happy 
     u "Can you really be full with just that?" 
     a "Of course." 
-    "Sure enough,{w=.1} she seemed satisfied after eating that sandwich." 
-    hide a happy 
-    show a satisfied 
+    "Sure enough,{w=.1} she seemed satisfied after eating that sandwich. " 
     "Her expression was cute." 
     a "Ahh,{w=.1} I'm so full!" 
     u "Nice." 
-    hide a satisfied 
-    show a excited 
     a "I'll buy a log cake!" 
     u "...{w=.3}Aren't you full?" 
-    hide a excited 
-    show a sarcastic 
     a "Haven't you heard that a girl has a second stomach for sweets?" 
     u "..." 
     "I gave up reasoning with her. " 
     u "We can't really eat a log cake here,{w=.1} so it'd be better if you got something more portable." 
-    hide a sarcastic 
-    show a happy 
     a "Fine,{w=.1} I'll get an ice cream." 
     u "Ice cream?{w=.3} It's...{w=.3} winter...{w=.3} you know?" 
     a "It's exactly because it's winter that I'm eating ice cream!" 
@@ -94,32 +63,24 @@ label wA14:
     u "Whatever." 
     a "Come with me." 
     u "Why?" 
-    hide a happy 
-    show a disdainful 
     a "C{w=.3}-o{w=.3}-u{w=.3}-p{w=.3}-l{w=.3}-e{w=.3}'s{w=.3} d{w=.3}-i{w=.3}-s{w=.3}-c{w=.3}-o{w=.3}-u{w=.3}-n{w=.3}-t." 
     u "{i}Sigh.{/i}" 
     u "After I'm done with my sandwiches." 
-    hide a disdainful 
-    show a playful   
     a "OK." 
     a "..." 
     a "Right,{w=.1} no one asked us for proof when we bought the sandwiches." 
     a "Pft,{w=.1} you thought waayy too much about the couple's discount thing!" 
-    hide a playful 
-    show a mischievous 
     u "Whatever." 
     "Her laughter was annoying. " 
-    scene bgblack with fade 
     "I bought her ice cream later." 
     "Naturally,{w=.1} she had to return the cost of the ice cream to me later." 
     "I guess she completely forgot about eggnog." 
-    scene bgchristmasmarket
 
 menu: 
     a "What're we going to do now?" 
 
     "We should go to the competition stage.": 
-        call sxA15 from _call_sxA15 
+        call sxA15 
     #TODO BwA15 
 
 return 
