@@ -1,6 +1,9 @@
 ﻿label sxA20: 
+    scene bgparkbench with fade 
+    stop music fadeout 2 
     "We sat at a bench in the park." 
     "It was much quieter compared to the bustle of the Christmas market." 
+    play music [m1, "<silence 5>", m3, "<silence 5>", st, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", m2, "<silence 5>", ctd] volume 0.05 fadein 5 fadeout 5
     a "Right,{w=.1} eggnog!" 
     "Her sudden exclaimation shocked me." 
     u "Oh...{w=.3} you finally remembered?" 

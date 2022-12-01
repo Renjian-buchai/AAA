@@ -3,9 +3,9 @@
     hide a mischievous  
     "In the heart of the Christmas Market,{w=.1} there was a competition stage." 
     scene bgstage with fade 
-    show a happy at right 
+    show a happy   
     "On the competition stage was held a giftwrapping competition." 
-    show mc at left 
+    show mc   
     "Emcee" "Alright!{w=.3}Is there anyone else who wants to come up?!" 
     "Emcee" "The current record is 20.3 seconds by Mister Lu Hua!" 
     hide mc 
@@ -24,13 +24,13 @@
     u "I don't really want to,{w=.1} though." 
     a "...{w=.3}Alright,{w=.1} then." 
     hide a excited 
-    show stagea excited at right 
+    show stagea excited   
     "She walks up onto the stage." 
-    show mc at left 
+    show mc   
     "Emcee" "We have a new competitor!" 
     "Emcee" "What's your name,{w=.1} little miss?" 
     hide stagea excited 
-    show stagea happy at right 
+    show stagea happy   
     a "Hehe,{w=.1} hi,{w=.1} I'm [a]." 
     a "I'm honoured to come to a competition like this!" 
     "Emcee" "Alright,{w=.1} let's start." 
@@ -44,7 +44,7 @@
     scene bgstage with fade 
     "Emcee" "Are you ready?!" 
     hide stagea happy 
-    show stagea excited at right 
+    show stagea excited   
     a "Yes!" 
     "Emcee" "Then you may start in 3...{w=1} 2...{w=1} 1...{w=1} you may start now!" 
     scene bgblack with fade 
@@ -55,7 +55,7 @@
     "Emcee" "But now,{w=.1} you're the new 6th place!" 
     "Emcee" "So...{w=.3} You get a 150 RMB voucher at XX bookstore!" 
     hide stagea excited 
-    show stagea happy at right 
+    show stagea happy   
     a "Yay!" 
     jump sxA16 
 
@@ -96,9 +96,9 @@ label sxA17:
     a "I want it!" 
     u "Oh,{w=.1} OK." 
     "We went to the stall that hung up the shiba inu toy." 
-    show skpr at left 
+    show skpr   
     hide a excited 
-    show a excited at right 
+    show a excited   
     "Shopkeeper" "Do you want to play?" 
     a "Yup!" 
     "Shopkeeper" "Then,{w=.1} how many balls do you want?" 
@@ -120,7 +120,7 @@ label sxA17:
     $ renpy.music.set_pause(False, channel="music") 
     "Flushing red,{w=.1} I glared at her." 
     hide a excited 
-    show a flustered at right 
+    show a flustered   
     "Her face was entirely red." 
     "The store owner guffawed." 
     "Shopkeeper" "I was just kidding." 
@@ -137,7 +137,7 @@ label sxA17:
     a "The balls,{w=.1} I mean." 
     u "That's fine." 
     hide a flustered 
-    show a excited at right 
+    show a excited   
     a "Alright,{w=.1} shiba inu,{w=.1} I'm coming for you!" 
     "On a table in the centre of the stall were a few moving targets to be knocked down." 
     "Each target had a number written on it,{w=.1} representing the number of points recieved per target." 
@@ -157,13 +157,13 @@ label sxA17:
     "[a] threw another ball at another target." 
     scene bggamestall with fade 
     "She was fortunate,{w=.1} and barely managed to knock down a 200-point target." 
-    show a depressed at right 
-    show skpr at left 
+    show a depressed   
+    show skpr   
     a "Haih,{w=.1} how sad." 
     a "It's your turn." 
     "Shopkeeper" "Go on,{w=.1} impress your girlfriend." 
     hide a depresesd 
-    show a flustered at right 
+    show a flustered   
     "Both [a] and I blushed." 
     jump sxA18 
 
@@ -319,14 +319,14 @@ label game14:
 
 label WsxA19: 
     scene bggamestall with dissolve 
-    show skpr at left 
+    show skpr   
     "Shopkeeper" "Fuck,{w=.1} you're a great shot,{w=.1} boy!" 
     u "Haha,{w=.1} can I exchange my points for the shiba inu?" 
     "Shopkeeper" "Alright,{w=.1} no problem." 
     "He hoisted down the shiba inu toy,{w=.1} handing it over to me." 
     "The shiba inu plushie was very soft." 
     "Without another word,{w=.1} I handed the plushie to [a]." 
-    show asi happy at right 
+    show asi happy   
     a "Hehe,{w=.1} thanks!" 
     u "No problem." 
     "Shopkeeper" "What other things do you want?" 
@@ -365,17 +365,17 @@ label WsxA19:
     "[a] suddenly pointed at a park next to the market right as we passed by." 
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
-    call sxA20 
+    call sxA20 from _call_sxA20 
 
 label XsxA19: 
     scene bggamestall with dissolve 
-    show skpr at left 
+    show skpr   
     "Shopkeeper" "You did great,{w=.1} boy." 
     u "Hehe,{w=.1} I want to exchange it for a shiba inu doll." 
     "Shopkeeper" "A'ight,{w=.1} getting it now." 
     "He down the shiba inu toy,{w=.1} handing it over to me." 
     "Without another word,{w=.1} I handed the shiba inu toy to A." 
-    show asi happy at right 
+    show asi happy   
     a "Hehe,{w=.1} thanks!" 
     u "You're welcome." 
     u "Well,{w=.1} then,{w=.1} bye." 
@@ -410,18 +410,19 @@ label XsxA19:
     u "Oh,{w=.1} OK." 
     call sxA20 from _call_sxA20_1 
 
-
 label LsxA19: 
     scene bggamestall with dissolve 
-    show skpr at left 
+    show skpr   
     "Shopkeeper" "Well,{w=.1} that's a shame." 
     "[a] shook her head in disappointment." 
     u "{i}Sigh,{w=.1}{/i}Three more balls,{w=.1} please." 
     "Shopkeeper" "Alright." 
+    hide skpr 
     scene bgblack with fade 
     "I played the game until we got 500 points." 
     "It somehow took me 7 more balls." 
     "{b}Fuck.{/b}" 
+    show skpr 
     scene bggamestall with fade 
     "The shopkeeper exasperatedly took down the plushie,{w=.1} handing it over to me." 
     "I passed it over to [a]." 
@@ -453,9 +454,10 @@ label LsxA19:
     u "Should we find somewhere to sit and wait for the show to start?" 
     a "Oh,{w=.1} alright." 
     scene bgblack with fade 
+    hide asi happy 
     "We strolled around the market,{w=.1} looking for somewhere to sit." 
     "[a] suddenly pointed at a park next to the market right as we passed by." 
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
-    call sxA20 
+    call sxA20 from _call_sxA20_2 
 return 

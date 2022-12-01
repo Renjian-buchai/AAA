@@ -21,6 +21,11 @@ define tdc = "./audio/10dC.mp3"
 define sct = "./audio/Santa Claus is coming by Train.mp3"
 define lgt = "./audio/The lonely ghost and the moon of Tokyo.mp3"
 define yam = "./audio/You and Me.mp3" 
+define ctd = "./audio/Cassette_Tape_Dream.mp3"
+define st = "./audio/SUMMER_TRIANGLE.mp3" 
+define m1 = "./audio/しゅわしゅわハニーレモン350ml.mp3"
+define m2 = "./audio/ローファイ少女は今日も寝不足.mp3"
+define m3 = "./audio/極東の羊、テレキャスターと踊る.mp3"
 
 #Transitions
 define wiperight = CropMove(1.0, "wiperight")

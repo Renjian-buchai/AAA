@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.0.2.5.9"
+define config.version = "0.0.2.6.9"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -188,16 +188,12 @@ init python:
     build.classify('**.tab', 'all') 
     build.classify('**.html','all') 
 
-    build.archive('scripts', 'all') 
-    build.archive('resources', 'all') 
-    build.archive('saves', 'all')
-    build.archive('tln', 'all')
-    build.classify('game/*.rpy', 'scripts') 
-    build.classify('game/*.rpyc', 'scripts')
-    build.classify('game/audio/*.mp3', 'resources') 
-    build.classify('game/gui/*.png', 'resources') 
-    build.classify('game/saves/*', 'saves')
-    build.classify('game/tl/*', 'tln')
+    build.classify('game/*.rpy', 'archive') 
+    build.classify('game/*.rpyc', 'archive')
+    build.classify('game/audio/*.mp3', 'archive') 
+    build.classify('game/gui/*.png', 'archive') 
+    build.classify('game/saves/*', 'archive')
+    build.classify('game/tl/*', 'archive')
 
     build.documentation('*.html')
     build.documentation('*.txt')

@@ -111,7 +111,7 @@ label eA8:
 
 label eA9: 
     scene bgzhejiangexhibitionhall with fade 
-    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] volume 0.01 fadein 5 fadeout 5
+    play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] volume 0.1 fadein 5 fadeout 5
     "I arrived outside Zhejiang Exhibition Hall." 
     "I couldn't see [a] anywhere." 
     "Dialling her phone number,{w=.1} I gave her a call." 
