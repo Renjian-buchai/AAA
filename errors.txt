@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 62: invalid syntax
+    if persistent.username == "" && persistent.username == None: 
+                                   ^
+    
+
+Ren'Py Version: Ren'Py 8.0.1.22070801
+Sat Dec  3 16:50:36 2022

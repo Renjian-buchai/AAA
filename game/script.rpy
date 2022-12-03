@@ -2,16 +2,20 @@
     import math 
     import random 
 
+#Variables
 define randoma = 0
 define randomb = 0 
 define randomc = 0 
 define randomd = 0 
 define score = 0 
-define cmpltd_sxA23 = False 
-define gamestate = 0 
+
+#Persistent 
+define persistent.sxA23 = False
+define persistent.username = None
+define persistent.gameState = 0 
 
 #Characters 
-define u = Character("[username]") 
+define u = Character("[persistent.username]") 
 define a = Character("Feng Qiuyue") 
 
 #Music 
@@ -26,6 +30,9 @@ define st = "./audio/SUMMER_TRIANGLE.mp3"
 define m1 = "./audio/しゅわしゅわハニーレモン350ml.mp3"
 define m2 = "./audio/ローファイ少女は今日も寝不足.mp3"
 define m3 = "./audio/極東の羊、テレキャスターと踊る.mp3"
+
+#Movies
+define fireworks = Movie(fps=24, size=None, channel=u'sound', play="./movie/mvfireworks", loop=True) 
 
 #Transitions
 define wiperight = CropMove(1.0, "wiperight")
@@ -43,15 +50,16 @@ define slideawaydown = CropMove(1.0, "slideawaydown")
 define irisout = CropMove(1.0, "irisout")
 define irisin = CropMove(1.0, "irisin")
 
-label start:
-
-    scene bglogin with fade 
-    $ username = renpy.input("Login:{w=0.5}\nPlease insert username: {w=0.5}", length=10, copypaste=False)
-    $ username = username.strip() 
-    if username == "": 
-        $ username = "Yu Wen" 
-    
-    #Game start
-    call neg1 from _call_neg1 
-
+label start: 
+    python: 
+        if persistent.username == None: 
+            renpy.scene("bglogin") 
+            persistent.username = renpy.input("Login:{w=0.5}\nPlease insert username: {w=0.5}\n(This cannot be changed)", length=10, copypaste=False)
+            persistent.username = persistent.username.strip() 
+        if persistent.username == "" and persistent.username == None: 
+            persistent.username = "Yu Wen" 
+        if persistent.username != None: 
+            renpy.jump("label1") 
+label label1: 
+    call neg1 
     return

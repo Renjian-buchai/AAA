@@ -92,4 +92,13 @@
 0.0.2.13D 
     Added distributables. 
 
+0.0.2.14 
+    Updated scripts
+    Added option to go another path when each path ends 
+    Made username a persistent variable
+    Made it so that you do not have to add your username if you have done so previously. 
+    Completed the shows and scenes. 
+    Updated options 
+    Updated README
+
 Current; 
