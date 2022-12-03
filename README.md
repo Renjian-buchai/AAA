@@ -33,8 +33,8 @@ This repository contains the files of the visual novel game [Christmas Market w/
 6. Open the game and check the compatibility of your changes in the source. <br> <br> 
 
 ##Licence <br> 
-This is licensed under a [CC-NC-SA](http://github.com/Renjian-Buchai/AAA/LICENSE) <br> 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /> License<br> <br> 
+This is licensed under a [CC-NC-SA](http://github.com/Renjian-Buchai/AAA/LICENSE) License <br> 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /> <br> <br> 
 
 Credits: <br>
 &ensp;Programming: <br> 
