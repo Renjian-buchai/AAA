@@ -61,5 +61,5 @@ label start:
         if persistent.username != None: 
             renpy.jump("label1") 
 label label1: 
-    call neg1 
+    call neg1 from _call_neg1 
     return
