@@ -117,4 +117,14 @@
 0.0.2.15D
     Added distributables.
 
+0.0.2.16
+    Added alternative path: CsiA13 
+    Merged A/B/CsiA13 together into wA13. 
+    Added multiple images: a angry, a disappointed, a handunderchin, a neutral, a scared, a shocked, asi angry, asi disappointed, asi happy, asi neutral, asi placeholder, asi scared, asi shocked, ina angry, ina disappointed, ina handunderchin, ina neutral, ina scared, inashocked, inasi angry, inasi disappointed, inasi happy, inasi neutral, inasi placeholder, inasi scared, inasi shocked. 
+    Updated scripts 
+    Deleted translation (To be added in future.) 
+    Added transitions to all show scripts. 
+    Updated options 
+    Updated README 
+
 Current; 

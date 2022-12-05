@@ -19,17 +19,17 @@ define u = Character("[persistent.username]")
 define a = DynamicCharacter("A_name")
 
 #Music 
-define ttt = "./audio/2.23 AM.mp3" 
-define tot = "./audio/3.03 PM.mp3" 
+define ttt = "./audio/2.23_AM.mp3" 
+define tot = "./audio/3.03_PM.mp3" 
 define tdc = "./audio/10dC.mp3" 
-define sct = "./audio/Santa Claus is coming by Train.mp3"
-define lgt = "./audio/The lonely ghost and the moon of Tokyo.mp3"
-define yam = "./audio/You and Me.mp3" 
+define sct = "./audio/Santa_Claus_is_coming_by_Train.mp3"
+define lgt = "./audio/The_lonely_ghost_and_the_moon_of_Tokyo.mp3"
+define yam = "./audio/You_and_Me.mp3" 
 define ctd = "./audio/Cassette_Tape_Dream.mp3"
 define st = "./audio/SUMMER_TRIANGLE.mp3" 
-define m1 = "./audio/しゅわしゅわハニーレモン350ml.mp3"
-define m2 = "./audio/ローファイ少女は今日も寝不足.mp3"
-define m3 = "./audio/極東の羊、テレキャスターと踊る.mp3"
+define m1 = "./audio/Fizzy_Honey_Lemon_Soda_350ml.mp3"
+define m2 = "./audio/Lo-fi_girl_always_lacks_sleep.mp3"
+define m3 = "./audio/Sheep_of_the_Far_East_Dancing_with_the_Telecaster.mp3"
 
 #Movies
 define fireworks = Movie(fps=24, size=None, channel=u'sound', play="./movie/mvfireworks", loop=True) 

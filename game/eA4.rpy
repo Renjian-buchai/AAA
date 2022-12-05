@@ -1,16 +1,16 @@
 ﻿label eA4: 
     u "Hmm..." 
     u "It's Saturday,{w=.1} why?" 
-    hide ina happy 
-    show ina disdainful 
+    hide ina happy with dissolve
+    show ina disdainful with dissolve 
     a "Are you an idiot?" 
     u "No,{w=.1} I'm actually at the top of my class." 
     a "What the fuck?!"  
     a "You know what I mean." 
     u "?" 
     u "Really?" 
-    hide ina disdainful 
-    show ina playful 
+    hide ina disdainful with dissolve
+    show ina playful with dissolve 
     a "It's C{w=0.6}-H{w=0.6}-R{w=0.6}-I{w=0.6}-S{w=0.6}-T{w=0.6}-M{w=0.6}-A{w=0.6}-S{w=0.6} E{w=0.6}-V{w=0.6}-E." 
     u "Can you speak English?" 
     u "Why're you just reciting the letters—" 
@@ -19,12 +19,12 @@
 
 label eA5: 
     u "And?" 
-    hide ina playful 
-    show ina confused 
+    hide ina playful with dissolve
+    show ina confused with dissolve 
     a "'And?'?" 
     u "How does that explain anything?" 
-    hide ina confused 
-    show ina smirk 
+    hide ina confused with dissolve
+    show ina smirk with dissolve 
     a "You see..." 
     a "Ufufu~" 
     a "I'll give you the honour of going to the Christmas Market with you!" 
@@ -33,28 +33,28 @@ label eA5:
     jump eA6 
 
 label eA6: 
-    hide ina smirk 
-    show ina sarcastic 
+    hide ina smirk with dissolve
+    show ina sarcastic with dissolve 
     a "Oh no,{w=.1} you saw through me!" 
     "She spoke in an overly-exaggerated manner." 
-    hide ina sarcastic 
-    show ina happy 
+    hide ina sarcastic with dissolve
+    show ina happy with dissolve 
     a "The Christmas market has a couple's discount,{w=.1} so I need you to pretend to be my boyfriend." 
     u "{i}Sigh...{/i}" 
     u "Please.{w=.3} What if they want us to prove it?" 
-    hide ina happy 
-    show ina confused 
+    hide ina happy with dissolve
+    show ina confused with dissolve 
     a "Then we just prove it." 
-    hide ina confused 
-    show ina disdainful
+    hide ina confused with dissolve
+    show ina disdainful with dissolve 
     a "Even if they ask us to kiss each other as proof,"
     a "It's not like either of us haven't had our first kisses yet,{w=.1} right?" 
     "Why's she looking at me like I'm the one who's brain damaged?" 
     "I had my first kiss last year,{w=.1} when I was drunk."
     u "Haha,{w=.1} yeah,{w=.1} right." 
     u "Regardless,{w=.1} I won't go just because you say so. " 
-    hide ina disdainful 
-    show ina mischievous 
+    hide ina disdainful with dissolve 
+    show ina mischievous with dissolve
     a "Hehe,{w=.1} too bad,{w=.1} your mom already agreed to it." 
     u "What the fuck?!" 
     a "She asked you to make good use of the discount." 
@@ -64,13 +64,13 @@ label eA6:
 
 label eA7: 
     u "So,{w=.1} when and where do we meet up?" 
-    hide ina disdainful 
-    show ina flustered 
+    hide ina disdainful with dissolve 
+    show ina flustered with dissolve
     a "Uhm...{w=.3} Call me later." 
     a "I haven't thought of that." 
     u "Are you stupid?" 
-    hide ina flustered 
-    show ina smirk 
+    hide ina flustered with dissolve
+    show ina smirk with dissolve 
     a "No,{w=.1} I'm actually at the top of the class." 
     "Did she really use my own retort against me?" 
     u "When do I call you?" 
@@ -131,14 +131,14 @@ label eA9:
     u "Are you right behind me?" 
     "I felt a finger tap me on my shoulder." 
     scene bgzhejiangexhibitionhall with fade  
-    show a happy peace 
+    show a happy peace with dissolve 
     a "Yep,{w=.1} I am!" 
     "She makes a peace sign as she hangs up." 
     a "Are you surprised?" 
     u "Not at all." 
     a "Liar." 
-    hide a happy peace 
-    show a pout 
+    hide a happy peace with dissolve
+    show a pout with dissolve 
     "I was plenty surprised,{w=.1} so..." 
     "Had it been showing on my face?" 
 menu: 

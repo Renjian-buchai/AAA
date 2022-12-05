@@ -3,16 +3,16 @@
     u "Also, you do know that I'm a guy,{w=.1} right?" 
     a "Haha,{w=.1} you don't say?" 
     a "Besides,{w=.1} we're friends!" 
-    hide ina happy 
-    show ina smirk 
+    hide ina happy with dissolve 
+    show ina smirk with dissolve
     a "You don't look at your {i}friend{/i} with {i}pervy eyes{/i},{w=.1} correct?" 
     u "..." 
     "Now that I think of it..." 
     "How did she know I was doing philosophy?" 
     "Was I reading aloud as I typed?" 
     u "How did you know I was doing philosophy?" 
-    hide ina smirk 
-    show ina happy 
+    hide ina smirk with dissolve
+    show ina happy with dissolve 
     a "It was{w=1} just~{w=1} a~{w=1} guess!" 
     "Her guesses are way too accurate." 
     "Then again,{w=.1} it's not like I have anything else to do other than work." 

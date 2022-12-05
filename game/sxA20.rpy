@@ -4,22 +4,22 @@
     "We sat at a bench in the park." 
     "It was much quieter compared to the bustle of the Christmas market." 
     play music [m1, "<silence 5>", m3, "<silence 5>", st, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", m2, "<silence 5>", ctd] volume 0.05 fadein 5 fadeout 5
-    show asi excited 
+    show asi excited with dissolve
     a "Right,{w=.1} eggnog!" 
     "Her sudden exclaimation shocked me." 
     u "Oh...{w=.3} you finally remembered?" 
     "She really is an airhead." 
-    hide asi excited 
-    show asi apologetic 
+    hide asi excited with dissolve
+    show asi apologetic with dissolve
     a "Yep,{w=.1} can you help me buy it?" 
     a "Please?" 
     u "What about the couple's discount?" 
-    hide asi apologetic 
-    show asi smirk 
+    hide asi apologetic with dissolve
+    show asi smirk with dissolve
     a "Lazy.{w=.3} Also,{w=.1} I can't buy anything while holding doge." 
     "Doge was probably the name she gave to the plushie." 
     u "Alright..." 
-    hide asi smirk 
+    hide asi smirk with dissolve
     scene bgblack with fade 
     "I reluctantly returned to the food section,{w=.1} bought two cups of eggnog,{w=.1} then headed towards the park." 
     "There seemed to be some kind of ruckus in the park." 
@@ -29,8 +29,8 @@ label sxA21:
     "I quickened my footsteps while trying not to spill the eggnog." 
     scene bgparkbench with fade 
     "At the bench was [a] and another man." 
-    show ahole 
-    show asi annoyed 
+    show ahole with dissolve
+    show asi annoyed with dissolve
     "Man" "Why don't you come along with me?" 
     a "No,{w=.1} don't want to." 
     "Man" "Why not? Are you on a date?" 
@@ -38,14 +38,14 @@ label sxA21:
     a "I'm not on a date." 
     "She seemed to be very annoyed." 
     "Man" "Then there's no problem,{w=.1} right?" 
-    hide asi annoyed 
-    show asi angry 
+    hide asi annoyed with dissolve
+    show asi angry with dissolve
     a "There's definitely a problem,{w=.1} and that's that I don't want to go with you." 
     "Man" "Why not?" 
     "Man" "Come on,{w=.1} I'll show you something much better than your friend can." 
     "The man grabbed onto her arm,{w=.1} pulling her with some strength." 
-    hide asi angry  
-    show asi scared 
+    hide asi angry  with dissolve
+    show asi scared with dissolve
     a "Stop! Erm...{w=.3} Uhm...{w=.3} Help!" 
     "How amusing;{w=.2} she was so flustered she forgot how to say 'help'." 
     "Wait,{w=.1} that's not the point here." 
@@ -56,18 +56,18 @@ label sxA21:
     "I kicked him diagonally in the ass,{w=.1} so that he fell onto the bench,{w=.1} then dumped a cup of piping hot eggnog onto his face." 
     "Man" "What the fuck— Fuck you!" 
     "I held onto [a]'s hand,{w=.1} poured the other cup of eggnog onto his crotch (Since I can't run while holding it anyways),{w=.1} then ran away,{w=.1} pulling [a] along." 
-    hide asi scared 
-    show asi relieved 
+    hide asi scared with dissolve
+    show asi relieved with dissolve
     a "Finally,{w=.1} you acted." 
     "She probably saw me while I was waiting for an excuse to kick him." 
     u "Sorry,{w=.1} the eggnog..." 
-    hide asi relieved
-    show asi happy 
+    hide asi relieved with dissolve
+    show asi happy with dissolve
     a "No need,{w=.1} at least I still have doge." 
     u "..." 
     u "Well,{w=.1} let's go somewhere with more people." 
-    hide asi happy 
-    show asi excited 
+    hide asi happy with dissolve
+    show asi excited with dissolve
     a "Haha!" 
     u "Why're you laughing?" 
     a "Well,{w=.1} it's fun." 
@@ -75,17 +75,17 @@ label sxA21:
     u "Then I want to see whatever you don't think is fun." 
     u "It must be like...{w=.3} hell,{w=.1} or something." 
     a "Hehe!" 
-    hide asi excited 
+    hide asi excited with dissolve
     scene bgblack with fade 
     "We returned to the game district,{w=.1} which was the closest area to us." 
     scene bgchristmasmarket with fade 
-    show asi happy 
+    show asi happy with dissolve
     a "The fireworks show should happen in 5 minutes or so." 
     u "And?" 
-    show asi confused 
+    show asi confused with dissolve
     a "Dunno,{w=.1} just wanted to say it."    
     u "Oh." 
-    hide asi confused 
+    hide asi confused with dissolve
     jump sxA22 
 
 label sxA22: 
@@ -99,7 +99,7 @@ label sxA22:
     "This was actually my first time seeing fireworks in person." 
     "It looks much better than it does on TV." 
     hide fireworks 
-    show a excited 
+    show a excited with dissolve
     a "Wow,{w=.1} so beautiful!" 
     u "Yep,{w=.1} it's quite beautiful." 
     a "Wait,{w=.1} why don't we record it?" 
@@ -110,13 +110,13 @@ label sxA22:
     "I started the audio recording when that bastard tried to screw with [a]." 
     "Just in case I need to submit it as evidence if he tried to sue us afterwards." 
     "I stopped the recording,{w=.1} then opened the camera app,{w=.1} recording the fireworks." 
-    hide a happy 
-    show a disdainful 
+    hide a happy with dissolve
+    show a disdainful with dissolve
     a "You should watch the fireworks too,{w=.1} you know?" 
     a "Don't just look at it through the screen." 
     a "You can't get the full experience like that." 
     u "Oh." 
-    hide a disdainful 
+    hide a disdainful with dissolve
     "The fireworks really were beautiful." 
     scene bgblack with fade 
     jump sxA23 
@@ -124,11 +124,11 @@ label sxA22:
 label sxA23: 
     "After the fireworks show,{w=.1} the crowds dispersed and the stalls closed up for the day." 
     scene bgchristmasmarket with fade 
-    show a disappointed 
+    show a disappointed with dissolve
     u "Should I walk you home?" 
     u "It's really quite late." 
     a "Alright." 
-    hide a disappointed 
+    hide a disappointed with dissolve
     scene bgblack with fade 
     "I walked her home." 
     "Her house was a little closer to the market than mine." 
@@ -136,7 +136,7 @@ label sxA23:
     "Finally,{w=.1} we arrived at her apartment." 
     scene bgapartment with fade 
     "Standing in the fluorescent lightning of the apartment hallway,{w=.1} [a] turned around." 
-    show a satisfied 
+    show a satisfied with dissolve
     a "I had quite a lot of fun today." 
     u "Me too." 
     a "I hope that we can do this next year,{w=.1} too."   
@@ -144,7 +144,7 @@ label sxA23:
     "What she said was quite strange since we both have 2 more years in university,{w=.1} but I didn't think much of it." 
     a "Then,{w=.1} goodbye." 
     u "Goodbye." 
-    hide a satisfied 
+    hide a satisfied with dissolve
     scene bgblack with fade
     "Ending." 
     python: 
