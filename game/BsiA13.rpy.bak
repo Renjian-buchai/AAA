@@ -97,6 +97,6 @@ menu:
     a "Well,{w=.1} where should we go now?"
 
     "We should go to the competition stage.": 
-        call sxA15 from _call_sxA15
+        call sxA15
     #TODO BwA15 
 return 

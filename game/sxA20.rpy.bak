@@ -158,4 +158,4 @@ menu:
     "Quit": 
         return 
     "Try another path": 
-        call start from _call_start_1 
+        call start 

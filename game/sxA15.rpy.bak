@@ -365,7 +365,7 @@ label WsxA19:
     "[a] suddenly pointed at a park next to the market right as we passed by." 
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
-    call sxA20 from _call_sxA20 
+    call sxA20 
 
 label XsxA19: 
     scene bggamestall with dissolve 
@@ -408,7 +408,7 @@ label XsxA19:
     "[a] suddenly pointed at a park next to the market right as we passed by." 
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
-    call sxA20 from _call_sxA20_1 
+    call sxA20 
 
 label LsxA19: 
     scene bggamestall with dissolve 
@@ -459,5 +459,5 @@ label LsxA19:
     "[a] suddenly pointed at a park next to the market right as we passed by." 
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
-    call sxA20 from _call_sxA20_2 
+    call sxA20 
 return 
