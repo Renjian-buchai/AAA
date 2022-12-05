@@ -119,7 +119,7 @@ menu:
     a "What're we going to do now?" 
 
     "We should go to the competition stage.": 
-        call sxA15 from _call_sxA15 
+        call sxA15 
     #TODO BwA15 
 
 label BsiA13: 
@@ -221,7 +221,7 @@ menu:
     a "Well,{w=.1} where should we go now?"
 
     "We should go to the competition stage.": 
-        call sxA15 from _call_sxA15_1 
+        call sxA15 
     #TODO BwA15 
 
 label CsiA13: 
@@ -340,7 +340,7 @@ menu:
     a "Where do you want to go?" 
 
     "We should go to the competition stage.": 
-        call sxA15 from _call_sxA15_2 
+        call sxA15 
     #TODO BwA15
 
 return 
