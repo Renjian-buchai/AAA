@@ -2,10 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 62: invalid syntax
-    if persistent.username == "" && persistent.username == None: 
-                                   ^
-    
+The label _call_start is defined twice, at File "game/sxA20.rpy", line 162:
+        call start from _call_start 
+and File "game/wA20.rpyc", line 162:
+        call start from _call_start 
+
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Sat Dec  3 16:50:36 2022
+Sun Dec  4 19:58:08 2022

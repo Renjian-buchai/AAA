@@ -147,7 +147,6 @@ label sxA23:
     hide a satisfied 
     scene bgblack with fade
     "Ending." 
-    "Path taken: A,{w=.1} A,{w=.1} A,{w=.1} A,{w=.1} A,{w=.1} A." 
     python: 
         if persistent.sxA23 == False: 
             persistent.sxA23 = True 
@@ -159,4 +158,4 @@ menu:
     "Quit": 
         return 
     "Try another path": 
-        call start from _call_start 
+        call start 

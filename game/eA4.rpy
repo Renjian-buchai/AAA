@@ -46,7 +46,7 @@ label eA6:
     show ina confused 
     a "Then we just prove it." 
     hide ina confused 
-    show ina disdainfu
+    show ina disdainful
     a "Even if they ask us to kiss each other as proof,"
     a "It's not like either of us haven't had our first kisses yet,{w=.1} right?" 
     "Why's she looking at me like I'm the one who's brain damaged?" 

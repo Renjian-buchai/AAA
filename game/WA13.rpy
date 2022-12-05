@@ -1,9 +1,9 @@
 ﻿label wA13: 
+    hide shkpra
+    hide shkprb
+    hide shkprc
     scene bgchristmasmarket 
     u "I want to eat roast beef sandwich." 
-    hide shkpra
-    hide shkprb 
-    hide shkprc 
     show a contemplative 
     a "Huh,{w=.1} that sounds great." 
     show a happy 
@@ -119,7 +119,7 @@ menu:
     a "What're we going to do now?" 
 
     "We should go to the competition stage.": 
-        call sxA15 from _call_sxA15 
+        call sxA15 
     #TODO BwA15 
 
 return 

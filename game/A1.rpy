@@ -20,7 +20,7 @@
 
 label A2: 
     "[a] is my best female friend from university." 
-    "She majors in music and minors in literature,{w=.1} while I major in philosophy and minor in maths." 
+    "She majors in acting and minors in literature,{w=.1} while I major in philosophy and minor in maths." 
     "Our relationship used to be terrible,{w=.1} because she kept insulting me unprovoked when I was doing work in the library." 
     "Speaking of which,{w=.1} humans really are strange creatures." 
     "When they stay with something long enough,{w=.1} they can even grow fond of a chihuahua,{w=.1} not to mention a beauty like [a]." 

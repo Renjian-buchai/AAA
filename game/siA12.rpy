@@ -34,7 +34,7 @@
     hide a curious 
     show shkpra at left 
     "Shopkeeper A" "Roast beef sandwich,{w=.1} cheap and easy to eat!" 
-    show shkprb at centre 
+    show shkprb 
     "Shopkeeper B" "Delicious mini toad-in-the-hole!{w=.3} If you share it with your crush before confessing,{w=.1} you'll definitely succeed!" 
     show shkprc at right 
     "Shopkeeper C" "Roasted spring chicken,{w=.1} roasted to perfection!{w=.3} You'll be losing out if you don't try it now!" 
@@ -43,6 +43,8 @@ menu:
     a "(What about you? What do you want to eat?)" 
     
     "Roast beef sandwich.": 
-        call wA13 from _call_wA13 
-    # TODO: BsiA13, CsiA13; 
+        call wA13 from _call_wA13    
+    "Mini Toad-in-the-hole.": 
+        call BsiA13 from _call_BsiA13
+    # TODO: CsiA13; 
 return 

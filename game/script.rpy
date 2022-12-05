@@ -15,8 +15,8 @@ define persistent.username = None
 define persistent.gameState = 0 
 
 #Characters 
-define u = Character("[persistent.username]") 
-define a = Character("Feng Qiuyue") 
+define u = Character("[persistent.username]")   
+define a = DynamicCharacter("A_name")
 
 #Music 
 define ttt = "./audio/2.23 AM.mp3" 
@@ -51,6 +51,7 @@ define irisout = CropMove(1.0, "irisout")
 define irisin = CropMove(1.0, "irisin")
 
 label start: 
+    $ A_name = _("Feng Qiuyue")
     python: 
         if persistent.username == None: 
             renpy.scene("bglogin") 

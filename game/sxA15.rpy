@@ -183,41 +183,41 @@ menu:
         if randoma == 1: 
             $ score = score + 100 
             $ randoma = 0 
-            jump game0 
+            jump gamez 
         else: 
             $ randoma = 0 
-            jump game1 
+            jump game 
 
     "200 point": 
         if randomb == 3: 
             $ score = score + 200 
             $ randomb = 0 
-            jump game2 
+            jump gamee 
         else: 
             $ randomb = 0 
-            jump game3 
+            jump games 
 
-label game0: 
+label gamez: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    jump game4 
+    jump gamesi 
 
-label game1: 
+label game: 
     "I missed." 
     "Our current score is [score]." 
-    jump game4 
+    jump gamesi 
 
-label game2: 
+label gamee: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    jump game4 
+    jump gamesi 
 
-label game3: 
+label games: 
     "I missed." 
     "Our current score is [score]." 
-    jump game4 
+    jump gamesi 
 
-label game4: 
+label gamesi: 
 
 python: 
     randoma = random.randint(0, 1) 
@@ -229,41 +229,41 @@ menu:
         if randoma == 1: 
             $ score = score + 100 
             $ randoma = 0 
-            jump game5 
+            jump gamew 
         else: 
             $ randoma = 0 
-            jump game6 
+            jump gamesx 
 
     "200 point": 
         if randomb == 3: 
             $ score = score + 200 
             $ randomb = 0 
-            jump game7 
+            jump gameq 
         else: 
             $ randomb = 0 
-            jump game8 
+            jump gameb 
 
-label game5: 
+label gamew: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    jump game9 
+    jump gamej 
 
-label game6: 
+label gamesx: 
     "I missed." 
     "Our current score is [score]." 
-    jump game9 
+    jump gamej 
 
-label game7: 
+label gameq: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    jump game9 
+    jump gamej 
 
-label game8: 
+label gameb: 
     "I missed." 
     "Our current score is [score]." 
-    jump game9 
+    jump gamej 
 
-label game9: 
+label gamej: 
 
 python: 
     randoma = random.randint(0, 1) 
@@ -275,41 +275,41 @@ menu:
         if randoma == 1: 
             $ score = score + 100 
             $ randoma = 0 
-            jump game10 
+            jump gamet 
         else: 
             $ randoma = 0 
-            jump game11 
+            jump gamety 
 
     "200 point": 
         if randomb == 3: 
             $ score = score + 200 
             $ randomb = 0 
-            jump game12 
+            jump gamete 
         else: 
             $ randomb = 0 
-            jump game13 
+            jump gamets 
 
-label game10: 
+label gamet: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    jump game14 
+    jump gametsi 
 
-label game11: 
+label gamety: 
     "I missed." 
     "Our current score is [score]." 
-    jump game14 
+    jump gametsi 
 
-label game12: 
+label gamete: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    jump game14 
+    jump gametsi 
 
-label game13: 
+label gamets: 
     "I missed." 
     "Our current score is [score]." 
-    jump game14 
+    jump gametsi 
 
-label game14: 
+label gametsi: 
     if score > 800: 
         jump WsxA19 
     elif score >500: 
@@ -365,7 +365,7 @@ label WsxA19:
     "[a] suddenly pointed at a park next to the market right as we passed by." 
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
-    call sxA20 from _call_sxA20 
+    call sxA20 
 
 label XsxA19: 
     scene bggamestall with dissolve 
@@ -408,7 +408,7 @@ label XsxA19:
     "[a] suddenly pointed at a park next to the market right as we passed by." 
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
-    call sxA20 from _call_sxA20_1 
+    call sxA20 
 
 label LsxA19: 
     scene bggamestall with dissolve 
@@ -459,5 +459,5 @@ label LsxA19:
     "[a] suddenly pointed at a park next to the market right as we passed by." 
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
-    call sxA20 from _call_sxA20_2 
+    call sxA20 
 return 
