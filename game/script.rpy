@@ -1,24 +1,16 @@
 ﻿init python: 
     import math 
     import random 
-
-#Variables
 define randoma = 0
 define randomb = 0 
 define randomc = 0 
 define randomd = 0 
 define score = 0 
-
-#Persistent 
-define persistent.sxA23 = False
-define persistent.username = None
-define persistent.gameState = 0 
-
-#Characters 
+default persistent.sxA23 = False
+default persistent.username = None
+default persistent.gameState = 0 
 define u = Character("[persistent.username]")   
 define a = DynamicCharacter("A_name")
-
-#Music 
 define ttt = "./audio/2.23_AM.mp3" 
 define tot = "./audio/3.03_PM.mp3" 
 define tdc = "./audio/10dC.mp3" 
@@ -30,11 +22,7 @@ define st = "./audio/SUMMER_TRIANGLE.mp3"
 define m1 = "./audio/Fizzy_Honey_Lemon_Soda_350ml.mp3"
 define m2 = "./audio/Lo-fi_girl_always_lacks_sleep.mp3"
 define m3 = "./audio/Sheep_of_the_Far_East_Dancing_with_the_Telecaster.mp3"
-
-#Movies
 define fireworks = Movie(fps=24, size=None, channel=u'sound', play="./movie/mvfireworks", loop=True) 
-
-#Transitions
 define wiperight = CropMove(1.0, "wiperight")
 define wipeleft = CropMove(1.0, "wipeleft")
 define wipeup = CropMove(1.0, "wipeup")
@@ -49,7 +37,6 @@ define slideawayup = CropMove(1.0, "slideawayup")
 define slideawaydown = CropMove(1.0, "slideawaydown")
 define irisout = CropMove(1.0, "irisout")
 define irisin = CropMove(1.0, "irisin")
-
 label start: 
     $ A_name = _("Feng Qiuyue")
     python: 

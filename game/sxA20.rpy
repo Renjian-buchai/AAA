@@ -24,7 +24,6 @@
     "I reluctantly returned to the food section,{w=.1} bought two cups of eggnog,{w=.1} then headed towards the park." 
     "There seemed to be some kind of ruckus in the park." 
     jump sxA21 
-
 label sxA21: 
     "I quickened my footsteps while trying not to spill the eggnog." 
     scene bgparkbench with fade 
@@ -87,7 +86,6 @@ label sxA21:
     u "Oh." 
     hide asi confused with dissolve
     jump sxA22 
-
 label sxA22: 
     "Soon,{w=.1} there was an announcement over the intercom system." 
     "Announcer" "The fireworks show is starting.{w=.3} For safety reasons,{w=.1} please do not approach the competition stage." 
@@ -120,7 +118,6 @@ label sxA22:
     "The fireworks really were beautiful." 
     scene bgblack with fade 
     jump sxA23 
-
 label sxA23: 
     "After the fireworks show,{w=.1} the crowds dispersed and the stalls closed up for the day." 
     scene bgchristmasmarket with fade 
@@ -152,7 +149,6 @@ label sxA23:
             persistent.sxA23 = True 
             persistent.gameState += 1 
     "" "Number of endings completed: [persistent.gameState]" 
-
 menu:
     "" "What would you like to do now?" 
     "Quit": 

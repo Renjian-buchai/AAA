@@ -9,3 +9,9 @@ Key:
     8: b 
     9: j 
     10: t 
+
+Definitions: 
+    Offshoot: 
+        The result of a meaningful choice 
+    Meaningful choice: 
+        A choice that does not converge with other choices in the same menu. 

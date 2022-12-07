@@ -33,7 +33,6 @@
     "I'm speechless." 
     "How can anyone be so shameless?" 
     jump wA14 
-
 label wA14: 
     "We sat down by a side with food." 
     hide a excited with dissolve
@@ -114,14 +113,11 @@ label wA14:
     "Naturally,{w=.1} she had to return the cost of the ice cream to me later." 
     "I guess she completely forgot about eggnog." 
     scene bgchristmasmarket with fade 
-
 menu: 
     a "What're we going to do now?" 
-
     "We should go to the competition stage.": 
         call sxA15 from _call_sxA15 
     #TODO BwA15 
-
 label BsiA13: 
     hide shkpra with dissolve
     hide shkprb with dissolve
@@ -179,7 +175,6 @@ label BsiA13:
     u "Very mean." 
     "Part-timer" "Shut up,{w=.1} you normies." 
     jump BsiA14 
-
 label BsiA14: 
     hide a mischievous with dissolve
     hide shkprb with dissolve
@@ -219,11 +214,9 @@ label BsiA14:
     "I was forced to eat the rest of it." 
 menu: 
     a "Well,{w=.1} where should we go now?"
-
     "We should go to the competition stage.": 
         call sxA15 from _call_sxA15_1 
     #TODO BwA15 
-
 label CsiA13: 
     hide shkpra with dissolve
     hide shkprb with dissolve
@@ -279,7 +272,6 @@ label CsiA13:
     scene bgblack with fade 
     "I thinked him,{w=.1} then we went over to a side to eat." 
     jump CsiA14 
-
 label CsiA14: 
     "We ate the spring chicken in silence." 
     scene bgchristmasmarket with fade 
@@ -342,5 +334,4 @@ menu:
     "We should go to the competition stage.": 
         call sxA15 from _call_sxA15_2 
     #TODO BwA15
-
 return 

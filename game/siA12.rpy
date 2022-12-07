@@ -38,10 +38,8 @@
     "Shopkeeper B" "Delicious mini toad-in-the-hole!{w=.3} If you share it with your crush before confessing,{w=.1} you'll definitely succeed!" 
     show shkprc at right with dissolve
     "Shopkeeper C" "Roasted spring chicken,{w=.1} roasted to perfection!{w=.3} You'll be losing out if you don't try it now!" 
-
 menu: 
     a "(What about you? What do you want to eat?)" 
-    
     "Roast beef sandwich.": 
         call wA13 from _call_wA13     
     "Mini Toad-in-the-hole.": 

@@ -58,7 +58,6 @@
     show a happy   with dissolve
     a "Yay!" 
     jump sxA16 
-
 label sxA16: 
     hide mc with dissolve
     scene bgchristmasmarket with fade 
@@ -82,7 +81,6 @@ label sxA16:
     u "Alright." 
     scene bgblack with fade 
     jump sxA17 
-
 label sxA17: 
     scene bggamestall with fade 
     hide a mischievous with dissolve
@@ -167,17 +165,15 @@ label sxA17:
     show a flustered with dissolve  
     "Both [a] and I blushed." 
     jump sxA18 
-
 label sxA18: 
     "Ignoring the store owner's uproarious laughter,{w=.1} I went up to the line behind which I had to stand." 
     hide a flustered with dissolve
     hide skpr with dissolve
-    scene bggamestall1 with dissolve 
+    scene bggamestall with dissolve 
     $ score = 300
 python: 
     randoma = random.randint(0, 1) 
     randomb = random.randint(0, 3)
-
 menu: 
     "" "Which target should I aim for?" 
     "100 point": 
@@ -188,7 +184,6 @@ menu:
         else: 
             $ randoma = 0 
             jump game 
-
     "200 point": 
         if randomb == 3: 
             $ score = score + 200 
@@ -197,33 +192,26 @@ menu:
         else: 
             $ randomb = 0 
             jump games 
-
 label gamez: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
     jump gamesi 
-
 label game: 
     "I missed." 
     "Our current score is [score]." 
     jump gamesi 
-
 label gamee: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
     jump gamesi 
-
 label games: 
     "I missed." 
     "Our current score is [score]." 
     jump gamesi 
-
 label gamesi: 
-
 python: 
     randoma = random.randint(0, 1) 
     randomb = random.randint(0, 3)
-
 menu: 
     "" "Which target should I aim for?" 
     "100 point": 
@@ -234,7 +222,6 @@ menu:
         else: 
             $ randoma = 0 
             jump gamesx 
-
     "200 point": 
         if randomb == 3: 
             $ score = score + 200 
@@ -243,33 +230,26 @@ menu:
         else: 
             $ randomb = 0 
             jump gameb 
-
 label gamew: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
     jump gamej 
-
 label gamesx: 
     "I missed." 
     "Our current score is [score]." 
     jump gamej 
-
 label gameq: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
     jump gamej 
-
 label gameb: 
     "I missed." 
     "Our current score is [score]." 
     jump gamej 
-
 label gamej: 
-
 python: 
     randoma = random.randint(0, 1) 
     randomb = random.randint(0, 3)
-
 menu: 
     "" "Which target should I aim for?" 
     "100 point": 
@@ -280,7 +260,6 @@ menu:
         else: 
             $ randoma = 0 
             jump gamety 
-
     "200 point": 
         if randomb == 3: 
             $ score = score + 200 
@@ -289,27 +268,22 @@ menu:
         else: 
             $ randomb = 0 
             jump gamets 
-
 label gamet: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
     jump gametsi 
-
 label gamety: 
     "I missed." 
     "Our current score is [score]." 
     jump gametsi 
-
 label gamete: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
     jump gametsi 
-
 label gamets: 
     "I missed." 
     "Our current score is [score]." 
     jump gametsi 
-
 label gametsi: 
     if score > 800: 
         jump WsxA19 
@@ -317,7 +291,6 @@ label gametsi:
         jump XsxA19 
     else: 
         jump LsxA19 
-
 label WsxA19: 
     scene bggamestall with dissolve 
     show skpr at left 
@@ -367,7 +340,6 @@ label WsxA19:
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
     call sxA20 from _call_sxA20 
-
 label XsxA19: 
     scene bggamestall with dissolve 
     show skpr at left with dissolve
@@ -410,7 +382,6 @@ label XsxA19:
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
     call sxA20 from _call_sxA20_1 
-
 label LsxA19: 
     scene bggamestall with dissolve 
     show skpr at left with dissolve

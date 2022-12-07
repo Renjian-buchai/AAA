@@ -17,7 +17,6 @@
     scene bgpc8 with dissolve
     "Maybe—" 
     jump zero 
-
 label zero: 
     "???" "Are you doing your philosophy bullshit again?" 
     "A pair of soft arms wrapped around my neck." 
@@ -26,10 +25,8 @@ label zero:
     show ina happy with dissolve 
     "I screamed and turned around,{w=0.1} recognising the one standing behind me." 
     u "Why're you in my room?!" 
-
 menu: 
     a "Your mom let me in."
-    
     "You do know you're a girl,{w=0.1} right?": 
         call A1 from _call_A1 
     # TODO: B1, C1 

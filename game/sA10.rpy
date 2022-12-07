@@ -18,7 +18,6 @@
     a "It's a few blocks away." 
     u "Alright,{w=.1} let's go." 
     jump sA11 
-
 label sA11: 
     scene bgblack with fade 
     "We walked to where the Christmas market was held." 
@@ -33,10 +32,8 @@ label sA11:
     a "I think we underestimated the pull of Christmas markets." 
     u "I think calling it {w=.15}'underestimated'{w=.15} is still an understatement." 
     a "Right." 
-
 menu: 
     a "What should we do now?" 
-
     "I think we should get something to eat.": 
         call siA12 from _call_siA12  
     # TODO: BsA12, CsA12; 

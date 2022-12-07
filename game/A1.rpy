@@ -17,7 +17,6 @@
     "Her guesses are way too accurate." 
     "Then again,{w=.1} it's not like I have anything else to do other than work." 
     jump A2 
-
 label A2: 
     "[a] is my best female friend from university." 
     "She majors in acting and minors in literature,{w=.1} while I major in philosophy and minor in maths." 
@@ -27,13 +26,10 @@ label A2:
     "Wait,{w=.1} I've digressed." 
     "My point was,{w=.1} we became friends after we insulted each other for a long enough time." 
     jump A3 
-
 label A3: 
     u "Why have you come here anyways?"
-    
 menu: 
     a "Hehe,{w=.1} do you know what day it is?" 
-    
     "It's Saturday.": 
         call eA4 from _call_eA4 
     # TODO: BA4 
