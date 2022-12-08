@@ -1,6 +1,6 @@
 #AAA
 By Stressed with Ale <br>
-ver. 0.0.2.17 <br> <br> 
+ver. 0.0.3.18 <br> <br> 
 
 This repository contains the files of the visual novel game [Christmas Market w/Feng Qiuyue](https://stressd.itch.io/chrstms-mrkt-wth-fng-qye) created for the [Winter VN Jam 2022](https://itch.io/jam/winter-vn-jam-2022). <br> <br>
 

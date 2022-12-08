@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/wA13.rpy", line 289: end of line expected.
-    hide a contemplative show a smirk 
-                         ^
+File "game/BwA15.rpy", line 174: expected ':' not found.
+    else if score >= 500: 
+         ^
+
+File "game/BwA15.rpy", line 176: expected statement.
+    else: 
+        ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Mon Dec  5 18:54:37 2022
+Thu Dec  8 12:53:23 2022

@@ -22,7 +22,7 @@ define st = "./audio/SUMMER_TRIANGLE.mp3"
 define m1 = "./audio/Fizzy_Honey_Lemon_Soda_350ml.mp3"
 define m2 = "./audio/Lo-fi_girl_always_lacks_sleep.mp3"
 define m3 = "./audio/Sheep_of_the_Far_East_Dancing_with_the_Telecaster.mp3"
-define fireworks = Movie(fps=24, size=None, channel=u'sound', play="./movie/mvfireworks", loop=True) 
+define Cutsceney = Movie(fps=15, size=None, channel=u'sound', play="./movie/mvbadendcutscene.webm", loop=False) 
 define wiperight = CropMove(1.0, "wiperight")
 define wipeleft = CropMove(1.0, "wipeleft")
 define wipeup = CropMove(1.0, "wipeup")
@@ -36,7 +36,7 @@ define slideawayleft = CropMove(1.0, "slideawayleft")
 define slideawayup = CropMove(1.0, "slideawayup")
 define slideawaydown = CropMove(1.0, "slideawaydown")
 define irisout = CropMove(1.0, "irisout")
-define irisin = CropMove(1.0, "irisin")
+define irisin = CropMove(1.0, "irisin")        
 label start: 
     $ A_name = _("Feng Qiuyue")
     python: 
