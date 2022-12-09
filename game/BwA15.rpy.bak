@@ -207,7 +207,7 @@ label WBwA16:
     "I remember seeing it on a flyer on the way to the exhibition hall." 
     a "Huh? That sounds interesting." 
     a "Let's go!" 
-    call BwA18 from _call_BwA18 
+    call BwA18 
 label XBwA16: 
     "Shopkeeper" "Your aim's great, boy." 
     u "Haha, I want the shiba inu plushie." 
@@ -233,7 +233,7 @@ label XBwA16:
     a "Isn't there a competition going on at the competition stage?" 
     a "Why don't we go check it out?" 
     u "Alright." 
-    call BwA18 from _call_BwA18_1 
+    call BwA18 
 label LBwA16: 
     #Not sad ending. 
 return 
