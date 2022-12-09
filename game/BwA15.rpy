@@ -176,14 +176,64 @@ elif score >= 500:
 else: 
     jump LBwA16 
 label WBwA16: 
-    ""
-    
+    "The owner whistles seeing my aim." 
+    "Shopkeeper" "Damn, both of your aim are cracked." 
+    u "She plays overwatch; her aim {i}has{/i} to be good." 
+    a "Shut up." 
+    "Shopkeeper" "Fuck you, overwatch player." 
+    "[a] glared at me." 
+    a "You didn't have to say that." 
+    u "Sorry, a CS:GO player like me can't understand having to be ashamed of doing what I like." 
+    a "Shut up." 
+    u "Haha." 
+    u "Well, we'll get the shiba inu plushie." 
+    "Shopkeeper" "A'ight, I'll bring it down." 
+    "He hoisted down the plushie before passing it over to me." 
+    "Shopkeeper" "Here's it." 
+    u "Alright, thanks." 
+    "I handed the plushie over to [a]." 
+    a "Thanks!" 
+    u "You're welcome." 
+    a "No, really, thank you." 
+    u "What the fuck?" 
+    "I still can't understand women even after speaking to her for almost a year." 
+    "She's already thanked me once, hadn't she?" 
+    u "Anyways, bye." 
+    "Shopkeeper" "Bye." 
+    "We walked away from the stall." 
+    u "Where should we go now?" 
+    a "I don't know." 
+    u "Isn't there a competition going on at the competition stage?" 
+    "I remember seeing it on a flyer on the way to the exhibition hall." 
+    a "Huh? That sounds interesting." 
+    a "Let's go!" 
+    call BwA18 
 label XBwA16: 
-    "" 
-
+    "Shopkeeper" "Your aim's great, boy." 
+    u "Haha, I want the shiba inu plushie." 
+    a "Hehe, your aim's better than I remember." 
+    u "Shut up." 
+    u "It has always been this good." 
+    u "I was just playing the pig to eat the tiger." 
+    "That was a lie." 
+    "It was just luck." 
+    a "No, you weren't." 
+    a "Remember during our university's sports day, you were a part of the baseball team, and when you pitched, it became a homerun even before the batter hit the ball." 
+    u "Fuck, I just gave the other team a ball three times." 
+    "That is, I missed the strike zone thrice." 
+    a "What does that even mean?" 
+    "It was apparent that she didn't know the rules of baseball." 
+    "The shopkeeper laughed at our childish display, handing over the shiba inu plushie that he hoisted down." 
+    "[a] recieved it, then hugged it tightly." 
+    u "Alright, bye!" 
+    a "Bye!" 
+    "The shopkeeper did not respond, just waving back." 
+    "We left the game district." 
+    u "Where do we go now?" 
+    a "Isn't there a competition going on at the competition stage?" 
+    a "Why don't we go check it out?" 
+    u "Alright." 
+    call BwA18 
 label LBwA16: 
-    "" 
-
-
-
+    #Not sad ending. 
 return 

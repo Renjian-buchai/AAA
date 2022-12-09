@@ -1,33 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/tl/Chinese/neg1.rpy", line 98, in script
-    old "Feng Qiuyue"
-  File "game/tl/Chinese/neg1.rpy", line 98, in script
-    old "Feng Qiuyue"
-Exception: A translation for "Feng Qiuyue" already exists at game/tl/Chinese/common.rpy:5.
+  File "game/script.rpy", line 52, in script call
+    call neg1 from _call_neg1
+  File "game/BwA15.rpy", line 179, in script
+    $ renpy.music_cutscene("mvbadendcutscene.webm", delay=3.0)
+  File "game/BwA15.rpy", line 179, in <module>
+    $ renpy.music_cutscene("mvbadendcutscene.webm", delay=3.0)
+AttributeError: module 'renpy.exports' has no attribute 'music_cutscene'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\bootstrap.py", line 274, in bootstrap
-    renpy.main.main()
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\main.py", line 558, in main
-    renpy.game.context().run(node)
-  File "game/tl/Chinese/neg1.rpy", line 98, in script
-    old "Feng Qiuyue"
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/tl/Chinese/neg1.rpy", line 98, in script
-    old "Feng Qiuyue"
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 2751, in execute
-    renpy.translation.add_string_translation(self.language, self.old, self.new, newloc)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\translation\__init__.py", line 475, in add_string_translation
-    stl.add(old, new, newloc)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\translation\__init__.py", line 415, in add
-    raise Exception("A translation for \"{}\" already exists at {}:{}.".format(
-Exception: A translation for "Feng Qiuyue" already exists at game/tl/Chinese/common.rpy:5.
+  File "game/script.rpy", line 52, in script call
+    call neg1 from _call_neg1
+  File "game/BwA15.rpy", line 179, in script
+    $ renpy.music_cutscene("mvbadendcutscene.webm", delay=3.0)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 1049, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/BwA15.rpy", line 179, in <module>
+    $ renpy.music_cutscene("mvbadendcutscene.webm", delay=3.0)
+AttributeError: module 'renpy.exports' has no attribute 'music_cutscene'
 
 Windows-10-10.0.19043 AMD64
 Ren'Py 8.0.1.22070801
-AAA 0.0.2.14
-Mon Dec  5 11:04:13 2022
+AAA 0.0.2.17
+Thu Dec  8 13:12:01 2022

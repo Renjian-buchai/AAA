@@ -118,7 +118,7 @@ menu:
     "We should go to the competition stage.": 
         call sxA15 from _call_sxA15 
     "We should go to the game district.": 
-        call BwA15 from _call_BwA15 
+        call BwA15 
 label BsiA13: 
     hide shkpra with dissolve
     hide shkprb with dissolve
@@ -218,7 +218,7 @@ menu:
     "We should go to the competition stage.": 
         call sxA15 from _call_sxA15_1 
     "We should go to the game district": 
-        call BwA15 from _call_BwA15_1 
+        call BwA15 
 label CsiA13: 
     hide shkpra with dissolve
     hide shkprb with dissolve
@@ -336,5 +336,5 @@ menu:
     "We should go to the competition stage.": 
         call sxA15 from _call_sxA15_2 
     "We should go to the game district.": 
-        call BwA15 from _call_BwA15_2 
+        call BwA15 
 return 
