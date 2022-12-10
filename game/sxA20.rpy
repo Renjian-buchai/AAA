@@ -148,10 +148,11 @@ label sxA23:
         if persistent.sxA23 == False: 
             persistent.sxA23 = True 
             persistent.gameState += 1 
-    "" "Number of endings completed: [persistent.gameState]" 
+    "Number of endings completed: [persistent.gameState]" 
 menu:
-    "" "What would you like to do now?" 
+    "What would you like to do now?" 
     "Quit": 
         return 
     "Try another path": 
         call start from _call_start_1 
+return 

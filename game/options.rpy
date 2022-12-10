@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.0.3.19"
+define config.version = "0.0.3.20"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -71,6 +71,8 @@ define build.name = "AAA"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
+
+define config.say_allow_dismiss = None
 
 
 ## To allow the user to play a test sound on the sound or voice channel,

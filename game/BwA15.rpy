@@ -97,7 +97,7 @@ label BwA16:
         randoma = random.randint(0, 1) 
         randomb = random.randint(0, 3)
 menu: 
-    "" "Which target should I aim for?" 
+    "Which target should I aim for?" 
     "100 point": 
         if randoma == 1: 
             $ score = score + 100 
@@ -135,7 +135,7 @@ label gametj:
         randoma = random.randint(0,1)
         randomb = random.randint(0,3) 
 menu: 
-    "" "Which target should I aim for?" 
+    "Which target should I aim for?" 
     "100 point": 
         if randoma == 1: 
             $ score = score + 100 

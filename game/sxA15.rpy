@@ -175,7 +175,7 @@ python:
     randoma = random.randint(0, 1) 
     randomb = random.randint(0, 3)
 menu: 
-    "" "Which target should I aim for?" 
+    "Which target should I aim for?" 
     "100 point": 
         if randoma == 1: 
             $ score = score + 100 
@@ -213,7 +213,7 @@ python:
     randoma = random.randint(0, 1) 
     randomb = random.randint(0, 3)
 menu: 
-    "" "Which target should I aim for?" 
+    "Which target should I aim for?" 
     "100 point": 
         if randoma == 1: 
             $ score = score + 100 
@@ -251,7 +251,7 @@ python:
     randoma = random.randint(0, 1) 
     randomb = random.randint(0, 3)
 menu: 
-    "" "Which target should I aim for?" 
+    "Which target should I aim for?" 
     "100 point": 
         if randoma == 1: 
             $ score = score + 100 
