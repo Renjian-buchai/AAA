@@ -2,13 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/BwA15.rpy", line 174: expected ':' not found.
-    else if score >= 500: 
-         ^
-
-File "game/BwA15.rpy", line 176: expected statement.
-    else: 
-        ^
+File "game/script.rpy", line 49: invalid syntax
+        jump un
+              ^
+    
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Thu Dec  8 12:53:23 2022
+Mon Dec 12 12:44:34 2022

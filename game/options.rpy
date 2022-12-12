@@ -190,12 +190,10 @@ init python:
     build.classify('**.tab', 'all') 
     build.classify('**.html','all') 
 
-    build.classify('game/*.rpy', 'archive') 
-    build.classify('game/*.rpyc', 'archive')
-    build.classify('game/audio/*.mp3', 'archive') 
-    build.classify('game/gui/*.png', 'archive') 
-    build.classify('game/saves/*', 'archive')
-    build.classify('game/tl/*', 'archive')
+    build.classify('game/*', 'archive') 
+    build.classify('References/*', 'archive') 
+    build.classify('Data/*', 'archive') 
+    build.classify('.vscode/*', 'archive')
 
     build.documentation('*.html')
     build.documentation('*.txt')
