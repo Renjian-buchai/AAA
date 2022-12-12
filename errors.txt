@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 15: expected expression
-    define cutscene = 
-                      ^
+File "game/script.rpy", line 49: invalid syntax
+        jump un
+              ^
+    
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Sat Dec 10 18:04:20 2022
+Mon Dec 12 12:44:34 2022

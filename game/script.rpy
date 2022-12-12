@@ -46,8 +46,9 @@ label start:
     $ A_name = _("Feng Qiuyue")
     python: 
         if persistent.username == None: 
-            renpy.scene("bglogin") 
-            persistent.username = renpy.input("Login:{w=0.5}\nPlease insert username: {w=0.5}\n(This cannot be changed)", length=10, copypaste=False)
+            renpy.scene()
+            renpy.show("bglogin")
+            persistent.username = renpy.input("Login:{w=0.5}\nPlease insert username: {w=0.5}", length=10, copypaste=False)
             persistent.username = persistent.username.strip() 
         if persistent.username == "" and persistent.username == None: 
             persistent.username = "Yu Wen" 

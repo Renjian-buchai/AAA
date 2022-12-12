@@ -41,9 +41,9 @@
 menu: 
     a "(What about you? What do you want to eat?)" 
     "Roast beef sandwich.": 
-        call wA13      
+        call wA13 from _call_wA13      
     "Mini Toad-in-the-hole.": 
-        call BsiA13  
+        call BsiA13 from _call_BsiA13  
     "Roasted Spring Chicken.": 
-        call CsiA13 
+        call CsiA13 from _call_CsiA13 
 return 
