@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/wA13.rpy", line 289: end of line expected.
-    hide a contemplative show a smirk 
-                         ^
+File "game/script.rpy", line 49: invalid syntax
+        jump un
+              ^
+    
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Mon Dec  5 18:54:37 2022
+Mon Dec 12 12:44:34 2022

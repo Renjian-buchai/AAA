@@ -2,11 +2,13 @@
 errors listed below, and try again.
 
 
-The label _call_start is defined twice, at File "game/sxA20.rpy", line 162:
-        call start from _call_start 
-and File "game/wA20.rpyc", line 162:
-        call start from _call_start 
+File "game/BwA15.rpy", line 174: expected ':' not found.
+    else if score >= 500: 
+         ^
 
+File "game/BwA15.rpy", line 176: expected statement.
+    else: 
+        ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Sun Dec  4 19:58:08 2022
+Thu Dec  8 12:53:23 2022

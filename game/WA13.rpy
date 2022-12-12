@@ -117,7 +117,8 @@ menu:
     a "What're we going to do now?" 
     "We should go to the competition stage.": 
         call sxA15 from _call_sxA15 
-    #TODO BwA15 
+    "We should go to the game district.": 
+        call BwA15 from _call_BwA15 
 label BsiA13: 
     hide shkpra with dissolve
     hide shkprb with dissolve
@@ -216,7 +217,8 @@ menu:
     a "Well,{w=.1} where should we go now?"
     "We should go to the competition stage.": 
         call sxA15 from _call_sxA15_1 
-    #TODO BwA15 
+    "We should go to the game district": 
+        call BwA15 from _call_BwA15_1 
 label CsiA13: 
     hide shkpra with dissolve
     hide shkprb with dissolve
@@ -333,5 +335,6 @@ menu:
 
     "We should go to the competition stage.": 
         call sxA15 from _call_sxA15_2 
-    #TODO BwA15
+    "We should go to the game district.": 
+        call BwA15 from _call_BwA15_2 
 return 

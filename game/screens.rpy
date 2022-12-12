@@ -110,6 +110,13 @@ screen say(who, what):
 
         text what id "what"
 
+screen disableskip():
+    #Dismiss keys
+    key "mouseup_1" action NullAction()
+    key "K_RETURN" action NullAction()
+    key "K_SPACE" action NullAction()
+    key "K_KP_ENTER" action NullAction()
+    key "joy_dismiss" action NullAction()  
 
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
