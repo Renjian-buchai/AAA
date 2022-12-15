@@ -1,0 +1,202 @@
+0.0.1       Initial commit 
+    Created new Renpy game: AAA 
+    Created new twine script: Winter.html 
+
+0.0.1.1     
+    Created script 
+    Added images 
+
+0.0.1.2 
+    Created LICENSE
+    Created README 
+    Organised folders 
+
+0.0.2.0 
+    Created story: neg1, 0 
+    Updated README 
+
+0.0.2.1 
+    Created story: A1 
+    Added images 
+    Updated README 
+
+0.0.2.2 
+    Created story: AA4
+    Updated README 
+
+0.0.2.3
+    Added images 
+    Updated README 
+
+0.0.2.4
+    Added bgm 
+    Updated README 
+
+0.0.2.5 
+    Edited README 
+        Included credits 
+
+0.0.2.6 
+    Updated scripts
+    Updated README  
+
+0.0.2.7 
+    Added AAA10 
+    Updated scripts 
+    Updated README 
+
+0.0.2.8 
+    Added AAAA12 
+    Updated scripts 
+    Updated README 
+
+0.0.2.9 
+    Updated Winter.html 
+    Updated README 
+
+0.0.2.10 
+    Updated AAAA12 
+    Updated README 
+
+0.0.2.11 
+    Added images 
+    Added wA13 
+    Updated AAAA12 
+    Updated README 
+
+0.0.2.12 
+    Changed naming scheme 
+    Organised folders 
+    Updated README 
+
+0.0.2.12 
+    Updated options 
+    Updated scripts 
+    Updated README 
+
+0.0.2.12T 
+    Messed around with GUI (Will use threads instead, next time.) 
+    Added sxA20. 
+    Updated scripts 
+    Updated README 
+    Updated options 
+
+0.0.2.13 
+    Updated scripts 
+    Added bgm 
+    Added images 
+    Added Changelog 
+    Updated README 
+    Updated options 
+
+0.0.2.13D 
+    Added distributables. 
+
+0.0.2.14 
+    Updated scripts
+    Added option to go another path when each path ends 
+    Made username a persistent variable
+    Made it so that you do not have to add your username if you have done so previously. 
+    Completed the shows and scenes. 
+    Updated options 
+    Updated README
+
+0.0.2.14D 
+    Added distributables. 
+
+0.0.2.15
+    Updated scripts 
+    Added placeholder images
+    Added images 
+    Added alternate path: BsiA13 
+    Organised files
+    Added translation file: Chinese for: Neg1, A1 
+    Updated options 
+    Updated README 
+
+0.0.2.15D
+    Added distributables.
+
+0.0.2.16
+    Added alternative path: CsiA13 
+    Merged A/B/CsiA13 together into wA13. 
+    Added multiple images: a angry, a disappointed, a handunderchin, a neutral, a scared, a shocked, asi angry, asi disappointed, asi happy, asi neutral, asi placeholder, asi scared, asi shocked, ina angry, ina disappointed, ina handunderchin, ina neutral, ina scared, inashocked, inasi angry, inasi disappointed, inasi happy, inasi neutral, inasi placeholder, inasi scared, inasi shocked. 
+    Updated scripts 
+    Deleted translation (To be added in future.) 
+    Added transitions to all show scripts. 
+    Updated options 
+    Updated README 
+
+0.0.2.16D
+    Added distributables. 
+    Organised data 
+
+0.0.2.17 
+    Completed path: wA. 
+    Compressed code. 
+    Added reference image. 
+    Added background: fireworks. 
+    Updated background: park bench. 
+    Updated code. 
+    Updated options. 
+    Updated README. 
+
+0.0.2.17D 
+    Added distributables. 
+
+0.0.3.17 
+    Created offshoot: BwA 
+
+0.0.3.18
+    Added movie: cutscene
+    Updated scripts 
+    Added script: BwA15 
+    Updated options 
+    Updated README 
+
+0.0.3.18D 
+    Added distributables 
+    Updated scripts 
+    Updated Winter.html
+
+0.0.3.19
+    Updated scripts 
+    Updated README
+    Updated options
+
+0.0.3.19D
+    Added distributables 
+
+0.0.3.20-nodist:3
+    Completed ending: BwA. 
+    Added images: mov45 
+    Updated GUI: game_menu, main_menu, namebox, skip, textbox 
+    Updated README 
+    Updated options 
+
+0.0.3.21 
+    Updated scripts 
+    Completed BwA (Final)
+    Added image: library 
+    Added persistent: BwA 
+    Edited GUI 
+    Updated README 
+    Updated options 
+
+0.0.3.21D
+    Added distributables
+
+0.0.3.22 
+    Created thread: Offshoot-LBwA
+    Added font: SIMSUN.ttf 
+    Added background: apartment
+    Added raws: aflustered, amischievous, asihappy 
+    Added script: LBwA18 
+    Renamed scripts: siA, sxA, wA. 
+    Updated scripts 
+
+0.0.3.22D
+    Added distributables
+    Updated Winter.html
+
+Current; 
