@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/LBwA18.rpy", line 122: invalid syntax
+    T = float((T: 1f))
+                 ^
+    
+
+Ren'Py Version: Ren'Py 8.0.1.22070801
+Thu Dec 15 16:58:42 2022

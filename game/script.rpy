@@ -2,7 +2,16 @@
     import math 
     import random 
     import time 
-    import threading    
+    import threading 
+    class Timer:
+        def __init__(self):
+            self.__start_time = None
+        def start(self):
+            self.__start_time = time.perf_counter()
+        def stop(self):
+            elapsed_time = time.perf_counter() - self.__start_time 
+            self.__start_time = None 
+            return self.elapsed_time
 init: 
     define randoma = 0
     define randomb = 0 
@@ -11,6 +20,7 @@ init:
     define score = 0 
     default persistent.sxA23 = False
     default persistent.BwA23 = False 
+    default persistent.LBwA23 = False 
     default persistent.username = None
     default persistent.gameState = 0 
     define cutscene = Movie("mvcutscene.webm", )
@@ -28,6 +38,11 @@ init:
     define m2 = "./audio/Lo-fi_girl_always_lacks_sleep.mp3"
     define m3 = "./audio/Sheep_of_the_Far_East_Dancing_with_the_Telecaster.mp3"
     define Cutsceney = Movie(fps=15, size=None, channel=u'sound', play="./movie/mvbadendcutscene.webm", loop=False) 
+    define T = float(0.0)
+    define T0 = float(0.0)
+    define T1 = float(0.0)
+    define Reward = "Reward" 
+    define position = "Position"
     define wiperight = CropMove(1.0, "wiperight")
     define wipeleft = CropMove(1.0, "wipeleft")
     define wipeup = CropMove(1.0, "wipeup")
