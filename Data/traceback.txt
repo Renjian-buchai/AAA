@@ -1,30 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 52, in script call
-    call neg1 from _call_neg1
-  File "game/BwA15.rpy", line 179, in script
-    $ renpy.music_cutscene("mvbadendcutscene.webm", delay=3.0)
-  File "game/BwA15.rpy", line 179, in <module>
-    $ renpy.music_cutscene("mvbadendcutscene.webm", delay=3.0)
-AttributeError: module 'renpy.exports' has no attribute 'music_cutscene'
+While parsing C:\Users\student\Desktop\AAA\game/siA.rpy.
+Exception: Line with id sxA15_a90f3366 appeared twice, at game/siA.rpy:1343 and game/sxA.rpy:4.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 52, in script call
-    call neg1 from _call_neg1
-  File "game/BwA15.rpy", line 179, in script
-    $ renpy.music_cutscene("mvbadendcutscene.webm", delay=3.0)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\python.py", line 1049, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/BwA15.rpy", line 179, in <module>
-    $ renpy.music_cutscene("mvbadendcutscene.webm", delay=3.0)
-AttributeError: module 'renpy.exports' has no attribute 'music_cutscene'
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\bootstrap.py", line 274, in bootstrap
+    renpy.main.main()
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\main.py", line 490, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\script.py", line 297, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\script.py", line 809, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn) # type: ignore
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\script.py", line 427, in finish_load
+    self.translator.take_translates(all_stmts)
+  File "C:\Users\student\Desktop\Applications\renpy-8.0.1-sdk\renpy\translation\__init__.py", line 166, in take_translates
+    raise Exception("Line with id %s appeared twice, at %s:%d and %s:%d." %
+Exception: Line with id sxA15_a90f3366 appeared twice, at game/siA.rpy:1343 and game/sxA.rpy:4.
 
 Windows-10-10.0.19043 AMD64
 Ren'Py 8.0.1.22070801
-AAA 0.0.2.17
-Thu Dec  8 13:12:01 2022
+AAA 0.0.3.22
+Fri Dec 16 15:51:47 2022

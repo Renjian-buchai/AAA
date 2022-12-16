@@ -2,15 +2,16 @@
     import math 
     import random 
     import time 
-    import threading    
+    import threading 
 init: 
-    define randoma = 0
-    define randomb = 0 
-    define randomc = 0 
-    define randomd = 0 
-    define score = 0 
+    define randoma = float(0.0)
+    define randomb = float(0.0)
+    define randomc = float(0.0)
+    define randomd = float(0.0)
+    define score0 = float(0.0)
     default persistent.sxA23 = False
     default persistent.BwA23 = False 
+    default persistent.LBwA23 = False 
     default persistent.username = None
     default persistent.gameState = 0 
     define cutscene = Movie("mvcutscene.webm", )
@@ -28,6 +29,11 @@ init:
     define m2 = "./audio/Lo-fi_girl_always_lacks_sleep.mp3"
     define m3 = "./audio/Sheep_of_the_Far_East_Dancing_with_the_Telecaster.mp3"
     define Cutsceney = Movie(fps=15, size=None, channel=u'sound', play="./movie/mvbadendcutscene.webm", loop=False) 
+    define T = float(0.0)
+    define T0 = float(0.0)
+    define T1 = float(0.0)
+    define Reward = "Reward" 
+    define position = "Position"
     define wiperight = CropMove(1.0, "wiperight")
     define wipeleft = CropMove(1.0, "wipeleft")
     define wipeup = CropMove(1.0, "wipeup")

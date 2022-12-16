@@ -4,5 +4,7 @@
         "**/*.rpa": true,
         "**/*.rpymc": true,
         "**/cache/": true
-    }
+    },
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 10
 }
