@@ -2,47 +2,9 @@
 errors listed below, and try again.
 
 
-The label BwA18 is defined twice, at File "game/BwA.rpyc", line 1:
-
-and File "game/BwA18.rpy", line 1:
-
-
-
-The label BwA19 is defined twice, at File "game/BwA.rpyc", line 52:
-
-and File "game/BwA18.rpy", line 52:
-
-
-
-The label BwA20 is defined twice, at File "game/BwA.rpyc", line 85:
-
-and File "game/BwA18.rpy", line 85:
-
-
-
-The label BwA21 is defined twice, at File "game/BwA.rpyc", line 153:
-
-and File "game/BwA18.rpy", line 153:
-
-
-
-The label BwA22 is defined twice, at File "game/BwA.rpyc", line 190:
-
-and File "game/BwA18.rpy", line 190:
-
-
-
-The label BwA23 is defined twice, at File "game/BwA.rpyc", line 222:
-
-and File "game/BwA18.rpy", line 222:
-
-
-
-The label _call_start is defined twice, at File "game/BwA.rpyc", line 247:
-
-and File "game/BwA18.rpy", line 247:
-
-
+File "game/LBwA18.rpy", line 300: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    u "{i}I{/i} made it back just in time." 
+    ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Thu Dec 15 18:29:28 2022
+Fri Dec 16 15:11:44 2022

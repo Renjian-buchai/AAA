@@ -926,7 +926,7 @@ menu:
     "Quit": 
         return 
     "Try another path": 
-        call start from _call_start 
+        call start 
 label LBwA17: 
     scene bgblack with fade 
     pause 1.0 
@@ -1336,7 +1336,7 @@ menu:
     "Quit": 
         return 
     "Try another path": 
-        call start from _call_start_1 
+        call start 
 label sxA15: 
     scene bgblack with fade 
     hide a mischievous  with dissolve
@@ -1926,4 +1926,4 @@ menu:
     "Quit": 
         return 
     "Try another path": 
-        call start from _call_start_2 
+        call start 

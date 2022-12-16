@@ -3,21 +3,12 @@
     import random 
     import time 
     import threading 
-    class Timer:
-        def __init__(self):
-            self.__start_time = None
-        def start(self):
-            self.__start_time = time.perf_counter()
-        def stop(self):
-            elapsed_time = time.perf_counter() - self.__start_time 
-            self.__start_time = None 
-            return self.elapsed_time
 init: 
-    define randoma = 0
-    define randomb = 0 
-    define randomc = 0 
-    define randomd = 0 
-    define score = 0 
+    define randoma = float(0.0)
+    define randomb = float(0.0)
+    define randomc = float(0.0)
+    define randomd = float(0.0)
+    define score0 = float(0.0)
     default persistent.sxA23 = False
     default persistent.BwA23 = False 
     default persistent.LBwA23 = False 
