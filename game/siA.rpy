@@ -549,7 +549,7 @@ menu:
     "Which target should I aim for?" 
     "100 point": 
         if randoma == 1: 
-            $ score0 = score0 + 100 
+            $ score0 += 100 
             $ randoma = 0 
             jump gameet 
         else: 
@@ -557,7 +557,7 @@ menu:
             jump gameety 
     "200 point": 
         if randomb == 3: 
-            $ score0 = score0 + 200 
+            $ score0 += 200 
             $ randomb = 0 
             jump gameete 
         else: 
@@ -580,12 +580,16 @@ label gameets:
     "Our current score is [score0]." 
     jump gameetsi 
 label gameetsi: 
-if score0 == 800: 
-    jump WBwA17 
-elif score0 >= 500: 
-    jump XBwA17 
-else: 
-    jump LBwA17 
+    $ del randoma, randomb 
+    if score0 == 800: 
+        $ del score0 
+        jump WBwA17 
+    elif score0 >= 500: 
+        $ del score0 
+        jump XBwA17 
+    else: 
+        $ del score0 
+        jump LBwA17 
 label WBwA17: 
     scene bgblack with fade 
     pause 1.0 
@@ -1145,23 +1149,23 @@ menu:
         jump LBwA20g
 label LBwA20g: 
     python: 
+        Reward = string("") 
         T1 = time.perf_counter() 
         T = (T1 - T0) * 4.0
+        del T1, T0
+        print("Deleted T0, T1")
+
     if T < 20.3: 
         $ Reward = "a voucher and a keychain" 
-        $ Position = "1st" 
         jump LBwA20
     elif T < 22.5: 
         $ Reward = "a voucher and a medal"
-        $ Position = "3rd" 
         jump LBwA20
     elif T < 25.8: 
         $ Reward = "a voucher" 
-        $ Position = "5th" 
         jump LBwA20
     else: 
         $ Reward = "nothing" 
-        $ Position = "23rd" 
         jump LBwA20
 label LBwA20: 
     scene bgblack with fade 
@@ -1170,6 +1174,8 @@ label LBwA20:
     "[a] managed to eke out second place,{w=.1} qualifying herself for a voucher and a gold medal." 
     "It's quite amusing,{w=.1} since she recieved gold for as a runner up." 
     "That makes TMD a lot of sense." 
+    $ del Reward 
+    $ del T 
     scene bgchristmasmarket with fade 
     u "Can I go home now?" 
     show asi pout with dissolve 
@@ -1517,7 +1523,7 @@ menu:
     "Which target should I aim for?" 
     "100 point": 
         if randoma == 1: 
-            $ score = score + 100 
+            $ score += 100 
             $ randoma = 0 
             jump gamez 
         else: 
@@ -1525,7 +1531,7 @@ menu:
             jump game 
     "200 point": 
         if randomb == 3: 
-            $ score = score + 200 
+            $ score += 200 
             $ randomb = 0 
             jump gamee 
         else: 
@@ -1555,7 +1561,7 @@ menu:
     "Which target should I aim for?" 
     "100 point": 
         if randoma == 1: 
-            $ score = score + 100 
+            $ score += 100 
             $ randoma = 0 
             jump gamew 
         else: 
@@ -1563,7 +1569,7 @@ menu:
             jump gamesx 
     "200 point": 
         if randomb == 3: 
-            $ score = score + 200 
+            $ score += 200 
             $ randomb = 0 
             jump gameq 
         else: 
@@ -1593,7 +1599,7 @@ menu:
     "Which target should I aim for?" 
     "100 point": 
         if randoma == 1: 
-            $ score = score + 100 
+            $ score += 100 
             $ randoma = 0 
             jump gamet 
         else: 
@@ -1601,7 +1607,7 @@ menu:
             jump gamety 
     "200 point": 
         if randomb == 3: 
-            $ score = score + 200 
+            $ score += 200 
             $ randomb = 0 
             jump gamete 
         else: 
@@ -1624,11 +1630,15 @@ label gamets:
     "Our current score is [score]." 
     jump gametsi 
 label gametsi: 
+    $ del randoma, randomb 
     if score > 800: 
+        $ del score 
         jump WsxA19 
-    elif score >500: 
+    elif score >500:
+        $ del score  
         jump XsxA19 
     else: 
+        $ del score 
         jump LsxA19 
 label WsxA19: 
     scene bggamestall with dissolve 

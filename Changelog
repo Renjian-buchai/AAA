@@ -214,4 +214,9 @@
 0.0.3.23D
     Added distributables
 
+Organisation Update 
+    Moved definitions from script:script to script: Definitions.  
+    Added script: Dictionary 
+    Updated script: Dictionary 
+
 Current; 

@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/siA.rpy", line 1633: expected statement.
+    del randoma, randomb 
+               ^
+
+Ren'Py Version: Ren'Py 8.0.1.22070801
+Sat Dec 17 12:39:14 2022
