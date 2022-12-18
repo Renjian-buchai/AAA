@@ -29,5 +29,7 @@ menu:
     a "Your mom let me in."
     "You do know you're a girl,{w=0.1} right?": 
         call A1 from _call_A1 
-    # TODO: B1, C1 
+    "{i}Sigh{/i}": 
+        call B1 
+    # TODO: C1 
 return 

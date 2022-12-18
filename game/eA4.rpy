@@ -11,7 +11,7 @@
     u "Really?" 
     hide ina disdainful with dissolve
     show ina playful with dissolve 
-    a "It's C{w=0.6}-H{w=0.6}-R{w=0.6}-I{w=0.6}-S{w=0.6}-T{w=0.6}-M{w=0.6}-A{w=0.6}-S{w=0.6} E{w=0.6}-V{w=0.6}-E." 
+    a "It's C{w=0.2}-H{w=0.2}-R{w=0.2}-I{w=0.2}-S{w=0.2}-T{w=0.2}-M{w=0.2}-A{w=0.2}-S{w=0.2} E{w=0.2}-V{w=0.2}-E." 
     u "Can you speak English?" 
     u "Why're you just reciting the letters—" 
     u "Ohh,{w=.1} Christmas Eve." 
@@ -48,7 +48,6 @@ label eA6:
     a "Even if they ask us to kiss each other as proof,"
     a "It's not like either of us haven't had our first kisses yet,{w=.1} right?" 
     "Why's she looking at me like I'm the one who's brain damaged?" 
-    "I had my first kiss last year,{w=.1} when I was drunk."
     u "Haha,{w=.1} yeah,{w=.1} right." 
     u "Regardless,{w=.1} I won't go just because you say so. " 
     hide ina disdainful with dissolve 
@@ -82,7 +81,7 @@ label eA8:
     scene bgbedroom with fade
     a "Hello,{w=.1} who's this?" 
     u "It's me." 
-    "Beep— {p}She ended the call." 
+    "Beep—{w=.3} {p}She ended the call." 
     "What the hell?"
     "I dialled her number again." 
     a "Are you {i}really{/i} bored enough to call the same person twice?" 
