@@ -38,14 +38,16 @@
     "Shopkeeper B" "Delicious mini toad-in-the-hole!{w=.3} If you share it with your crush before confessing,{w=.1} you'll definitely succeed!" 
     show shkprc at right with dissolve
     "Shopkeeper C" "Roasted spring chicken,{w=.1} roasted to perfection!{w=.3} You'll be losing out if you don't try it now!" 
-menu: 
-    a "(What about you? What do you want to eat?)" 
-    "Roast beef sandwich.": 
-        jump wA13      
-    "Mini Toad-in-the-hole.": 
-        jump BsiA13 
-    "Roasted Spring Chicken.": 
-        jump CsiA13 
+
+    menu: 
+        a "(What about you? What do you want to eat?)" 
+        "Roast beef sandwich.": 
+            jump wA13      
+        "Mini Toad-in-the-hole.": 
+            jump BsiA13 
+        "Roasted Spring Chicken.": 
+            jump CsiA13 
+
 label wA13: 
     hide shkpra with dissolve
     hide shkprb with dissolve
@@ -81,6 +83,7 @@ label wA13:
     "I'm speechless." 
     "How can anyone be so shameless?" 
     jump wA14 
+
 label wA14: 
     "We sat down by a side with food." 
     hide a excited with dissolve
@@ -161,12 +164,14 @@ label wA14:
     "Naturally,{w=.1} she had to return the cost of the ice cream to me later." 
     "I guess she completely forgot about eggnog." 
     scene bgchristmasmarket with fade 
-menu: 
-    a "What're we going to do now?" 
-    "We should go to the competition stage.": 
-        jump sxA15 
-    "We should go to the game district.": 
-        jump BwA15 
+
+    menu: 
+        a "What're we going to do now?" 
+        "We should go to the competition stage.": 
+            jump sxA15 
+        "We should go to the game district.": 
+            jump BwA15 
+
 label BsiA13: 
     hide shkpra with dissolve
     hide shkprb with dissolve
@@ -197,13 +202,13 @@ label BsiA13:
     hide a happy peace with dissolve
     show a confused with dissolve
     a "Don't you need proof?" 
-    "Shopkeeper B" "Nah,{w=.1} just a part-time worker.{w=.3}Can't be bothered." 
-    "I guess it doesn't matter where you work.{w=.3}As long as you're a part-time worker,{w=.1} you won't give a fuck about work." 
+    "Shopkeeper B" "Nah,{w=.1} just a part-time worker.{w=.3} Can't be bothered." 
+    "I guess it doesn't matter where you work.{w=.3} As long as you're a part-time worker,{w=.1} you won't give a fuck about work." 
     hide a confused with dissolve
     show a disappointed with dissolve
     a "Oh,{w=.1} OK." 
     "She put on a disappointed act." 
-    "Her act was realistic.{w=.3}Well,{w=.1} it {i}is{/i} her degree." 
+    "Her act was realistic.{w=.3} Well,{w=.1} it {i}is{/i} her degree." 
     u "Alright,{w=.1} we want 2 of them." 
     "Each toad-in-the-hole was around 6-inches across,{w=.1} even though they were supposedly 'mini'." 
     "Part-timer" "74.8 RMB." 
@@ -217,13 +222,14 @@ label BsiA13:
     a "I love you honey!" 
     u "Same." 
     "The part-timer glared at us like,{w=.1} 'Go die,{w=.1} normies',{w=.1} then took out two mini toad-in-the-hole and two spoons." 
-    "Part-timer" "Here.{w=.3}Now,{w=.1} fuck off." 
+    "Part-timer" "Here.{w=.3} Now,{w=.1} fuck off." 
     hide a happy with dissolve
     show a mischievous with dissolve
     a "So mean." 
     u "Very mean." 
     "Part-timer" "Shut up,{w=.1} you normies." 
     jump BsiA14 
+
 label BsiA14: 
     hide a mischievous with dissolve
     hide shkprb with dissolve
@@ -231,7 +237,7 @@ label BsiA14:
     "We sat down to a side with the toad-in-the-hole." 
     scene bgchristmasmarket with fade 
     show a happy with dissolve
-    "[a] plucks a sausage out of the toad-in-the-hole,{w=.1} before bititng into it slowly." 
+    "[a] plucks a sausage out of the toad-in-the-hole,{w=.1} before biting into it slowly." 
     a "{i}Ahh!{/i},{w=.1} the sausage screams as the monster eats it piece by piece." 
     u "Don't play with your food." 
     "If I did that at home,{w=.1} my parents would've beaten me half to death." 
@@ -254,19 +260,21 @@ label BsiA14:
     show a disdainful with dissolve
     a "You're not the director." 
     u "Figured so." 
-    u "Well,{w=.1} let's eat it quickly.{w=.3}The crowds will be fucking crazy when working time ends." 
+    u "Well,{w=.1} let's eat it quickly.{w=.3} The crowds will be fucking crazy when working time ends." 
     hide a disdainful with dissolve
     show a happy with dissolve
     a "A'ight!" 
     "We wolfed down the toad-in-the-hole." 
     "[a] only ate half of it before being full." 
     "I was forced to eat the rest of it." 
-menu: 
-    a "Well,{w=.1} where should we go now?"
-    "We should go to the competition stage.": 
-        jump sxA15 
-    "We should go to the game district": 
-        jump BwA15 
+
+    menu: 
+        a "Well,{w=.1} where should we go now?"
+        "We should go to the competition stage.": 
+            jump sxA15 
+        "We should go to the game district": 
+            jump BwA15 
+
 label CsiA13: 
     hide shkpra with dissolve
     hide shkprb with dissolve
@@ -320,8 +328,9 @@ label CsiA13:
     hide a happy with dissolve
     hide shkprc with dissolve
     scene bgblack with fade 
-    "I thinked him,{w=.1} then we went over to a side to eat." 
+    "I thanked him,{w=.1} then we went over to a side to eat." 
     jump CsiA14 
+
 label CsiA14: 
     "We ate the spring chicken in silence." 
     scene bgchristmasmarket with fade 
@@ -378,13 +387,14 @@ label CsiA14:
     hide a scared with dissolve
     show a happy with dissolve
     a "Alright,{w=.1} then..." 
-menu: 
-    a "Where do you want to go?" 
 
-    "We should go to the competition stage.": 
-        jump sxA15 
-    "We should go to the game district.": 
-        jump BwA15 
+    menu: 
+        a "Where do you want to go?" 
+        "We should go to the competition stage.": 
+            jump sxA15 
+        "We should go to the game district.": 
+            jump BwA15 
+
 label BwA15: 
     scene bgblack with fade 
     hide a mischievous with dissolve 
@@ -475,9 +485,9 @@ label BwA15:
     "In the end,{w=.1} I got my way.{w=.3} She gets 3 balls while I get 2 balls." 
     scene bggamestall with fade 
     show a excited with dissolve 
-    a "Alright~ Shiba inu,{w=.1} I'm coming for ya~!" 
+    a "Alright~{w=.3} Shiba inu,{w=.1} I'm coming for ya~!" 
     "On a table in the centre of the stall,{w=.1} there were a few moving targets to be knocked down." 
-    "Each target had a number written on it,{w=.1} representing the number of points recieved per target." 
+    "Each target had a number written on it,{w=.1} representing the number of points received per target." 
     "Points could be exchanged with rewards." 
     "The shiba inu was worth 500 points."
     hide a excited with dissolve 
@@ -499,6 +509,7 @@ label BwA15:
     show a flustered with dissolve 
     "Both of us blushed." 
     jump BwA16 
+
 label BwA16: 
     "Ignoring the shopkeeper's uproarious laughter,{w=.1} I went up to the line behind which I was to stand."
     hide a flustered with dissolve 
@@ -507,89 +518,98 @@ label BwA16:
     python: 
         randoma = random.randint(0, 1) 
         randomb = random.randint(0, 3)
-menu: 
-    "Which target should I aim for?" 
-    "100 point": 
-        if randoma == 1: 
-            $ score0 = score0 + 100 
-            $ randoma = 0 
-            jump gametw 
-        else: 
-            $ randoma = 0 
-            jump gametsx 
-    "200 point": 
-        if randomb == 3: 
-            $ score0 = score0 + 200 
-            $ randomb = 0 
-            jump gametq 
-        else: 
-            $ randomb = 0 
-            jump gametb
+
+    menu: 
+        "Which target should I aim for?" 
+        "100 point": 
+            if randoma == 1: 
+                $ score0 = score0 + 100 
+                $ randoma = 0 
+                jump gametw 
+            else: 
+                $ randoma = 0 
+                jump gametsx 
+        "200 point": 
+            if randomb == 3: 
+                $ score0 = score0 + 200 
+                $ randomb = 0 
+                jump gametq 
+            else: 
+                $ randomb = 0 
+                jump gametb
+
 label gametw: 
     "I knocked down the 100 point target." 
     "Our current score is [score0]." 
     jump gametj 
+
 label gametsx: 
     "I missed." 
     "Our current score is [score0]." 
     jump gametj 
+
 label gametq: 
     "I knocked down the 200 point target." 
     "Our current score is [score0]." 
     jump gametj 
+
 label gametb: 
     "I missed." 
     "Our current score is [score0]." 
     jump gametj 
+
 label gametj:
     python: 
         randoma = random.randint(0,1)
         randomb = random.randint(0,3) 
-menu: 
-    "Which target should I aim for?" 
-    "100 point": 
-        if randoma == 1: 
-            $ score0 += 100 
-            $ randoma = 0 
-            jump gameet 
-        else: 
-            $ randoma = 0 
-            jump gameety 
-    "200 point": 
-        if randomb == 3: 
-            $ score0 += 200 
-            $ randomb = 0 
-            jump gameete 
-        else: 
-            $ randomb = 0 
-            jump gameets
+
+    menu: 
+        "Which target should I aim for?" 
+        "100 point": 
+            if randoma == 1: 
+                $ score0 = score0 + 100 
+                $ randoma = 0 
+                jump gameet 
+            else: 
+                $ randoma = 0 
+                jump gameety 
+        "200 point": 
+            if randomb == 3: 
+                $ score0 = score0 + 200 
+                $ randomb = 0 
+                jump gameete 
+            else: 
+                $ randomb = 0 
+                jump gameets
+
 label gameet: 
     "I knocked down the 100 point target." 
     "Our current score is [score0]." 
     jump gameetsi 
+
 label gameety: 
     "I missed." 
     "Our current score is [score0]." 
     jump gameetsi 
+
 label gameete: 
     "I knocked down the 200 point target." 
     "Our current score is [score0]." 
     jump gameetsi
+
 label gameets: 
     "I missed." 
     "Our current score is [score0]." 
     jump gameetsi 
+
 label gameetsi: 
-    $ del randoma, randomb 
     if score0 == 800: 
-        $ del score0 
         jump WBwA17 
     elif score0 >= 500: 
-        $ del score0 
         jump XBwA17 
     else: 
-        $ del score0 
         jump LBwA17 
+
 label WBwA17: 
     scene bgblack with fade 
     pause 1.0 
@@ -641,6 +661,7 @@ label WBwA17:
     a "Huh?{w=.3} That sounds interesting." 
     a "Let's go!" 
     jump BwA18
+
 label XBwA17: 
     scene bgblack with fade 
     pause 1.0 
@@ -668,7 +689,7 @@ label XBwA17:
     "The shopkeeper laughed at our childish display,{w=.1} handing over the shiba inu plushie that he hoisted down." 
     hide a confused with dissolve 
     show a happy with dissolve 
-    "[a] recieved it,{w=.1} then hugged it tightly." 
+    "[a] received it,{w=.1} then hugged it tightly." 
     u "Alright,{w=.1} bye!" 
     a "Bye!" 
     "The shopkeeper did not respond,{w=.1} just waving back." 
@@ -684,6 +705,7 @@ label XBwA17:
     u "Alright." 
     scene bgblack with fade 
     jump BwA18
+
 label BwA18:
     "There was a competition stage situated in the heart of the Christmas market." 
     "Arriving at the competition stage,{w=.1}  we suddenly realised that the area was quite empty." 
@@ -735,6 +757,7 @@ label BwA18:
     "I really can't understand girls' thoughts."
     "How awkward..." 
     jump BwA19 
+
 label BwA19: 
     "We both sat at the bench in an awkward silence." 
     a "There's a fireworks festival later." 
@@ -768,6 +791,7 @@ label BwA19:
     scene bgblack with fade 
     "At the time,{w=.1}  [a] suddenly came up to me while I was reading for research purposes and writing an essay on the side." 
     jump BwA20 
+
 label BwA20: 
     scene bglibrary with fade 
     show ina curious with dissolve
@@ -826,16 +850,17 @@ label BwA20:
     hide ina disdainful with dissolve 
     show ina playful with dissolve 
     a "Acting,{w=.1}  a much better degree than yours." 
-    u "Oh,{w=.1}  so you're a narcicist." 
+    u "Oh,{w=.1}  so you're a narcissist." 
     hide ina playful with dissolve 
     show ina angry with dissolve 
     a "What did'ya just say?!" 
     hide ina angry with dissolve 
-    "Needless to mention,{w=.1}  we started off on the worng foot." 
+    "Needless to mention,{w=.1} we started off on the wrong foot." 
     scene bgblack with fade 
     "Since then,{w=.1}  she would come to the library every day just to insult me." 
     "I wasted my entire summer holidays because I couldn't study due to our diss wars." 
     jump BwA21
+
 label BwA21: 
     scene bgstage with fade 
     u "Of course I remember." 
@@ -873,6 +898,7 @@ label BwA21:
     "Silence once again." 
     a "You know,{w=.1}  I—"
     jump BwA22
+
 label BwA22: 
     "She was interrupted by an announcement." 
     "Announcement" "The fireworks show is starting.{w=.3} Please do not approach the competition stage." 
@@ -885,7 +911,7 @@ label BwA22:
     $ renpy.music.set_volume(0.5, delay=0.3)
     a "Beautiful." 
     u "Yes,{w=.1}  very beautiful." 
-    "I was just responding randomly because I was wondering what she was planinng to say just now." 
+    "I was just responding randomly because I was wondering what she was planning to say just now." 
     "My eyes didn't leave her face even as I spoke,{w=.1}  something that [a] seemed to vaguely notice." 
     hide asi excited 
     show asi flustered 
@@ -905,16 +931,16 @@ label BwA22:
     scene bgblack with fade 
     pause 10 
     jump BwA23 
+
 label BwA23: 
     "During the Christmas festival,{w=.1}  there was an accident." 
     "During the fireworks festival,{w=.1}  a multi-shot firework abruptly tilted to the reaction force of the fireworks." 
     "The resulting explosion caused the death of three workers and a woman who was sitting at a nearby park bench." 
-    "The man who was with the deceased woman was permanantly blinded in his right eye by the chemicals emitted." 
+    "The man who was with the deceased woman was permanently blinded in his right eye by the chemicals emitted." 
     "Based on eyewitness accounts,{w=.1}  18-year-old [a] was first to notice the firework's tilt,{w=.1}  prompting her to jump in front of 18-year-old [u],{w=.1}  saving his life at the sacrifice of hers." 
     "I listened to the news broadcasted on Christmas as I looked for [a]'s gravestone." 
     "Due to my injuries,{w=.1}  I was unable to attend [a]'s funeral." 
-    "On the day of my discharge,{w=.1}  I directly headed to H City Xiaoshan Cemetary." 
-    scene bgcemetary with fade 
+    "On the day of my discharge,{w=.1}  I directly headed to H City Xiaoshan Cemetery." 
     "Finally seeing the gravestone planted in the middle-class grave,{w=.1}  my vision grew blurry." 
     "To the one who I never realised I loved until it was too late," 
     "goodbye." 
@@ -925,12 +951,14 @@ label BwA23:
             persistent.BwA23 = True 
             persistent.gameState += 1 
     "Number of endings completed: [persistent.gameState]" 
-menu:
-    "What would you like to do now?" 
-    "Quit": 
-        return 
-    "Try another path": 
-        call start from _call_start 
+
+    menu:
+        "What would you like to do now?" 
+        "Quit": 
+            return 
+        "Try another path": 
+            call start from _call_start 
+
 label LBwA17: 
     scene bgblack with fade 
     pause 1.0 
@@ -982,20 +1010,21 @@ label LBwA17:
     scene bgchristmasmarket with fade 
     u "Where do we go now?" 
     show asi excited with dissolve 
-    a "There's a competiiton going on at the stage,{w=.1} right?{w=.3} "
+    a "There's a competition going on at the stage,{w=.1} right?{w=.3} "
     u "I would assume so." 
     u "That's what the market's website says." 
     a "Sounds interesting!"
     a "Let's go!" 
     scene bgblack with fade 
     jump LBwA18 
+
 label LBwA18: 
     "The competition stage,{w=.1} situated in the heart of the Christmas Market,{w=.1} was bustling as many people crowded around the stage." 
     scene bgstage with fade 
     "Emcee" "Does anyone want to try?{w=.3} We only have 3 prizes left." 
     show Emcee at left with dissolve 
     "Noticing a poster nearby,{w=.1} I commented," 
-    u "Oh,{w=.1} it seems to be a giftwrapping competition." 
+    u "Oh,{w=.1} it seems to be a gift-wrapping competition." 
     show asi happy with dissolve 
     a "Really?{w=.3} That's interesting." 
     "No,{w=.1} it isn't." 
@@ -1007,7 +1036,7 @@ label LBwA18:
     u "Since you already know about my thoughts,{w=.1} care to explain why it's wrong?"
     hide asi smirk with dissolve 
     show asi excited with dissolve 
-    a "Haha,{w=.1} it's obviously because I'm good at giftwrapping." 
+    a "Haha,{w=.1} it's obviously because I'm good at gift-wrapping." 
     a "My parents used to force me to wrap presents for everyone." 
     a "So to get back to watching anime quickly,{w=.1} I learnt to wrap presents quickly." 
     u "You're just excited about winning,{w=.1} huh?" 
@@ -1017,7 +1046,7 @@ label LBwA18:
     u "...I understand,{w=.1} you'd rather cry on a BMW than smile on a bike." 
     hide asi disdainful with dissolve 
     show asi annoyed with dissolve 
-    a "Who're you calling a golddigger?" 
+    a "Who're you calling a gold-digger?" 
     a "How do you even know that reference?{w=.3} I thought that you only watched anime." 
     u "Are you retarded?{w=.3} Do you think that I was like 3 when the phrase became viral?" 
     hide asi annoyed with dissolve 
@@ -1041,7 +1070,7 @@ label LBwA18:
     hide asi smirk with dissolve 
     show asi excited with dissolve 
     "He held up a mic up to [a]'s face first." 
-    a "Hii~I'm [a],{w=.1} a student at China University of Fine Arts!" 
+    a "Hii~{w=.3} I'm [a],{w=.1} a student at China University of Fine Arts!" 
     u "And I'm her boyfriend." 
     a "Hey,{w=.1} introduce yourself." 
     u "I'm her boyfriend." 
@@ -1071,111 +1100,124 @@ label LBwA18:
     u "Oh." 
     "We sat at a table placed on the stage,{w=.1} and prepared to wrap the gift." 
     jump LBwA19
+
 label LBwA19: 
     hide asi excited with fade 
     hide Emcee with fade 
     scene bgstage with fade 
     "When the emcee announced 'start',{w=.1} I begun unwrapping." 
     $ T0 = time.perf_counter() 
+
 label game_n1: 
-menu: 
-    "What should I do now?" 
-    "Wrap present": 
-        "I tore out some wrapping paper." 
-        "I taped the wrapping paper to the present." 
-        "I folded the wrapping paper to encase the present." 
-        "I taped the wrapping paper closed." 
-        $ renpy.pause(1.0, hard=True)
-        jump game_0 
-    "Tie ribbon": 
-        "I took out a ribbon." 
-        "I set it aside." 
-        $ renpy.pause(1.0, hard=True)
-        jump game_1 
-    "Submit present": 
-        "That doesn't sound quite right..." 
-        $ renpy.pause(1.0, hard=True)
-        jump game_n1 
+
+    menu: 
+        "What should I do now?" 
+        "Wrap present": 
+            "I tore out some wrapping paper." 
+            "I taped the wrapping paper to the present." 
+            "I folded the wrapping paper to encase the present." 
+            "I taped the wrapping paper closed." 
+            $ renpy.pause(1.0, hard=True)
+            jump game_0 
+        "Tie ribbon": 
+            "I took out a ribbon." 
+            "I set it aside." 
+            $ renpy.pause(1.0, hard=True)
+            jump game_1 
+        "Submit present": 
+            "That doesn't sound quite right..." 
+            $ renpy.pause(1.0, hard=True)
+            jump game_n1 
+
 label game_0: 
-menu: 
-    "What should I do now?" 
-    "Tie ribbon": 
-        "I took out a ribbon." 
-        "I taped the ribbon to the present." 
-        "I tied the ribbon tightly."  
-        $ renpy.pause(1.0, hard=True)
-        jump game_2 
-    "Submit present": 
-        "That doesn't sound quite right..." 
-        $ renpy.pause(1.0, hard=True)
-        jump game_0 
+
+    menu: 
+        "What should I do now?" 
+        "Tie ribbon": 
+            "I took out a ribbon." 
+            "I taped the ribbon to the present." 
+            "I tied the ribbon tightly."  
+            $ renpy.pause(1.0, hard=True)
+            jump game_2 
+        "Submit present": 
+            "That doesn't sound quite right..." 
+            $ renpy.pause(1.0, hard=True)
+            jump game_0 
+
 label game_1: 
-menu: 
-    "What should I do now?" 
-    "Wrap present": 
-        "I tore out some wrapping paper." 
-        "I taped the wrapping paper to the present." 
-        "I folded the wrapping paper to encase the present." 
-        "I taped the wrapping paper closed." 
-        $ renpy.pause(1.0, hard=True)
-        jump game_3 
-    "Submit present": 
-        "That doesn't sound quite right..." 
-        $ renpy.pause(1.0, hard=True)
-        jump game_1 
+
+    menu: 
+        "What should I do now?" 
+        "Wrap present": 
+            "I tore out some wrapping paper." 
+            "I taped the wrapping paper to the present." 
+            "I folded the wrapping paper to encase the present." 
+            "I taped the wrapping paper closed." 
+            $ renpy.pause(1.0, hard=True)
+            jump game_3 
+        "Submit present": 
+            "That doesn't sound quite right..." 
+            $ renpy.pause(1.0, hard=True)
+            jump game_1 
+
 label game_3: 
-menu: 
-    "What should I do now?" 
-    "Tie ribbon": 
-        "I taped the ribbon to the present." 
-        "I tied the ribbon tightly." 
-        $ renpy.pause(1.0, hard=True)
-        jump game_4 
-    "Submit present": 
-        "That doesn't sound quite right..." 
-        $ renpy.pause(1.0, hard=True)
-        jump game_3 
+
+    menu: 
+        "What should I do now?" 
+        "Tie ribbon": 
+            "I taped the ribbon to the present." 
+            "I tied the ribbon tightly." 
+            $ renpy.pause(1.0, hard=True)
+            jump game_4 
+        "Submit present": 
+            "That doesn't sound quite right..." 
+            $ renpy.pause(1.0, hard=True)
+            jump game_3 
+
 label game_2: 
-menu: 
-    "What should I do now?" 
-    "Submit present": 
-        $ renpy.pause(1.0, hard=True)
-        jump LBwA20g
+
+    menu: 
+        "What should I do now?" 
+        "Submit present": 
+            $ renpy.pause(1.0, hard=True)
+            jump LBwA20g
+
 label game_4: 
-menu: 
-    "What should I do now?" 
-    "Submit present": 
-        $ renpy.pause(1.0, hard=True)
-        jump LBwA20g
+
+    menu: 
+        "What should I do now?" 
+        "Submit present": 
+            $ renpy.pause(1.0, hard=True)
+            jump LBwA20g
+
 label LBwA20g: 
     python: 
-        Reward = string("") 
         T1 = time.perf_counter() 
         T = (T1 - T0) * 4.0
-        del T1, T0
-        print("Deleted T0, T1")
-
     if T < 20.3: 
         $ Reward = "a voucher and a keychain" 
+        $ Position = "1st" 
         jump LBwA20
     elif T < 22.5: 
         $ Reward = "a voucher and a medal"
+        $ Position = "3rd" 
         jump LBwA20
     elif T < 25.8: 
         $ Reward = "a voucher" 
+        $ Position = "5th" 
         jump LBwA20
     else: 
         $ Reward = "nothing" 
+        $ Position = "23rd" 
         jump LBwA20
+
 label LBwA20: 
     scene bgblack with fade 
     "After the competition,{w=.1} we collected our winnings." 
-    "I recieved [Reward]."
+    "I received [Reward]."
     "[a] managed to eke out second place,{w=.1} qualifying herself for a voucher and a gold medal." 
-    "It's quite amusing,{w=.1} since she recieved gold for as a runner up." 
+    "It's quite amusing,{w=.1} since she received gold for as a runner up." 
     "That makes TMD a lot of sense." 
-    $ del Reward 
-    $ del T 
     scene bgchristmasmarket with fade 
     u "Can I go home now?" 
     show asi pout with dissolve 
@@ -1207,11 +1249,12 @@ label LBwA20:
     show asi disappointed with dissolve 
     a "Huh?{w=.3} How sad..." 
     jump LBwA21 
+
 label LBwA21: 
     "[a] also checked the weather." 
     hide asi disappointed with dissolve 
     show asi smirk with dissolve 
-    a "It's not going to rain! It's already at -2 Celcius!" 
+    a "It's not going to rain! It's already at -2 Celsius!" 
     u "Well,{w=.1} it could be freezing rain." 
     "The weather this week was unusually cold,{w=.1} considering it was still in December." 
     "Perhaps it was just a cold snap." 
@@ -1274,12 +1317,13 @@ label LBwA21:
     hide asi smirk with dissolve 
     scene bgblack with dissolve 
     jump LBwA22 
+
 label LBwA22: 
     "I walked [a] back home,{w=.1} before returning home myself." 
     "It was fortunate that we left early,{w=.1} because just as I was about to arrive back home,{w=.1} the first snowflakes begun to fall." 
     "Obviously,{w=.1} I rushed back into my house,{w=.1} then hid under my blanket to warm myself." 
     scene bgbedroom with fade 
-    "Soon,{w=.1} I recieved a call from [a]." 
+    "Soon,{w=.1} I received a call from [a]." 
     a "It's snowing!" 
     u "Yes,{w=.1} it's snowing." 
     "What else am I supposed to say?" 
@@ -1301,6 +1345,7 @@ label LBwA22:
     "That night,{w=.1} I slept terribly." 
     $ renpy.pause(2.0, hard=True) 
     jump LBwA23 
+
 label LBwA23: 
     "25th December." 
     "I was woken up by a phone call." 
@@ -1337,21 +1382,23 @@ label LBwA23:
             persistent.LBwA23 = True 
             persistent.gamestate += 1 
     "Number of endings completed: [persistent.gamestate]" 
-menu: 
-    "What would you like to do now?" 
-    "Quit": 
-        return 
-    "Try another path": 
-        call start from _call_start_1 
+
+    menu: 
+        "What would you like to do now?" 
+        "Quit": 
+            return 
+        "Try another path": 
+            call start from _call_start_1 
+
 label sxA15: 
     scene bgblack with fade 
     hide a mischievous  with dissolve
     "In the heart of the Christmas Market,{w=.1} there was a competition stage." 
     scene bgstage with fade 
     show a happy   with dissolve
-    "On the competition stage was held a giftwrapping competition." 
+    "On the competition stage was held a gift-wrapping competition." 
     show mc at left with dissolve
-    "Emcee" "Alright!{w=.3}Is there anyone else who wants to come up?!" 
+    "Emcee" "Alright!{w=.3} Is there anyone else who wants to come up?!" 
     "Emcee" "The current record is 20.3 seconds by Mister Lu Hua!" 
     hide mc with dissolve
     hide a happy with dissolve
@@ -1403,6 +1450,7 @@ label sxA15:
     show a happy   with dissolve
     a "Yay!" 
     jump sxA16 
+
 label sxA16: 
     hide mc with dissolve
     scene bgchristmasmarket with fade 
@@ -1422,17 +1470,18 @@ label sxA16:
     "But her bad mood didn't last for very long." 
     hide a annoyed with dissolve
     show a mischievous with dissolve
-    a "Isn't there a game district?{w=.3}Let's go." 
+    a "Isn't there a game district?{w=.3} Let's go." 
     u "Alright." 
     scene bgblack with fade 
     jump sxA17 
+
 label sxA17: 
     scene bggamestall with fade 
     hide a mischievous with dissolve
     show a playful with dissolve
     "There was a game district in the market." 
     "We headed to the game district." 
-    a "What game do you mant to play?" 
+    a "What game do you want to play?" 
     u "No clue.{w=.3} What do you want?" 
     a "I want to play...{w=.3} Oh,{w=.1} a shiba inu plushie..." 
     hide a playful with dissolve
@@ -1484,7 +1533,7 @@ label sxA17:
     show a excited   with dissolve
     a "Alright,{w=.1} shiba inu,{w=.1} I'm coming for you!" 
     "On a table in the centre of the stall were a few moving targets to be knocked down." 
-    "Each target had a number written on it,{w=.1} representing the number of points recieved per target." 
+    "Each target had a number written on it,{w=.1} representing the number of points received per target." 
     "Points could be exchanged for rewards." 
     "The shiba inu was worth 500 points." 
     hide a excited with dissolve
@@ -1510,136 +1559,155 @@ label sxA17:
     show a flustered with dissolve  
     "Both [a] and I blushed." 
     jump sxA18 
+
 label sxA18: 
     "Ignoring the store owner's uproarious laughter,{w=.1} I went up to the line behind which I had to stand." 
     hide a flustered with dissolve
     hide skpr with dissolve
     scene bggamestall with dissolve 
     $ score = 300
-python: 
-    randoma = random.randint(0, 1) 
-    randomb = random.randint(0, 3)
-menu: 
-    "Which target should I aim for?" 
-    "100 point": 
-        if randoma == 1: 
-            $ score += 100 
-            $ randoma = 0 
-            jump gamez 
-        else: 
-            $ randoma = 0 
-            jump game 
-    "200 point": 
-        if randomb == 3: 
-            $ score += 200 
-            $ randomb = 0 
-            jump gamee 
-        else: 
-            $ randomb = 0 
-            jump games 
+
+    python: 
+        randoma = random.randint(0, 1) 
+        randomb = random.randint(0, 3)
+
+    menu: 
+        "Which target should I aim for?" 
+        "100 point": 
+            if randoma == 1: 
+                $ score = score + 100 
+                $ randoma = 0 
+                jump gamez 
+            else: 
+                $ randoma = 0 
+                jump game 
+        "200 point": 
+            if randomb == 3: 
+                $ score = score + 200 
+                $ randomb = 0 
+                jump gamee 
+            else: 
+                $ randomb = 0 
+                jump games 
+
 label gamez: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
     jump gamesi 
+
 label game: 
     "I missed." 
     "Our current score is [score]." 
     jump gamesi 
+
 label gamee: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
     jump gamesi 
+
 label games: 
     "I missed." 
     "Our current score is [score]." 
     jump gamesi 
+
 label gamesi: 
-python: 
-    randoma = random.randint(0, 1) 
-    randomb = random.randint(0, 3)
-menu: 
-    "Which target should I aim for?" 
-    "100 point": 
-        if randoma == 1: 
-            $ score += 100 
-            $ randoma = 0 
-            jump gamew 
-        else: 
-            $ randoma = 0 
-            jump gamesx 
-    "200 point": 
-        if randomb == 3: 
-            $ score += 200 
-            $ randomb = 0 
-            jump gameq 
-        else: 
-            $ randomb = 0 
-            jump gameb 
+
+    python: 
+        randoma = random.randint(0, 1) 
+        randomb = random.randint(0, 3)
+
+    menu: 
+        "Which target should I aim for?" 
+        "100 point": 
+            if randoma == 1: 
+                $ score = score + 100 
+                $ randoma = 0 
+                jump gamew 
+            else: 
+                $ randoma = 0 
+                jump gamesx 
+        "200 point": 
+            if randomb == 3: 
+                $ score = score + 200 
+                $ randomb = 0 
+                jump gameq 
+            else: 
+                $ randomb = 0 
+                jump gameb 
+
 label gamew: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
     jump gamej 
+
 label gamesx: 
     "I missed." 
     "Our current score is [score]." 
     jump gamej 
+
 label gameq: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
     jump gamej 
+
 label gameb: 
     "I missed." 
     "Our current score is [score]." 
     jump gamej 
+
 label gamej: 
-python: 
-    randoma = random.randint(0, 1) 
-    randomb = random.randint(0, 3)
-menu: 
-    "Which target should I aim for?" 
-    "100 point": 
-        if randoma == 1: 
-            $ score += 100 
-            $ randoma = 0 
-            jump gamet 
-        else: 
-            $ randoma = 0 
-            jump gamety 
-    "200 point": 
-        if randomb == 3: 
-            $ score += 200 
-            $ randomb = 0 
-            jump gamete 
-        else: 
-            $ randomb = 0 
-            jump gamets 
+
+    python: 
+        randoma = random.randint(0, 1) 
+        randomb = random.randint(0, 3)
+
+    menu: 
+        "Which target should I aim for?" 
+        "100 point": 
+            if randoma == 1: 
+                $ score = score + 100 
+                $ randoma = 0 
+                jump gamet 
+            else: 
+                $ randoma = 0 
+                jump gamety 
+        "200 point": 
+            if randomb == 3: 
+                $ score = score + 200 
+                $ randomb = 0 
+                jump gamete 
+            else: 
+                $ randomb = 0 
+                jump gamets 
+
 label gamet: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
     jump gametsi 
+
 label gamety: 
     "I missed." 
     "Our current score is [score]." 
     jump gametsi 
+
 label gamete: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
     jump gametsi 
+
 label gamets: 
     "I missed." 
     "Our current score is [score]." 
     jump gametsi 
+
 label gametsi: 
-    $ del randoma, randomb 
     if score > 800: 
-        $ del score 
         jump WsxA19 
-    elif score >500:
-        $ del score  
+    elif score >500: 
         jump XsxA19 
     else: 
-        $ del score 
         jump LsxA19 
+
 label WsxA19: 
     scene bggamestall with dissolve 
     show skpr at left 
@@ -1689,6 +1757,7 @@ label WsxA19:
     scene bgchristmasmarket with fade 
     u "Oh,{w=.1} OK." 
     jump sxA20
+
 label XsxA19: 
     scene bggamestall with dissolve 
     show skpr at left with dissolve
@@ -1712,7 +1781,7 @@ label XsxA19:
     u "Should we go home now?" 
     hide asi happy with dissolve
     show asi disdainful with dissolve
-    a "No,{w=.1} there'st still a fireworks show." 
+    a "No,{w=.1} there's still a fireworks show." 
     u "Oh,{w=.1} OK." 
     hide asi disdainful with dissolve
     show asi happy with dissolve
@@ -1731,12 +1800,13 @@ label XsxA19:
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
     jump sxA20
+
 label LsxA19: 
     scene bggamestall with dissolve 
     show skpr at left with dissolve
     "Shopkeeper" "Well,{w=.1} that's a shame." 
     "[a] shook her head in disappointment." 
-    u "{i}Sigh,{w=.1}{/i}Three more balls,{w=.1} please." 
+    u "{i}Sigh,{w=.1}{/i} Three more balls,{w=.1} please." 
     "Shopkeeper" "Alright." 
     hide skpr with dissolve
     scene bgblack with fade 
@@ -1761,7 +1831,7 @@ label LsxA19:
     u "Should we go home now?" 
     hide asi happy with dissolve
     show asi disdainful with dissolve
-    a "No,{w=.1} there'st still a fireworks show." 
+    a "No,{w=.1} there's still a fireworks show." 
     u "Oh,{w=.1} OK." 
     hide asi disdainful with dissolve
     show asi happy with dissolve
@@ -1781,6 +1851,7 @@ label LsxA19:
     scene bgchristmasmarketpark with fade 
     u "Oh,{w=.1} OK." 
     jump sxA20 
+
 label sxA20: 
     scene bgparkbench with fade 
     stop music fadeout 2 
@@ -1789,7 +1860,7 @@ label sxA20:
     play music [m1, "<silence 5>", m3, "<silence 5>", st, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", m2, "<silence 5>", ctd] volume 0.05 fadein 5 fadeout 5
     show asi excited with dissolve
     a "Right,{w=.1} eggnog!" 
-    "Her sudden exclaimation shocked me." 
+    "Her sudden exclamation shocked me." 
     u "Oh...{w=.3} you finally remembered?" 
     "She really is an airhead." 
     hide asi excited with dissolve
@@ -1807,6 +1878,7 @@ label sxA20:
     "I reluctantly returned to the food section,{w=.1} bought two cups of eggnog,{w=.1} then headed towards the park." 
     "There seemed to be some kind of ruckus in the park." 
     jump sxA21 
+
 label sxA21: 
     "I quickened my footsteps while trying not to spill the eggnog." 
     scene bgparkbench with fade 
@@ -1831,12 +1903,12 @@ label sxA21:
     a "Stop! Erm...{w=.3} Uhm...{w=.3} Help!" 
     "How amusing;{w=.2} she was so flustered she forgot how to say 'help'." 
     "Wait,{w=.1} that's not the point here." 
-    "Finally,{w=.1} I have grounds to claim self-defense." 
+    "Finally,{w=.1} I have grounds to claim self-defence." 
     u "A'ight,{w=.1} that's enough." 
     "Since his attention was completely on [a],{w=.1} his back was completely open." 
     scene bgparkbench with hpunch 
     "I kicked him diagonally in the ass,{w=.1} so that he fell onto the bench,{w=.1} then dumped a cup of piping hot eggnog onto his face." 
-    "Man" "What the fuck— Fuck you!" 
+    "Man" "What the fuck—{w=.3} Fuck you!" 
     "I held onto [a]'s hand,{w=.1} poured the other cup of eggnog onto his crotch (Since I can't run while holding it anyways),{w=.1} then ran away,{w=.1} pulling [a] along." 
     hide asi scared with dissolve
     show asi relieved with dissolve
@@ -1869,6 +1941,7 @@ label sxA21:
     u "Oh." 
     hide asi confused with dissolve
     jump sxA22 
+
 label sxA22: 
     "Soon,{w=.1} there was an announcement over the intercom system." 
     "Announcer" "The fireworks show is starting.{w=.3} For safety reasons,{w=.1} please do not approach the competition stage." 
@@ -1900,6 +1973,7 @@ label sxA22:
     "The fireworks really were beautiful." 
     scene bgblack with fade 
     jump sxA23 
+
 label sxA23: 
     "After the fireworks show,{w=.1} the crowds dispersed and the stalls closed up for the day." 
     scene bgchristmasmarket with fade 
@@ -1931,9 +2005,10 @@ label sxA23:
             persistent.sxA23 = True 
             persistent.gameState += 1 
     "Number of endings completed: [persistent.gameState]" 
-menu:
-    "What would you like to do now?" 
-    "Quit": 
-        return 
-    "Try another path": 
-        call start from _call_start_2 
+
+    menu:
+        "What would you like to do now?" 
+        "Quit": 
+            return 
+        "Try another path": 
+            call start from _call_start_2 
