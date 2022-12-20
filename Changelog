@@ -246,6 +246,14 @@
     Merged Offshoot-AB with Offshoot-B 
     Merged Offshoot-B with Master 
     Changed branch to Master 
+
+0.0.3.26 
+    Made it impossible to rollback after a menu. 
+    Made it impossible to rollback during a game. 
+    Updated script: eAB10 
+    Updated README 
+    Updated options 
+
     
 
 Current; 

@@ -1,4 +1,5 @@
 ﻿label eA4: 
+    $ renpy.block_rollback()
     u "Hmm..." 
     u "It's Saturday,{w=.1} why?" 
     hide ina happy with dissolve
@@ -16,6 +17,7 @@
     u "Why're you just reciting the letters—" 
     u "Ohh,{w=.1} Christmas Eve." 
     jump eA5 
+
 label eA5: 
     u "And?" 
     hide ina playful with dissolve
@@ -30,6 +32,7 @@ label eA5:
     "She definitely has an ulterior motive." 
     u "What's the {i}real{/i} reason you need me to come?" 
     jump eA6 
+
 label eA6: 
     hide ina smirk with dissolve
     show ina sarcastic with dissolve 
@@ -58,6 +61,7 @@ label eA6:
     u "..." 
     u "{i}Sigh{/i}" 
     jump eA7 
+
 label eA7: 
     u "So,{w=.1} when and where do we meet up?" 
     hide ina disdainful with dissolve 
@@ -74,6 +78,7 @@ label eA7:
     u "..." 
     u "Alright,{w=.1} I'll call you at 17:00."  
     jump eA8 
+
 label eA8: 
     scene bgblack with fade 
     stop music fadeout 5.0
@@ -103,6 +108,7 @@ label eA8:
     u "See you later."
     scene bgblack with fade 
     jump eA9 
+
 label eA9: 
     scene bgzhejiangexhibitionhall with fade 
     play music [ttt, "<silence 5>", tot, "<silence 5>", sct, "<silence 5>", lgt, "<silence 5>", tdc, "<silence 5>", yam] volume 0.1 fadein 5 fadeout 5
@@ -135,8 +141,9 @@ label eA9:
     show a pout with dissolve 
     "I was plenty surprised,{w=.1} so..." 
     "Had it been showing on my face?" 
-menu: 
-    "Fine,{w=.1} I was surprised.": 
-        call sA10 from _call_sA10 
-    # TODO: BeA4; 
+
+    menu: 
+        "Fine,{w=.1} I was surprised.": 
+            call sA10 from _call_sA10 
+        # TODO: BeA4; 
 return 

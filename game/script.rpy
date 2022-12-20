@@ -7,7 +7,7 @@
             renpy.show("bglogin")
             persistent.username = renpy.input("Login:{w=0.5}\nPlease insert username: {w=0.5}", length=10, copypaste=False)
             persistent.username = persistent.username.strip() 
-        if persistent.username == "" and persistent.username == None: 
+        if persistent.username is None and not persistent.username is "" or persistent.username is '': 
             persistent.username = "Yu Wen" 
         if persistent.username != None: 
             renpy.jump("label1") 

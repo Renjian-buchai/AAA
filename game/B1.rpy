@@ -1,4 +1,5 @@
 ﻿label B1: 
+    $ renpy.block_rollback()
     a "Hehe, isn't it good that your gorgeous friend came here out of nowhere?" 
     u "Narcissist." 
     jump B2 

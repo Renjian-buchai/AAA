@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/siA.rpy", line 1633: expected statement.
-    del randoma, randomb 
-               ^
+File "game/menu.rpy", line 24: screen expects a non-empty block.
+    screen menu_screen(): 
+                          ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Sat Dec 17 12:39:14 2022
+Tue Dec 20 19:15:19 2022

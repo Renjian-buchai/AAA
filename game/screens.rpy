@@ -1,14 +1,7 @@
-﻿################################################################################
-## Initialization
-################################################################################
-
+﻿# Init 
 init offset = -1
 
-
-################################################################################
-## Styles
-################################################################################
-
+# Styles
 style default:
     properties gui.text_properties()
     language gui.language
@@ -32,13 +25,11 @@ style button_text is gui_text:
     properties gui.text_properties("button")
     yalign 0.5
 
-
 style label_text is gui_text:
     properties gui.text_properties("label", accent=True)
 
 style prompt_text is gui_text:
     properties gui.text_properties("prompt")
-
 
 style bar:
     ysize gui.bar_size
@@ -70,31 +61,11 @@ style vslider:
     base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/slider/vertical_[prefix_]thumb.png"
 
-
 style frame:
     padding gui.frame_borders.padding
     background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
 
-
-
-################################################################################
-## In-game screens
-################################################################################
-
-
-## Say screen ##################################################################
-##
-## The say screen is used to display dialogue to the player. It takes two
-## parameters, who and what, which are the name of the speaking character and
-## the text to be displayed, respectively. (The who parameter can be None if no
-## name is given.)
-##
-## This screen must create a text displayable with id "what", as Ren'Py uses
-## this to manage text display. It can also create displayables with id "who"
-## and id "window" to apply style properties.
-##
-## https://www.renpy.org/doc/html/screen_special.html#say
-
+# In-game screens 
 screen say(who, what):
     style_prefix "say"
 
@@ -110,7 +81,7 @@ screen say(who, what):
 
         text what id "what"
 
-screen disableskip():
+screen disableskip:
     #Dismiss keys
     key "mouseup_1" action NullAction()
     key "K_RETURN" action NullAction()
@@ -246,7 +217,7 @@ style choice_button_text is default:
 screen quick_menu():
 
     ## Ensure this appears on top of other screens.
-    zorder 100
+    zorder 1000
 
     if quick_menu:
 

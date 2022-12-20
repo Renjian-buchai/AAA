@@ -1,4 +1,5 @@
 ﻿label siA12: 
+    $ renpy.block_rollback()
     scene bgchristmasmarket 
     hide a incredulous with dissolve
     show a happy with dissolve
@@ -42,13 +43,14 @@
     menu: 
         a "(What about you? What do you want to eat?)" 
         "Roast beef sandwich.": 
-            jump wA13      
+            call wA13      
         "Mini Toad-in-the-hole.": 
-            jump BsiA13 
+            call BsiA13 
         "Roasted Spring Chicken.": 
-            jump CsiA13 
+            call CsiA13 
 
 label wA13: 
+    $ renpy.block_rollback()
     hide shkpra with dissolve
     hide shkprb with dissolve
     hide shkprc with dissolve
@@ -168,11 +170,12 @@ label wA14:
     menu: 
         a "What're we going to do now?" 
         "We should go to the competition stage.": 
-            jump sxA15 
+            call sxA15 
         "We should go to the game district.": 
-            jump BwA15 
+            call BwA15 
 
 label BsiA13: 
+    $ renpy.block_rollback()
     hide shkpra with dissolve
     hide shkprb with dissolve
     hide shkprc with dissolve
@@ -271,11 +274,12 @@ label BsiA14:
     menu: 
         a "Well,{w=.1} where should we go now?"
         "We should go to the competition stage.": 
-            jump sxA15 
+            call sxA15 
         "We should go to the game district": 
-            jump BwA15 
+            call BwA15 
 
 label CsiA13: 
+    $ renpy.block_rollback()
     hide shkpra with dissolve
     hide shkprb with dissolve
     hide shkprc with dissolve
@@ -391,11 +395,12 @@ label CsiA14:
     menu: 
         a "Where do you want to go?" 
         "We should go to the competition stage.": 
-            jump sxA15 
+            call sxA15 
         "We should go to the game district.": 
-            jump BwA15 
+            call BwA15 
 
 label BwA15: 
+    $ renpy.block_rollback()
     scene bgblack with fade 
     hide a mischievous with dissolve 
     "There was a game district in the market." 
@@ -525,40 +530,45 @@ label BwA16:
             if randoma == 1: 
                 $ score0 = score0 + 100 
                 $ randoma = 0 
-                jump gametw 
+                call gametw 
             else: 
                 $ randoma = 0 
-                jump gametsx 
+                call gametsx 
         "200 point": 
             if randomb == 3: 
                 $ score0 = score0 + 200 
                 $ randomb = 0 
-                jump gametq 
+                call gametq 
             else: 
                 $ randomb = 0 
-                jump gametb
+                call gametb
 
 label gametw: 
+    $ renpy.block_rollback()
     "I knocked down the 100 point target." 
     "Our current score is [score0]." 
-    jump gametj 
+    call gametj 
 
 label gametsx: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    jump gametj 
+    call gametj 
 
 label gametq: 
+    $ renpy.block_rollback()
     "I knocked down the 200 point target." 
     "Our current score is [score0]." 
-    jump gametj 
+    call gametj 
 
 label gametb: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    jump gametj 
+    call gametj 
 
 label gametj:
+    $ renpy.block_rollback()
     python: 
         randoma = random.randint(0,1)
         randomb = random.randint(0,3) 
@@ -569,48 +579,54 @@ label gametj:
             if randoma == 1: 
                 $ score0 = score0 + 100 
                 $ randoma = 0 
-                jump gameet 
+                call gameet 
             else: 
                 $ randoma = 0 
-                jump gameety 
+                call gameety 
         "200 point": 
             if randomb == 3: 
                 $ score0 = score0 + 200 
                 $ randomb = 0 
-                jump gameete 
+                call gameete 
             else: 
                 $ randomb = 0 
-                jump gameets
+                call gameets
 
 label gameet: 
+    $ renpy.block_rollback()
     "I knocked down the 100 point target." 
     "Our current score is [score0]." 
-    jump gameetsi 
+    call gameetsi 
 
 label gameety: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    jump gameetsi 
+    call gameetsi 
 
 label gameete: 
+    $ renpy.block_rollback()
     "I knocked down the 200 point target." 
     "Our current score is [score0]." 
-    jump gameetsi
+    call gameetsi
 
 label gameets: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    jump gameetsi 
+    call gameetsi 
 
 label gameetsi: 
+    $ renpy.block_rollback()
     if score0 == 800: 
-        jump WBwA17 
+        call WBwA17 
     elif score0 >= 500: 
-        jump XBwA17 
+        call XBwA17 
     else: 
-        jump LBwA17 
+        call LBwA17 
 
 label WBwA17: 
+    $ renpy.block_rollback()
     scene bgblack with fade 
     pause 1.0 
     scene bggamestall with fade 
@@ -663,6 +679,7 @@ label WBwA17:
     jump BwA18
 
 label XBwA17: 
+    $ renpy.block_rollback()
     scene bgblack with fade 
     pause 1.0 
     scene bggamestall with fade 
@@ -925,6 +942,7 @@ label BwA22:
     u "I—"
     hide asi flustered 
     scene bgblack with fade 
+    show disableskip
     $ renpy.movie_cutscene("mvcutscene.webm", delay=3, loops=0, stop_music=True)
     scene bgmov45 
     pause 5
@@ -1109,6 +1127,7 @@ label LBwA19:
     $ T0 = time.perf_counter() 
 
 label game_n1: 
+    $ renpy.block_rollback()
 
     menu: 
         "What should I do now?" 
@@ -1118,18 +1137,19 @@ label game_n1:
             "I folded the wrapping paper to encase the present." 
             "I taped the wrapping paper closed." 
             $ renpy.pause(1.0, hard=True)
-            jump game_0 
+            call game_0 
         "Tie ribbon": 
             "I took out a ribbon." 
             "I set it aside." 
             $ renpy.pause(1.0, hard=True)
-            jump game_1 
+            call game_1 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            jump game_n1 
+            call game_n1 
 
 label game_0: 
+    $ renpy.block_rollback()
 
     menu: 
         "What should I do now?" 
@@ -1138,13 +1158,14 @@ label game_0:
             "I taped the ribbon to the present." 
             "I tied the ribbon tightly."  
             $ renpy.pause(1.0, hard=True)
-            jump game_2 
+            call game_2 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            jump game_0 
+            call game_0 
 
 label game_1: 
+    $ renpy.block_rollback()
 
     menu: 
         "What should I do now?" 
@@ -1154,13 +1175,14 @@ label game_1:
             "I folded the wrapping paper to encase the present." 
             "I taped the wrapping paper closed." 
             $ renpy.pause(1.0, hard=True)
-            jump game_3 
+            call game_3 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            jump game_1 
+            call game_1 
 
 label game_3: 
+    $ renpy.block_rollback()
 
     menu: 
         "What should I do now?" 
@@ -1168,50 +1190,54 @@ label game_3:
             "I taped the ribbon to the present." 
             "I tied the ribbon tightly." 
             $ renpy.pause(1.0, hard=True)
-            jump game_4 
+            call game_4 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            jump game_3 
+            call game_3 
 
 label game_2: 
+    $ renpy.block_rollback()
 
     menu: 
         "What should I do now?" 
         "Submit present": 
             $ renpy.pause(1.0, hard=True)
-            jump LBwA20g
+            call LBwA20g
 
 label game_4: 
+    $ renpy.block_rollback()
 
     menu: 
         "What should I do now?" 
         "Submit present": 
             $ renpy.pause(1.0, hard=True)
-            jump LBwA20g
+            call LBwA20g
 
 label LBwA20g: 
+    $ renpy.block_rollback()
     python: 
         T1 = time.perf_counter() 
         T = (T1 - T0) * 4.0
     if T < 20.3: 
         $ Reward = "a voucher and a keychain" 
         $ Position = "1st" 
-        jump LBwA20
+        call LBwA20
     elif T < 22.5: 
         $ Reward = "a voucher and a medal"
         $ Position = "3rd" 
-        jump LBwA20
+        call LBwA20
     elif T < 25.8: 
         $ Reward = "a voucher" 
         $ Position = "5th" 
-        jump LBwA20
+        call LBwA20
     else: 
         $ Reward = "nothing" 
         $ Position = "23rd" 
-        jump LBwA20
+        call LBwA20
 
 label LBwA20: 
+    $ renpy.block_rollback()
     scene bgblack with fade 
     "After the competition,{w=.1} we collected our winnings." 
     "I received [Reward]."
@@ -1577,38 +1603,38 @@ label sxA18:
             if randoma == 1: 
                 $ score = score + 100 
                 $ randoma = 0 
-                jump gamez 
+                call gamez 
             else: 
                 $ randoma = 0 
-                jump game 
+                call game 
         "200 point": 
             if randomb == 3: 
                 $ score = score + 200 
                 $ randomb = 0 
-                jump gamee 
+                call gamee 
             else: 
                 $ randomb = 0 
-                jump games 
+                call games 
 
 label gamez: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    jump gamesi 
+    call gamesi 
 
 label game: 
     "I missed." 
     "Our current score is [score]." 
-    jump gamesi 
+    call gamesi 
 
 label gamee: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    jump gamesi 
+    call gamesi 
 
 label games: 
     "I missed." 
     "Our current score is [score]." 
-    jump gamesi 
+    call gamesi 
 
 label gamesi: 
 
@@ -1622,38 +1648,38 @@ label gamesi:
             if randoma == 1: 
                 $ score = score + 100 
                 $ randoma = 0 
-                jump gamew 
+                call gamew 
             else: 
                 $ randoma = 0 
-                jump gamesx 
+                call gamesx 
         "200 point": 
             if randomb == 3: 
                 $ score = score + 200 
                 $ randomb = 0 
-                jump gameq 
+                call gameq 
             else: 
                 $ randomb = 0 
-                jump gameb 
+                call gameb 
 
 label gamew: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    jump gamej 
+    call gamej 
 
 label gamesx: 
     "I missed." 
     "Our current score is [score]." 
-    jump gamej 
+    call gamej 
 
 label gameq: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    jump gamej 
+    call gamej 
 
 label gameb: 
     "I missed." 
     "Our current score is [score]." 
-    jump gamej 
+    call gamej 
 
 label gamej: 
 
@@ -1667,46 +1693,46 @@ label gamej:
             if randoma == 1: 
                 $ score = score + 100 
                 $ randoma = 0 
-                jump gamet 
+                call gamet 
             else: 
                 $ randoma = 0 
-                jump gamety 
+                call gamety 
         "200 point": 
             if randomb == 3: 
                 $ score = score + 200 
                 $ randomb = 0 
-                jump gamete 
+                call gamete 
             else: 
                 $ randomb = 0 
-                jump gamets 
+                call gamets 
 
 label gamet: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    jump gametsi 
+    call gametsi 
 
 label gamety: 
     "I missed." 
     "Our current score is [score]." 
-    jump gametsi 
+    call gametsi 
 
 label gamete: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    jump gametsi 
+    call gametsi 
 
 label gamets: 
     "I missed." 
     "Our current score is [score]." 
-    jump gametsi 
+    call gametsi 
 
 label gametsi: 
     if score > 800: 
-        jump WsxA19 
+        call WsxA19 
     elif score >500: 
-        jump XsxA19 
+        call XsxA19 
     else: 
-        jump LsxA19 
+        call LsxA19 
 
 label WsxA19: 
     scene bggamestall with dissolve 

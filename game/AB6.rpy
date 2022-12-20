@@ -1,4 +1,5 @@
 ﻿label AB6: 
+    $ renpy.block_rollback()
     a "Why noot~?" 
     u "Busy." 
     a "Hmm? Then what if I told you there's a couple's discount if we pretend to date?" 

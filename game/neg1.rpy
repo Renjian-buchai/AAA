@@ -1,4 +1,5 @@
 ﻿label neg1: 
+    $ renpy.block_rollback()
     play music [yam, "<silence 2.5>", tdc] volume 0.1 fadein 4 fadeout 4 loop 
     scene bgpc1 with dissolve
     "Finals Philosophy Essay" 

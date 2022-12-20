@@ -1,11 +1,13 @@
 ﻿label DD: 
-label Definitions: 
+label Libraries: 
     init python: 
         import math 
         import random 
         import time 
         import threading 
-    
+
+label Definitions: 
+          
     init: 
         # Characters 
         define u = Character("[persistent.username]")   
@@ -33,6 +35,8 @@ label Definitions:
         define m2 = "./audio/Lo-fi_girl_always_lacks_sleep.mp3"
         define m3 = "./audio/Sheep_of_the_Far_East_Dancing_with_the_Telecaster.mp3"
 
+
+
 label Dictionaries: 
     python: 
         # Riddle Guessing Game 
@@ -50,5 +54,4 @@ label Dictionaries:
         3: ('There is a face but no mouth, and feet but no hands. Although there are four legs, they cannot walk by themselves.', 'Table', 'Chair', '2 whole frozen chickens from the supermarket'), 
         4: ('Wearing green clothes, the belly is watery, has many children, and all of them have black faces.', 'Watermelon', 'A cuckold', 'Vegetarians')} 
 
-return 
 return 
