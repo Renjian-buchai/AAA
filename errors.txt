@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/menu.rpy", line 24: screen expects a non-empty block.
-    screen menu_screen(): 
-                          ^
+File "game/siA.rpy", line 37: expected statement.
+    xpos 25 
+            ^
 
-Ren'Py Version: Ren'Py 8.0.1.22070801
-Tue Dec 20 19:15:19 2022
+File "game/siA.rpy", line 40: expected statement.
+    xpos 0 
+           ^
+
+File "game/siA.rpy", line 43: expected statement.
+    xpos -25  
+              ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Fri Dec 23 12:59:14 2022

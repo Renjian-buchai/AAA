@@ -1,13 +1,64 @@
 ﻿label DD: 
 label Libraries: 
     init python: 
+        import sys 
         import math 
-        import random 
-        import time 
-        import threading 
-
+        from random import randint 
+        from time import perf_counter
 label Definitions: 
-          
+    python early: 
+        # f(x)
+        def test(): 
+            for name in dir(): 
+                print(name) 
+        
+        def update(Pathname): 
+            renpy.scene() 
+            renpy.show("bgblack") 
+            renpy.with_statement(fade, always=False) 
+            renpy.say(who=None, what="Ending.") 
+            varname = f"persistent.{Pathname}" 
+            
+            if eval(varname) is False: 
+                exec(varname + " = True") 
+                persistent.gameState += 1 
+
+            renpy.say(who=None, what=f"Number of endings completed: {persistent.gameState}")
+            del varname 
+
+        def rtrn(): 
+            renpy.say(who=None, what="What would you like to do now?", interact=False) 
+            result = renpy.display_menu([("Quit", "quit"), ("Try another path", "start")]) 
+
+            if result is "quit": 
+                renpy.return_statement() 
+            elif result is "start": 
+                renpy.call("start")
+            else: 
+                print(Error) 
+        
+        def end(Pathname): 
+            test() 
+            update(Pathname) 
+            rtrn()
+
+
+        
+        # scene bgblack with fade
+        # "Ending." 
+        # python: 
+        #     if persistent.sxA23 == False: 
+        #         persistent.sxA23 = True 
+        #         persistent.gameState += 1 
+        # "Number of endings completed: [persistent.gameState]" 
+
+        # menu:
+        #     "What would you like to do now?" 
+        #     "Quit": 
+        #         return 
+        #     "Try another path": 
+        #         call start from _call_start_2 
+
     init: 
         # Characters 
         define u = Character("[persistent.username]")   
@@ -43,7 +94,7 @@ label Dictionaries:
         Riddle0 = {  
         0: ('Five brothers, living together, with different names and uneven heights.', "Quintuplets", 'Fingers', 'Siblings'), 
         1: ('A black boy who never speaks. When he does, his tongue falls out.', 'An African peasant', 'Sunflower seeds', 'Leaking pens'), 
-        2: ('When people take off their clothes, it wears clothes. When people wear their clothes, they take off their clothes', 'Voyeurs', 'Clothes racks', 'The \'toys\' in [a]\'s drawers'), 
+        2: ('When people take off their clothes, it wears clothes. When people wear their clothes, they take off their clothes', 'Voyeurs', 'Clothes racks', 'The \'toys\' in Feng Qiuyue\'s drawers'), 
         3: ('The square house has doors not windows, keeping it frosty outside and warm inside.', 'Ice house', 'Freezers', 'Igloos'), 
         4: ('Tall buildings made of single wood, no tiles or bricks, people walk under the water, and the water flows up the people.', 'Wooden shack', 'Umbrella', 'Raincoats')} 
 

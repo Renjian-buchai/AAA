@@ -214,7 +214,7 @@
 0.0.3.23D
     Added distributables
 
-0.0.3.24 
+0.0.4.24 
     Created thread: Offshoot-B 
     Edited scripts 
     Created script B1 
@@ -224,17 +224,7 @@
     Updated README 
     Updated options 
 
-0.0.3.24 
-    Created thread: Offshoot-B 
-    Edited scripts 
-    Created script B1 
-    Deleted persistent 
-    Organised data 
-    Spellchecked dialogue 
-    Updated README 
-    Updated options 
-
-0.0.3.25 
+0.0.4.25 
     Created thread: Offshoot-AB 
     Created script: AB6 
     Updated script: AB6 
@@ -242,17 +232,27 @@
     Updated READMe 
     Updated options 
 
-0.0.3.25M 
+0.0.4.25M 
     Merged Offshoot-AB with Offshoot-B 
     Merged Offshoot-B with Master 
     Changed branch to Master 
 
-0.0.3.26 
+0.0.4.26 
     Made it impossible to rollback after a menu. 
     Made it impossible to rollback during a game. 
     Updated script: eAB10 
     Updated README 
     Updated options 
+
+0.0.4.27 
+    Updated script 
+    Added images into offshoot B. 
+    Added prefix:01 to script:DD. 
+    Updated image: bgapartmentint 
+    Amended changelog 
+    Updated README 
+    Updated options 
+    Deleted .rpyc files 
 
     
 

@@ -1,6 +1,6 @@
 #AAA
 By Stressed with Ale <br>
-ver. 0.0.3.26 <br> <br> 
+ver. 0.0.4.27 <br> <br> 
 
 This repository contains the files of the visual novel game [Goodbye](https://stressd.itch.io/gdbye-wntr) created for the [Winter VN Jam 2022](https://itch.io/jam/winter-vn-jam-2022). <br> <br>
 
