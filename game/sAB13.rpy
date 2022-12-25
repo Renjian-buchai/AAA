@@ -192,7 +192,7 @@ label riddlewrong:
     "There's really just one place we haven't visited, I think." 
     u "Christmas tree." 
     a "OK!" 
-    call sAB14 
+    call sAB14 from _call_sAB14 
 
 label riddlecorrect: 
     $ renpy.block_rollback() 
@@ -233,13 +233,13 @@ label riddlecorrect:
     menu: 
         "[Q]" 
         "[C]": 
-            call riddle1correct 
+            call riddle1correct from _call_riddle1correct 
         "[W1]": 
             $ B = W1 
-            call riddle1wrong 
+            call riddle1wrong from _call_riddle1wrong 
         "[W2]": 
             $ B = W2 
-            call riddle1wrong 
+            call riddle1wrong from _call_riddle1wrong_1 
     
 label riddle1correct:
     $ renpy.block_rollback() 
@@ -300,7 +300,7 @@ label riddle1correct:
     hide a annoyed 
     show a happy 
     a "Right, let's go!" 
-    call sAB14 
+    call sAB14 from _call_sAB14_1 
 
 label riddle1wrong: 
     $ renpy.block_rollback() 
@@ -357,7 +357,7 @@ label riddle1wrong:
     "It means that I'm tired of being with you." 
     "Not that I would ever say that, though." 
     $ del Q, W1, W2, C, B 
-    call sAB14 
+    call sAB14 from _call_sAB14_2 
 
 label sAB14: 
     ""

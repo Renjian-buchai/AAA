@@ -1,250 +1,34 @@
-Fri Dec 23 12:57:08 2022
+Sun Dec 25 21:11:10 2022
 Windows-10-10.0.19044
 Ren'Py 8.0.3.22090809
  
 
-Bootstrap to the start of init.init took 0.12s
+Bootstrap to the start of init.init took 0.11s
 Early init took 0.01s
-Loader init took 0.10s
-Loading error handling took 0.07s
-game/sAB13.rpy:94: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if randint(0, 1) is 1:
-game/sAB13.rpy:166: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if indx is 0:
-game/sAB13.rpy:168: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  elif indx is 1:
-Loading script took 1.55s
-Loading save slot metadata. took 0.05s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\student\\Desktop\\Applications\\renpy-8.0.1-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.19s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\student\\AppData\\Roaming/RenPy/backups\\AAA':
-Dump and make backups. took 0.23s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.09s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.21s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics 605'
-Version: b'4.6.0 - Build 27.20.100.8280'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1184, 666) drawable=(1184, 666)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 95.08s
-Early init took 0.00s
-Loader init took 0.08s
-Loading error handling took 0.06s
-Loading script took 0.66s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-
-File "game/siA.rpy", line 36: end of line expected.
-    show shkpra 'shkpra' xpos 25 
-                         ^
-
-File "game/siA.rpy", line 38: end of line expected.
-    show shkprb 'shkprb' xpos 0 
-                         ^
-
-File "game/siA.rpy", line 40: end of line expected.
-    show shkprc 'shkprc' xpos -25  
-                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.18s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics 605'
-Version: b'4.6.0 - Build 27.20.100.8280'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1184, 666) drawable=(1184, 666)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 122.82s
-Early init took 0.00s
-Loader init took 0.08s
-Loading error handling took 0.06s
-Loading script took 0.86s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-
-File "game/siA.rpy", line 37: expected statement.
-    xpos 25 
-            ^
-
-File "game/siA.rpy", line 40: expected statement.
-    xpos 0 
-           ^
-
-File "game/siA.rpy", line 43: expected statement.
-    xpos -25  
-              ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.15s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics 605'
-Version: b'4.6.0 - Build 27.20.100.8280'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1184, 666) drawable=(1184, 666)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 125.14s
-Early init took 0.00s
 Loader init took 0.07s
-Loading error handling took 0.06s
-Loading script took 0.62s
+Loading error handling took 0.05s
+Loading script took 0.30s
 Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
-
-File "game/siA.rpy", line 37: expected statement.
-    xpos 25 
-            ^
-
-File "game/siA.rpy", line 40: expected statement.
-    xpos 0 
-           ^
-
-File "game/siA.rpy", line 43: expected statement.
-    xpos -25  
-              ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.15s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics 605'
-Version: b'4.6.0 - Build 27.20.100.8280'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1184, 666) drawable=(1184, 666)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 139.34s
-Early init took 0.00s
-Loader init took 0.09s
-Loading error handling took 0.07s
-Loading script took 0.98s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\student\\Desktop\\Applications\\renpy-8.0.1-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.08s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\Applications\\Sys\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.11s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\student\\AppData\\Roaming/RenPy/backups\\AAA':
-Dump and make backups. took 0.15s
+Dump and make backups. took 0.13s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.06s
+Initial gc. took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.08s
+Init translation took 0.07s
 Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.20s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.11s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics 605'
-Version: b'4.6.0 - Build 27.20.100.8280'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1184, 666) drawable=(1184, 666)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 158.53s
-Early init took 0.00s
-Loader init took 0.14s
-Loading error handling took 0.08s
-Loading script took 1.32s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\student\\Desktop\\Applications\\renpy-8.0.1-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.07s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\student\\AppData\\Roaming/RenPy/backups\\AAA':
-Dump and make backups. took 0.15s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.10s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.05s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics 605'
-Version: b'4.6.0 - Build 27.20.100.8280'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1184, 666) drawable=(1184, 666)
-Maximum texture size: 4096x4096
+Save bytecode. took 0.00s

@@ -1,5 +1,5 @@
 ﻿label start: 
-    call DD 
+    call DD from _call_DD 
     $ A_name = _("Feng Qiuyue")
     python: 
         if persistent.username == None: 

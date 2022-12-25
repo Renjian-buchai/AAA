@@ -241,6 +241,6 @@ label eAB12:
     menu: 
         u "Erm..." 
         "Game district": 
-            call sAB13 
+            call sAB13 from _call_sAB13 
         #TODO: BeAB13; 
 return 

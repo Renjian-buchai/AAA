@@ -74,6 +74,6 @@ label B5:
     menu: 
         a "Anyways, Christmas Market. Come with me." 
         "No.": 
-            call AB6 
+            call AB6 from _call_AB6 
         #TODO: eB6; 
 return 

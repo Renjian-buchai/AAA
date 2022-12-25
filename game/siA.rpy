@@ -43,11 +43,11 @@
     menu: 
         a "(What about you? What do you want to eat?)" 
         "Roast beef sandwich.": 
-            call wA13      
+            call wA13 from _call_wA13      
         "Mini Toad-in-the-hole.": 
-            call BsiA13 
+            call BsiA13 from _call_BsiA13 
         "Roasted Spring Chicken.": 
-            call CsiA13 
+            call CsiA13 from _call_CsiA13 
 
 label wA13: 
     $ renpy.block_rollback()
@@ -170,9 +170,9 @@ label wA14:
     menu: 
         a "What're we going to do now?" 
         "We should go to the competition stage.": 
-            call sxA15 
+            call sxA15 from _call_sxA15 
         "We should go to the game district.": 
-            call BwA15 
+            call BwA15 from _call_BwA15 
 
 label BsiA13: 
     $ renpy.block_rollback()
@@ -274,9 +274,9 @@ label BsiA14:
     menu: 
         a "Well,{w=.1} where should we go now?"
         "We should go to the competition stage.": 
-            call sxA15 
+            call sxA15 from _call_sxA15_1 
         "We should go to the game district": 
-            call BwA15 
+            call BwA15 from _call_BwA15_1 
 
 label CsiA13: 
     $ renpy.block_rollback()
@@ -395,9 +395,9 @@ label CsiA14:
     menu: 
         a "Where do you want to go?" 
         "We should go to the competition stage.": 
-            call sxA15 
+            call sxA15 from _call_sxA15_2 
         "We should go to the game district.": 
-            call BwA15 
+            call BwA15 from _call_BwA15_2 
 
 label BwA15: 
     $ renpy.block_rollback()
@@ -530,42 +530,42 @@ label BwA16:
             if randoma == 1: 
                 $ score0 = score0 + 100 
                 $ randoma = 0 
-                call gametw 
+                call gametw from _call_gametw 
             else: 
                 $ randoma = 0 
-                call gametsx 
+                call gametsx from _call_gametsx 
         "200 point": 
             if randomb == 3: 
                 $ score0 = score0 + 200 
                 $ randomb = 0 
-                call gametq 
+                call gametq from _call_gametq 
             else: 
                 $ randomb = 0 
-                call gametb
+                call gametb from _call_gametb
 
 label gametw: 
     $ renpy.block_rollback()
     "I knocked down the 100 point target." 
     "Our current score is [score0]." 
-    call gametj 
+    call gametj from _call_gametj 
 
 label gametsx: 
     $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    call gametj 
+    call gametj from _call_gametj_1 
 
 label gametq: 
     $ renpy.block_rollback()
     "I knocked down the 200 point target." 
     "Our current score is [score0]." 
-    call gametj 
+    call gametj from _call_gametj_2 
 
 label gametb: 
     $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    call gametj 
+    call gametj from _call_gametj_3 
 
 label gametj:
     $ renpy.block_rollback()
@@ -579,51 +579,51 @@ label gametj:
             if randoma == 1: 
                 $ score0 = score0 + 100 
                 $ randoma = 0 
-                call gameet 
+                call gameet from _call_gameet 
             else: 
                 $ randoma = 0 
-                call gameety 
+                call gameety from _call_gameety 
         "200 point": 
             if randomb == 3: 
                 $ score0 = score0 + 200 
                 $ randomb = 0 
-                call gameete 
+                call gameete from _call_gameete 
             else: 
                 $ randomb = 0 
-                call gameets
+                call gameets from _call_gameets
 
 label gameet: 
     $ renpy.block_rollback()
     "I knocked down the 100 point target." 
     "Our current score is [score0]." 
-    call gameetsi 
+    call gameetsi from _call_gameetsi 
 
 label gameety: 
     $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    call gameetsi 
+    call gameetsi from _call_gameetsi_1 
 
 label gameete: 
     $ renpy.block_rollback()
     "I knocked down the 200 point target." 
     "Our current score is [score0]." 
-    call gameetsi
+    call gameetsi from _call_gameetsi_2
 
 label gameets: 
     $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    call gameetsi 
+    call gameetsi from _call_gameetsi_3 
 
 label gameetsi: 
     $ renpy.block_rollback()
     if score0 == 800: 
-        call WBwA17 
+        call WBwA17 from _call_WBwA17 
     elif score0 >= 500: 
-        call XBwA17 
+        call XBwA17 from _call_XBwA17 
     else: 
-        call LBwA17 
+        call LBwA17 from _call_LBwA17 
 
 label WBwA17: 
     $ renpy.block_rollback()
@@ -1124,16 +1124,16 @@ label game_n1:
             "I folded the wrapping paper to encase the present." 
             "I taped the wrapping paper closed." 
             $ renpy.pause(1.0, hard=True)
-            call game_0 
+            call game_0 from _call_game_0 
         "Tie ribbon": 
             "I took out a ribbon." 
             "I set it aside." 
             $ renpy.pause(1.0, hard=True)
-            call game_1 
+            call game_1 from _call_game_1 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            call game_n1 
+            call game_n1 from _call_game_n1 
 
 label game_0: 
     $ renpy.block_rollback()
@@ -1145,11 +1145,11 @@ label game_0:
             "I taped the ribbon to the present." 
             "I tied the ribbon tightly."  
             $ renpy.pause(1.0, hard=True)
-            call game_2 
+            call game_2 from _call_game_2 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            call game_0 
+            call game_0 from _call_game_0_1 
 
 label game_1: 
     $ renpy.block_rollback()
@@ -1162,11 +1162,11 @@ label game_1:
             "I folded the wrapping paper to encase the present." 
             "I taped the wrapping paper closed." 
             $ renpy.pause(1.0, hard=True)
-            call game_3 
+            call game_3 from _call_game_3 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            call game_1 
+            call game_1 from _call_game_1_1 
 
 label game_3: 
     $ renpy.block_rollback()
@@ -1177,11 +1177,11 @@ label game_3:
             "I taped the ribbon to the present." 
             "I tied the ribbon tightly." 
             $ renpy.pause(1.0, hard=True)
-            call game_4 
+            call game_4 from _call_game_4 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            call game_3 
+            call game_3 from _call_game_3_1 
 
 label game_2: 
     $ renpy.block_rollback()
@@ -1190,7 +1190,7 @@ label game_2:
         "What should I do now?" 
         "Submit present": 
             $ renpy.pause(1.0, hard=True)
-            call LBwA20g
+            call LBwA20g from _call_LBwA20g
 
 label game_4: 
     $ renpy.block_rollback()
@@ -1199,7 +1199,7 @@ label game_4:
         "What should I do now?" 
         "Submit present": 
             $ renpy.pause(1.0, hard=True)
-            call LBwA20g
+            call LBwA20g from _call_LBwA20g_1
 
 label LBwA20g: 
     $ renpy.block_rollback()
@@ -1209,19 +1209,19 @@ label LBwA20g:
     if T < 20.3: 
         $ Reward = "a voucher and a keychain" 
         $ Position = "1st" 
-        call LBwA20
+        call LBwA20 from _call_LBwA20
     elif T < 22.5: 
         $ Reward = "a voucher and a medal"
         $ Position = "3rd" 
-        call LBwA20
+        call LBwA20 from _call_LBwA20_1
     elif T < 25.8: 
         $ Reward = "a voucher" 
         $ Position = "5th" 
-        call LBwA20
+        call LBwA20 from _call_LBwA20_2
     else: 
         $ Reward = "nothing" 
         $ Position = "23rd" 
-        call LBwA20
+        call LBwA20 from _call_LBwA20_3
 
 label LBwA20: 
     $ renpy.block_rollback()
@@ -1577,38 +1577,38 @@ label sxA18:
             if randoma == 1: 
                 $ score = score + 100 
                 $ randoma = 0 
-                call gamez 
+                call gamez from _call_gamez 
             else: 
                 $ randoma = 0 
-                call game 
+                call game from _call_game 
         "200 point": 
             if randomb == 3: 
                 $ score = score + 200 
                 $ randomb = 0 
-                call gamee 
+                call gamee from _call_gamee 
             else: 
                 $ randomb = 0 
-                call games 
+                call games from _call_games 
 
 label gamez: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    call gamesi 
+    call gamesi from _call_gamesi 
 
 label game: 
     "I missed." 
     "Our current score is [score]." 
-    call gamesi 
+    call gamesi from _call_gamesi_1 
 
 label gamee: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    call gamesi 
+    call gamesi from _call_gamesi_2 
 
 label games: 
     "I missed." 
     "Our current score is [score]." 
-    call gamesi 
+    call gamesi from _call_gamesi_3 
 
 label gamesi: 
 
@@ -1622,38 +1622,38 @@ label gamesi:
             if randoma == 1: 
                 $ score = score + 100 
                 $ randoma = 0 
-                call gamew 
+                call gamew from _call_gamew 
             else: 
                 $ randoma = 0 
-                call gamesx 
+                call gamesx from _call_gamesx 
         "200 point": 
             if randomb == 3: 
                 $ score = score + 200 
                 $ randomb = 0 
-                call gameq 
+                call gameq from _call_gameq 
             else: 
                 $ randomb = 0 
-                call gameb 
+                call gameb from _call_gameb 
 
 label gamew: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    call gamej 
+    call gamej from _call_gamej 
 
 label gamesx: 
     "I missed." 
     "Our current score is [score]." 
-    call gamej 
+    call gamej from _call_gamej_1 
 
 label gameq: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    call gamej 
+    call gamej from _call_gamej_2 
 
 label gameb: 
     "I missed." 
     "Our current score is [score]." 
-    call gamej 
+    call gamej from _call_gamej_3 
 
 label gamej: 
 
@@ -1667,46 +1667,46 @@ label gamej:
             if randoma == 1: 
                 $ score = score + 100 
                 $ randoma = 0 
-                call gamet 
+                call gamet from _call_gamet 
             else: 
                 $ randoma = 0 
-                call gamety 
+                call gamety from _call_gamety 
         "200 point": 
             if randomb == 3: 
                 $ score = score + 200 
                 $ randomb = 0 
-                call gamete 
+                call gamete from _call_gamete 
             else: 
                 $ randomb = 0 
-                call gamets 
+                call gamets from _call_gamets 
 
 label gamet: 
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    call gametsi 
+    call gametsi from _call_gametsi 
 
 label gamety: 
     "I missed." 
     "Our current score is [score]." 
-    call gametsi 
+    call gametsi from _call_gametsi_1 
 
 label gamete: 
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    call gametsi 
+    call gametsi from _call_gametsi_2 
 
 label gamets: 
     "I missed." 
     "Our current score is [score]." 
-    call gametsi 
+    call gametsi from _call_gametsi_3 
 
 label gametsi: 
     if score > 800: 
-        call WsxA19 
+        call WsxA19 from _call_WsxA19 
     elif score >500: 
-        call XsxA19 
+        call XsxA19 from _call_XsxA19 
     else: 
-        call LsxA19 
+        call LsxA19 from _call_LsxA19 
 
 label WsxA19: 
     scene bggamestall  
