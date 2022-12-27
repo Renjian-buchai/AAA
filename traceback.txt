@@ -1,82 +1,39 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('a depressed.png') at 0x0000000005a25310>:
-  File "game/script.rpy", line 15, in script call
-    call neg1 from _call_neg1
-  File "game/siA.rpy", line 1392, in script call
-    $ end('LBwA23')
-  File "game/script.rpy", line 15, in script call
-    call neg1 from _call_neg1
-  File "game/siA.rpy", line 1558, in script
-    a "Haih,{w=.1} how sad."
-OSError: Couldn't find file 'a depressed.png'.
+While running game code:
+  File "game/options.rpy", line 184, in script
+    init python:
+  File "game/options.rpy", line 184, in script
+    init python:
+  File "game/options.rpy", line 201, in <module>
+    build.package('AAA', 'bare.zip', 'C:/users/student/desktop/AAA', None, True, False, False)
+  File "renpy/common/00build.rpy", line 382, in package
+    raise Exception("Format {} not known.".format(i))
+Exception: Format bare.zip not known.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 15, in script call
-    call neg1 from _call_neg1
-  File "game/siA.rpy", line 1392, in script call
-    $ end('LBwA23')
-  File "game/script.rpy", line 15, in script call
-    call neg1 from _call_neg1
-  File "game/siA.rpy", line 1558, in script
-    a "Haih,{w=.1} how sad."
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\transform.py", line 747, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\image.py", line 506, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\image.py", line 309, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\im.py", line 627, in render
-    return cache.get(self, render=True)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
-    surf = image.load()
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\im.py", line 720, in load
-    raise e
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\display\im.py", line 685, in load
-    filelike = renpy.loader.load(self.filename)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'a depressed.png'.
+  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/options.rpy", line 184, in script
+    init python:
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/options.rpy", line 184, in script
+    init python:
+  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/options.rpy", line 201, in <module>
+    build.package('AAA', 'bare.zip', 'C:/users/student/desktop/AAA', None, True, False, False)
+  File "renpy/common/00build.rpy", line 382, in package
+    raise Exception("Format {} not known.".format(i))
+Exception: Format bare.zip not known.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
-AAA 0.1.4.28
-Sun Dec 25 21:55:54 2022
+Goodbye 0.2.4.29
+Tue Dec 27 13:25:00 2022

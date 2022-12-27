@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.1.4.28"
+define config.version = "0.2.4.29"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -198,4 +198,4 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
-    build.package('AAA', 'bare.zip', 'C:/users/student/desktop/AAA', None, True, False, False)
+    build.package('AAA', 'bare-zip', 'C:/users/student/desktop/AAA', None, True, False, False)
