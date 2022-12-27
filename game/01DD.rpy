@@ -1,10 +1,12 @@
-﻿label DD: 
+﻿label DD:
+
 label Libraries: 
     init python: 
         import sys 
         import math 
         from random import randint 
         from time import perf_counter
+
 label Definitions: 
     python early: 
         # f(x)
@@ -86,7 +88,28 @@ label Definitions:
         define m2 = "./audio/Lo-fi_girl_always_lacks_sleep.mp3"
         define m3 = "./audio/Sheep_of_the_Far_East_Dancing_with_the_Telecaster.mp3"
 
+        # Image
+        # ina 
+        image ina pout = "ina disdainful.png"
 
+        # a 
+        image a happy peace = "a happy.png" 
+        image a pout = "a disdainful.png"
+    
+        # asi 
+        image asi disdainful = "asi resigned.png" 
+        image asi pout = "asi smirk.png" 
+        image asi mischievous = "asi playful.png"
+        image asi confused = "asi curious.png" 
+
+        # side chars 
+
+        # backgrounds
+        image bgchristmasmarketpark = "bgparkbench.png"
+
+label Preferences: 
+    python: 
+        preferences.text_cps = 160
 
 label Dictionaries: 
     python: 

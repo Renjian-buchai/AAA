@@ -4,7 +4,7 @@
     scene bgpc1 with dissolve
     "Finals Philosophy Essay" 
     scene bgpc2 with dissolve
-    "{u}Topic:{w=0.5} Winter{/u}" 
+    "{u}Topic:{w=0.1} Winter{/u}" 
     scene bgpc3 with dissolve
     "Winter..." 
     scene bgpc4 with dissolve
@@ -21,14 +21,14 @@
 label zero: 
     "???" "Are you doing your philosophy bullshit again?" 
     "A pair of soft arms wrapped around my neck." 
-    u "Ahh, WHAT THE FUCK?!" 
+    u "Ahh,{w=0.05} WHAT THE FUCK?!" 
     scene bgbedroom with hpunch
     show ina happy  
-    "I screamed and turned around,{w=0.1} recognising the one standing behind me." 
+    "I screamed and turned around,{w=0.05} recognising the one standing behind me." 
     u "Why're you in my room?!" 
 menu: 
     a "Your mom let me in."
-    "You do know you're a girl,{w=0.1} right?": 
+    "You do know you're a girl,{w=0.05} right?": 
         call A1 from _call_A1 
     # "{i}Sigh{/i}": 
     #     call B1 

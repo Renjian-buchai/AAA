@@ -15,3 +15,28 @@ Definitions:
         The result of a meaningful choice 
     Meaningful choice: 
         A choice that does not converge with other choices in the same menu. 
+    
+Update 
+Ver.no: 
+    x.0.0.0 
+        Major release 
+        e.g. Release to game jam 
+    0.x.0.0 
+        Minor release 
+        e.g. Every time an alpha or beta or release is released 
+    0.0.x.0 
+        Number of branches 
+    0.0.0.x 
+        Number of updates since start 
+
+Ver.suf: 
+Incomplete: 
+    -Alpha 
+        Tested by developers. 
+    -beta
+        Tested by others. 
+    -Incomplete
+        Unreleased. 
+Release: 
+    [nil] 
+        Released. 

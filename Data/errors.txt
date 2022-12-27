@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/LBwA18.rpy", line 300: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    u "{i}I{/i} made it back just in time." 
-    ^
+File "game/siA.rpy", line 37: expected statement.
+    xpos 25 
+            ^
 
-Ren'Py Version: Ren'Py 8.0.1.22070801
-Fri Dec 16 15:11:44 2022
+File "game/siA.rpy", line 40: expected statement.
+    xpos 0 
+           ^
+
+File "game/siA.rpy", line 43: expected statement.
+    xpos -25  
+              ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Fri Dec 23 12:59:14 2022

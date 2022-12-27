@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("AAA")
+define config.name = _("Goodbye")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -59,7 +59,7 @@ Background music:
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "AAA"
+define build.name = "Goodbye"
 
 
 ## Sounds and music ############################################################
@@ -187,7 +187,7 @@ init python:
     build.classify('**/.**', None)
     build.classify('game/README.md', 'all') 
     build.classify('LICENSE', 'all') 
-    build.classify('**.tab', 'all') 
+    build.classify('**.tab', None) 
     build.classify('**.html','all') 
 
     build.classify('game/*', 'archive') 
@@ -198,4 +198,4 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
-    build.package('AAA', 'bare-zip', 'C:/users/student/desktop/AAA', None, True, False, False)
+    build.package('AAA', 'bare.zip', 'C:/users/student/desktop/AAA', None, True, False, False)
