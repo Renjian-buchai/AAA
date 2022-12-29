@@ -1,6 +1,7 @@
 ﻿label start: 
     call DD from _call_DD 
     $ A_name = _("Feng Qiuyue")
+
     python: 
         if persistent.username == None: 
             renpy.scene()
@@ -11,6 +12,9 @@
             persistent.username = "Yu Wen" 
         if persistent.username != None: 
             renpy.jump("label1") 
+    
+    $ completioncheck() 
+    
 label label1: 
     call neg1 from _call_neg1 
     return

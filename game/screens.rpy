@@ -723,10 +723,6 @@ screen preferences():
 
                 vbox:
 
-                    label _("Text Speed")
-
-                    bar value Preference("text speed")
-
                     label _("Auto-Forward Time")
 
                     bar value Preference("auto-forward time")

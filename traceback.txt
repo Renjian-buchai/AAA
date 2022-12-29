@@ -1,39 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/options.rpy", line 184, in script
-    init python:
-  File "game/options.rpy", line 184, in script
-    init python:
-  File "game/options.rpy", line 201, in <module>
-    build.package('AAA', 'bare.zip', 'C:/users/student/desktop/AAA', None, True, False, False)
-  File "renpy/common/00build.rpy", line 382, in package
-    raise Exception("Format {} not known.".format(i))
-Exception: Format bare.zip not known.
+  File "game/script.rpy", line 19, in script call
+    call neg1 from _call_neg1
+  File "game/siA.rpy", line 2036, in script call
+    $ end('sxA23')
+  File "game/script.rpy", line 19, in script call
+    call neg1 from _call_neg1
+  File "game/siA.rpy", line 2036, in script call
+    $ end('sxA23')
+ScriptError: could not find label 'main_menu'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
     renpy.main.main()
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
-    renpy.game.context().run(node)
-  File "game/options.rpy", line 184, in script
-    init python:
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/options.rpy", line 184, in script
-    init python:
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/options.rpy", line 201, in <module>
-    build.package('AAA', 'bare.zip', 'C:/users/student/desktop/AAA', None, True, False, False)
-  File "renpy/common/00build.rpy", line 382, in package
-    raise Exception("Format {} not known.".format(i))
-Exception: Format bare.zip not known.
+  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
+    run(restart)
+  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\main.py", line 146, in run
+    renpy.execution.run_context(True)
+  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\execution.py", line 938, in run_context
+    context.run()
+  File "game/script.rpy", line 19, in script call
+    call neg1 from _call_neg1
+  File "game/siA.rpy", line 2036, in script call
+    $ end('sxA23')
+  File "game/script.rpy", line 19, in script call
+    call neg1 from _call_neg1
+  File "game/siA.rpy", line 2036, in script call
+    $ end('sxA23')
+  File "D:\Applications\Sys\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'main_menu'.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 Goodbye 0.2.4.29
-Tue Dec 27 13:25:00 2022
+Wed Dec 28 18:34:05 2022

@@ -286,6 +286,12 @@ Temp. UD for game jam:
     Updated README 
     Updated options 
     Deleted persistent data 
-    
+
+0.2.4.30 
+    Solved bug where pressing quit returns an exception 
+    Updated image bggamestall 
+    Created a distributable version that doesn't have: References folder, B-path files, Data folder, .vscode folder. 
+    Solved bug where shopkeeper B is overlapped with [a]. 
+    Resolved error where shopkeeper C (Female), is referred to as 'he'. [Don't bring identity politics into this; As the creators, we declare that she identifies as a 'she'.]
 
 Current; 

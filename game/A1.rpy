@@ -1,4 +1,5 @@
 ﻿label A1: 
+    $ del val 
     $ renpy.block_rollback()
     u "You do know that you're a girl,{w=0.05} right?" 
     u "Also, you do know that I'm a guy,{w=0.05} right?" 

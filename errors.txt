@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/01DD.rpy", line 40: invalid syntax
+            call main_menu
+                  ^
+    
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Wed Dec 28 18:32:19 2022

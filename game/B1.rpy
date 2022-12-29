@@ -1,4 +1,5 @@
 ﻿label B1: 
+    $ del val 
     $ renpy.block_rollback()
     scene bgbedroom 
     a "Hehe, isn't it good that your gorgeous friend came here out of nowhere?" 

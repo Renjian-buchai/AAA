@@ -43,11 +43,12 @@
     menu: 
         a "(What about you? What do you want to eat?)" 
         "Roast beef sandwich.": 
-            call wA13 from _call_wA13      
+            jump wA13 
         "Mini Toad-in-the-hole.": 
-            call BsiA13 from _call_BsiA13 
+            jump BsiA13
         "Roasted Spring Chicken.": 
-            call CsiA13 from _call_CsiA13 
+            jump CsiA13 
+    
 
 label wA13: 
     $ renpy.block_rollback()
@@ -171,9 +172,10 @@ label wA14:
     menu: 
         a "What're we going to do now?" 
         "We should go to the competition stage.": 
-            call sxA15 from _call_sxA15 
+            jump sxA15 
         "We should go to the game district.": 
-            call BwA15 from _call_BwA15 
+            jump BwA15 
+    
 
 label BsiA13: 
     $ renpy.block_rollback()
@@ -192,7 +194,7 @@ label BsiA13:
     show a excited 
     a "Alright,{w=.05} I'll try it!" 
     "We walked up to the store." 
-    show shkprb at left 
+    show shkprbl at left 
     "Shopkeeper B" "Boy,{w=.05} girl,{w=.05} do you want mini toad-in-the-hole." 
     a "Yep." 
     u "...{w=.1}Well,{w=.05} what she said." 
@@ -219,7 +221,7 @@ label BsiA13:
     u "Expensive." 
     "Part-timer" "No,{w=.05} it's normal." 
     u "70 RMB." 
-    "Part-timer" "I didn't record the price." 
+    "Part-timer" "I didn't set the price." 
     u "{i}Sigh,{w=.05}{/i} Fine." 
     hide a disappointed 
     show a happy 
@@ -275,9 +277,10 @@ label BsiA14:
     menu: 
         a "Well,{w=.05} where should we go now?"
         "We should go to the competition stage.": 
-            call sxA15 from _call_sxA15_1 
+            jump sxA15 
         "We should go to the game district": 
-            call BwA15 from _call_BwA15_1 
+            jump BwA15 
+    
 
 label CsiA13: 
     $ renpy.block_rollback()
@@ -300,20 +303,20 @@ label CsiA13:
     hide a smirk 
     show a happy 
     a "Alright." 
-    show shkprc at left 
+    show shkprcl at left 
     "Shopkeeper C" "D'you want'a eat some spring chick'n?" 
-    "He spoke in the Sichuan dialect." 
+    "She spoke in the Sichuan dialect." 
     "I did not understand the Sichuan dialect." 
     "Fortunately,{w=.05} [a]'s hometown was Chengdu,{w=.05} so she understood and spoke it perfectly." 
     u "What did that mean?" 
-    a "He said,{w=.05} 'Do you want to eat spring chicken?'."
-    u "Tell him,{w=.05} 'Yes,{w=.05} 2 of them.'" 
+    a "She said,{w=.05} 'Do you want to eat spring chicken?'."
+    u "Tell her,{w=.05} 'Yes,{w=.05} 2 of them.'" 
     a "OK." 
     a "Ye'h,{w=.05} 2." 
     "Shopkeeper C" "A'ight,{w=.05} less get'cha couple o' spring chick'n." 
-    u "Google translate,{w=.05} please help me translate." 
+    u "Baidu translate,{w=.05} please help me translate." 
     a "He said,{w=.05} 'Alright,{w=.05} let's get you some spring chicken.'" 
-    u "I asked for google translate,{w=.05} not you." 
+    u "I asked for Baidu translate,{w=.05} not you." 
     hide a happy 
     show a smirk 
     a "Haha,{w=.05} fuck off." 
@@ -333,7 +336,7 @@ label CsiA13:
     hide a happy 
     hide shkprc 
     scene bgblack with fade 
-    "I thanked him,{w=.05} then we went over to a side to eat." 
+    "I thanked her,{w=.05} then we went over to a side to eat." 
     jump CsiA14 
 
 label CsiA14: 
@@ -396,9 +399,10 @@ label CsiA14:
     menu: 
         a "Where do you want to go?" 
         "We should go to the competition stage.": 
-            call sxA15 from _call_sxA15_2 
+            jump sxA15 
         "We should go to the game district.": 
-            call BwA15 from _call_BwA15_2 
+            jump BwA15 
+    
 
 label BwA15: 
     $ renpy.block_rollback()
@@ -531,42 +535,47 @@ label BwA16:
             if randoma == 1: 
                 $ score0 = score0 + 100 
                 $ randoma = 0 
-                call gametw from _call_gametw 
+                jump gametw 
             else: 
                 $ randoma = 0 
-                call gametsx from _call_gametsx 
+                jump gametsx 
         "200 point": 
             if randomb == 3: 
                 $ score0 = score0 + 200 
                 $ randomb = 0 
-                call gametq from _call_gametq 
+                jump gametq 
             else: 
                 $ randomb = 0 
-                call gametb from _call_gametb
+                jump gametb
+    
 
 label gametw: 
     $ renpy.block_rollback()
     "I knocked down the 100 point target." 
     "Our current score is [score0]." 
-    call gametj from _call_gametj 
+    jump gametj 
+    
 
 label gametsx: 
     $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    call gametj from _call_gametj_1 
+    jump gametj 
+    
 
 label gametq: 
     $ renpy.block_rollback()
     "I knocked down the 200 point target." 
     "Our current score is [score0]." 
-    call gametj from _call_gametj_2 
+    jump gametj 
+    
 
 label gametb: 
     $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    call gametj from _call_gametj_3 
+    jump gametj 
+    
 
 label gametj:
     $ renpy.block_rollback()
@@ -580,51 +589,57 @@ label gametj:
             if randoma == 1: 
                 $ score0 = score0 + 100 
                 $ randoma = 0 
-                call gameet from _call_gameet 
+                jump gameet
             else: 
                 $ randoma = 0 
-                call gameety from _call_gameety 
+                jump gameety 
         "200 point": 
             if randomb == 3: 
                 $ score0 = score0 + 200 
                 $ randomb = 0 
-                call gameete from _call_gameete 
+                jump gameete 
             else: 
                 $ randomb = 0 
-                call gameets from _call_gameets
+                jump gameets
+    
 
 label gameet: 
     $ renpy.block_rollback()
     "I knocked down the 100 point target." 
     "Our current score is [score0]." 
-    call gameetsi from _call_gameetsi 
+    jump gameetsi
+    
 
 label gameety: 
     $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    call gameetsi from _call_gameetsi_1 
+    jump gameetsi 
+    
 
 label gameete: 
     $ renpy.block_rollback()
     "I knocked down the 200 point target." 
     "Our current score is [score0]." 
-    call gameetsi from _call_gameetsi_2
+    jump gameetsi 
+    
 
 label gameets: 
     $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score0]." 
-    call gameetsi from _call_gameetsi_3 
+    jump gameetsi 
+    
 
 label gameetsi: 
     $ renpy.block_rollback()
     if score0 == 800: 
-        call WBwA17 from _call_WBwA17 
+        jump WBwA17 
     elif score0 >= 500: 
-        call XBwA17 from _call_XBwA17 
+        jump XBwA17 
     else: 
-        call LBwA17 from _call_LBwA17 
+        jump LBwA17 
+    
 
 label WBwA17: 
     $ renpy.block_rollback()
@@ -1125,16 +1140,16 @@ label game_n1:
             "I folded the wrapping paper to encase the present." 
             "I taped the wrapping paper closed." 
             $ renpy.pause(1.0, hard=True)
-            call game_0 from _call_game_0 
+            jump game_0 
         "Tie ribbon": 
             "I took out a ribbon." 
             "I set it aside." 
             $ renpy.pause(1.0, hard=True)
-            call game_1 from _call_game_1 
+            jump game_1 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            call game_n1 from _call_game_n1 
+            jump game_n1 
 
 label game_0: 
     $ renpy.block_rollback()
@@ -1146,11 +1161,11 @@ label game_0:
             "I taped the ribbon to the present." 
             "I tied the ribbon tightly."  
             $ renpy.pause(1.0, hard=True)
-            call game_2 from _call_game_2 
+            jump game_2
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            call game_0 from _call_game_0_1 
+            jump game_0 
 
 label game_1: 
     $ renpy.block_rollback()
@@ -1163,11 +1178,11 @@ label game_1:
             "I folded the wrapping paper to encase the present." 
             "I taped the wrapping paper closed." 
             $ renpy.pause(1.0, hard=True)
-            call game_3 from _call_game_3 
+            jump game_3
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            call game_1 from _call_game_1_1 
+            jump game_1 
 
 label game_3: 
     $ renpy.block_rollback()
@@ -1178,11 +1193,11 @@ label game_3:
             "I taped the ribbon to the present." 
             "I tied the ribbon tightly." 
             $ renpy.pause(1.0, hard=True)
-            call game_4 from _call_game_4 
+            jump game_4 
         "Submit present": 
             "That doesn't sound quite right..." 
             $ renpy.pause(1.0, hard=True)
-            call game_3 from _call_game_3_1 
+            jump game_3 
 
 label game_2: 
     $ renpy.block_rollback()
@@ -1191,7 +1206,7 @@ label game_2:
         "What should I do now?" 
         "Submit present": 
             $ renpy.pause(1.0, hard=True)
-            call LBwA20g from _call_LBwA20g
+            jump LBwA20g 
 
 label game_4: 
     $ renpy.block_rollback()
@@ -1200,7 +1215,7 @@ label game_4:
         "What should I do now?" 
         "Submit present": 
             $ renpy.pause(1.0, hard=True)
-            call LBwA20g from _call_LBwA20g_1
+            jump LBwA20g 
 
 label LBwA20g: 
     $ renpy.block_rollback()
@@ -1210,19 +1225,19 @@ label LBwA20g:
     if T < 20.3: 
         $ Reward = "a voucher and a keychain" 
         $ Position = "1st" 
-        call LBwA20 from _call_LBwA20
+        jump LBwA20 
     elif T < 22.5: 
         $ Reward = "a voucher and a medal"
         $ Position = "3rd" 
-        call LBwA20 from _call_LBwA20_1
+        jump LBwA20
     elif T < 25.8: 
         $ Reward = "a voucher" 
         $ Position = "5th" 
-        call LBwA20 from _call_LBwA20_2
+        jump LBwA20
     else: 
         $ Reward = "nothing" 
         $ Position = "23rd" 
-        call LBwA20 from _call_LBwA20_3
+        jump LBwA20 
 
 label LBwA20: 
     $ renpy.block_rollback()
@@ -1398,7 +1413,7 @@ label sxA15:
     scene bgstage with fade 
     show a happy   
     "On the competition stage was held a gift-wrapping competition." 
-    show mc at left 
+    show mc
     "Emcee" "Alright!{w=.1} Is there anyone else who wants to come up?!" 
     "Emcee" "The current record is 20.3 seconds by Mister Lu Hua!" 
     hide mc 
@@ -1580,40 +1595,45 @@ label sxA18:
             if randoma == 1: 
                 $ score = score + 100 
                 $ randoma = 0 
-                call gamez from _call_gamez 
+                jump gamez 
             else: 
                 $ randoma = 0 
-                call game from _call_game 
+                jump game 
         "200 point": 
             if randomb == 3: 
                 $ score = score + 200 
                 $ randomb = 0 
-                call gamee from _call_gamee 
+                jump gamee 
             else: 
                 $ randomb = 0 
-                call games from _call_games 
+                jump games 
 
 label gamez: 
+    $ renpy.block_rollback()
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    call gamesi from _call_gamesi 
+    jump gamesi 
 
 label game: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score]." 
-    call gamesi from _call_gamesi_1 
+    jump gamesi 
 
 label gamee: 
+    $ renpy.block_rollback()
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    call gamesi from _call_gamesi_2 
+    jump gamesi 
 
 label games: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score]." 
-    call gamesi from _call_gamesi_3 
+    jump gamesi 
 
 label gamesi: 
+    $ renpy.block_rollback()
 
     python: 
         randoma = randint(0, 1) 
@@ -1625,40 +1645,45 @@ label gamesi:
             if randoma == 1: 
                 $ score = score + 100 
                 $ randoma = 0 
-                call gamew from _call_gamew 
+                jump gamew 
             else: 
                 $ randoma = 0 
-                call gamesx from _call_gamesx 
+                jump gamesx 
         "200 point": 
             if randomb == 3: 
                 $ score = score + 200 
                 $ randomb = 0 
-                call gameq from _call_gameq 
+                jump gameq 
             else: 
                 $ randomb = 0 
-                call gameb from _call_gameb 
+                jump gameb 
 
 label gamew: 
+    $ renpy.block_rollback()
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    call gamej from _call_gamej 
+    jump gamej 
 
 label gamesx: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score]." 
-    call gamej from _call_gamej_1 
+    jump gamej 
 
 label gameq: 
+    $ renpy.block_rollback()
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    call gamej from _call_gamej_2 
+    jump gamej 
 
 label gameb: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score]." 
-    call gamej from _call_gamej_3 
+    jump gamej 
 
 label gamej: 
+    $ renpy.block_rollback()
 
     python: 
         randoma = randint(0, 1) 
@@ -1670,48 +1695,54 @@ label gamej:
             if randoma == 1: 
                 $ score = score + 100 
                 $ randoma = 0 
-                call gamet from _call_gamet 
+                jump gamet
             else: 
                 $ randoma = 0 
-                call gamety from _call_gamety 
+                jump gamety 
         "200 point": 
             if randomb == 3: 
                 $ score = score + 200 
                 $ randomb = 0 
-                call gamete from _call_gamete 
+                jump gamete 
             else: 
                 $ randomb = 0 
-                call gamets from _call_gamets 
+                jump gamets 
 
 label gamet: 
+    $ renpy.block_rollback()
     "I knocked down the 100 point target." 
     "Our current score is [score]." 
-    call gametsi from _call_gametsi 
+    jump gametsi
 
 label gamety: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score]." 
-    call gametsi from _call_gametsi_1 
+    jump gametsi 
 
 label gamete: 
+    $ renpy.block_rollback()
     "I knocked down the 200 point target." 
     "Our current score is [score]." 
-    call gametsi from _call_gametsi_2 
+    jump gametsi 
 
 label gamets: 
+    $ renpy.block_rollback()
     "I missed." 
     "Our current score is [score]." 
-    call gametsi from _call_gametsi_3 
+    jump gametsi 
 
 label gametsi: 
-    if score > 800: 
-        call WsxA19 from _call_WsxA19 
-    elif score > 500: 
-        call XsxA19 from _call_XsxA19 
+    $ renpy.block_rollback()
+    if score >= 800: 
+        jump WsxA19 
+    elif score >= 500: 
+        jump XsxA19  
     else: 
-        call LsxA19 from _call_LsxA19 
+        jump LsxA19  
 
 label WsxA19: 
+    $ renpy.block_rollback()
     scene bggamestall  
     show skpr at left 
     "Shopkeeper" "Fuck,{w=.05} you're a great shot,{w=.05} boy!" 
@@ -1762,6 +1793,7 @@ label WsxA19:
     jump sxA20
 
 label XsxA19: 
+    $ renpy.block_rollback()
     scene bggamestall  
     show skpr at left 
     "Shopkeeper" "You did great,{w=.05} boy." 
@@ -1805,6 +1837,7 @@ label XsxA19:
     jump sxA20
 
 label LsxA19: 
+    $ renpy.block_rollback()
     scene bggamestall  
     show skpr at left 
     "Shopkeeper" "Well,{w=.05} that's a shame." 
@@ -2000,5 +2033,5 @@ label sxA23:
     "What she said was quite strange since we both have 2 more years in university,{w=.05} but I didn't think much of it." 
     a "Then,{w=.05} goodbye." 
     u "Goodbye." 
-    hide a satisfied 
     $ end('sxA23')
+    hide a satisfied 

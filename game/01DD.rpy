@@ -9,6 +9,7 @@ label Libraries:
 
 label Definitions: 
     python early: 
+
         # f(x)
         def test(): 
             for name in dir(): 
@@ -30,12 +31,13 @@ label Definitions:
 
         def rtrn(): 
             renpy.say(who=None, what="What would you like to do now?", interact=False) 
-            result = renpy.display_menu([("Quit", "quit"), ("Try another path", "start")]) 
+            result = renpy.display_menu([("Try another path", "start"), ("Quit", "Quit")]) 
 
-            if result is "quit": 
-                renpy.return_statement() 
-            elif result is "start": 
+            if result is "start": 
                 renpy.call("start")
+            elif result is "Quit": 
+                renpy.scene() 
+                renpy.show_screen('main_menu')
             else: 
                 print(Error) 
         
@@ -43,25 +45,13 @@ label Definitions:
             test() 
             update(Pathname) 
             rtrn()
-
-
         
-        # scene bgblack with fade
-        # "Ending." 
-        # python: 
-        #     if persistent.sxA23 == False: 
-        #         persistent.sxA23 = True 
-        #         persistent.gameState += 1 
-        # "Number of endings completed: [persistent.gameState]" 
-
-        # menu:
-        #     "What would you like to do now?" 
-        #     "Quit": 
-        #         return 
-        #     "Try another path": 
-        #         call start from _call_start_2 
-
     init: 
+        # std var 
+        define Cpath = False
+        define Persistent_paths = dict([(1, persistent.sxA23), (2, persistent.BwA23), (3, persistent.LBwA23)]) 
+        $ boolean_values = [] 
+
         # Characters 
         define u = Character("[persistent.username]")   
         define a = DynamicCharacter("A_name")
@@ -95,6 +85,7 @@ label Definitions:
         # a 
         image a happy peace = "a happy.png" 
         image a pout = "a disdainful.png"
+        image a depressed = "a disappointed.png"
     
         # asi 
         image asi disdainful = "asi resigned.png" 

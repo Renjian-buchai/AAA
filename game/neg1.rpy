@@ -17,6 +17,10 @@
     "How scary must the prospect of frostbite and starvation be for those who can't even afford to survive?" 
     scene bgpc8 with dissolve
     "Maybe—" 
+    python: 
+        boolean_values = [value for value in Persistent_paths.values()] 
+        if all(boolean_values):
+            Cpath = True
     jump zero 
 label zero: 
     "???" "Are you doing your philosophy bullshit again?" 
@@ -26,11 +30,18 @@ label zero:
     show ina happy  
     "I screamed and turned around,{w=0.05} recognising the one standing behind me." 
     u "Why're you in my room?!" 
-menu: 
-    a "Your mom let me in."
-    "You do know you're a girl,{w=0.05} right?": 
-        call A1 from _call_A1 
-    # "{i}Sigh{/i}": 
-    #     call B1 
-    # TODO: C1 
+    python: 
+        if Cpath: 
+            renpy.say(who=a, what="Your mom let me in.", interact=False) 
+            val = result = renpy.display_menu([("You do know you're a girl, right?", "A1")\
+            # , ("{i}Sigh{/i}", "B1"), ("Oh.", "C1")\
+            ]) 
+            renpy.call(val)
+        else: 
+            renpy.say(who=a, what="Your mom let me in.", interact=False) 
+            val = result = renpy.display_menu([("You do know you're a girl, right?", "A1"), \
+            # ("{i}Sigh{/i}", "B1")\
+            ])   
+            renpy.call(val)
+            #TODO: C1 
 return 
